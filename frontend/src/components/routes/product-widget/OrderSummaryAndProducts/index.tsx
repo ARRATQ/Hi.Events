@@ -580,33 +580,16 @@ export const OrderSummaryAndProducts = () => {
                     </Alert>
                 )}
 
-                <InlineOrderSummary
-                    event={event}
-                    order={order}
-                    showBuyerProtection={false}
-                    defaultExpanded={false}
-                />
+                {order.is_payment_required && (
+                    <InlineOrderSummary
+                        event={event}
+                        order={order}
+                        showBuyerProtection={false}
+                        defaultExpanded={false}
+                    />
+                )}
 
                 {order?.status === 'AWAITING_OFFLINE_PAYMENT' && <OfflinePaymentInstructions event={event}/>}
-
-                <h1 className={classes.heading}>{t`Order Details`}</h1>
-
-                <OrderDetails
-                    order={order}
-                    event={event}
-                    allowSelfEdit={allowSelfEdit}
-                    onEditClick={() => setEditOrderModalOpened(true)}
-                    onResendClick={handleResendOrderConfirmation}
-                />
-
-                {event?.settings?.is_online_event && <OnlineEventDetails eventSettings={event.settings}/>}
-
-                {!!event?.settings?.post_checkout_message && <PostCheckoutMessage message={event.settings.post_checkout_message}/>}
-
-                <h1 className={classes.heading}>{t`Event Details`}</h1>
-                <EventDetails event={event}/>
-
-                {order.status === 'COMPLETED' && <AddToCalendarCTA event={event}/>}
 
                 {(order?.attendees && order.attendees.length > 0) && (
                     <>
@@ -643,6 +626,25 @@ export const OrderSummaryAndProducts = () => {
                         </Card>
                     </>
                 )}
+
+                <h1 className={classes.heading}>{t`Order Details`}</h1>
+
+                <OrderDetails
+                    order={order}
+                    event={event}
+                    allowSelfEdit={allowSelfEdit}
+                    onEditClick={() => setEditOrderModalOpened(true)}
+                    onResendClick={handleResendOrderConfirmation}
+                />
+
+                {event?.settings?.is_online_event && <OnlineEventDetails eventSettings={event.settings}/>}
+
+                {!!event?.settings?.post_checkout_message && <PostCheckoutMessage message={event.settings.post_checkout_message}/>}
+
+                <h1 className={classes.heading}>{t`Event Details`}</h1>
+                <EventDetails event={event}/>
+
+                {order.status === 'COMPLETED' && <AddToCalendarCTA event={event}/>}
 
                 <PoweredByFooter/>
             </CheckoutContent>
