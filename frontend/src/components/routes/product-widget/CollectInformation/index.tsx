@@ -416,7 +416,7 @@ export const CollectInformation = () => {
                     </div>
                 )}
 
-                {(event && order) && (
+                {(event && order && order.is_payment_required) && (
                     <InlineOrderSummary event={event} order={order} defaultExpanded={true}/>
                 )}
 
