@@ -507,7 +507,7 @@ export const CollectInformation = () => {
                         </div>
                     )}
 
-                    {requireBillingAddress && (
+                    {requireBillingAddress && order?.is_payment_required && (
                         <>
                             <h3 style={{marginBottom: 5}}>
                                 {t`Billing Address`}
