@@ -43,6 +43,66 @@ $transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.5;
 }
 
+.freeEventBanner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: $radius-sm;
+  background: var(--checkout-surface, #F9FAFB);
+  border: 1px solid var(--checkout-border, #E5E7EB);
+}
+
+.freeEventCover {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.freeEventCoverPlaceholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  background: var(--checkout-accent-soft, var(--mantine-primary-color-light));
+  color: var(--checkout-accent, var(--mantine-primary-color-filled));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.freeEventInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.freeEventTitle {
+  font-family: $font-display;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--checkout-text-primary, #111827);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.freeEventMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--checkout-text-secondary, #6B7280);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
 .sectionHeading {
   font-family: $font-display;
   font-size: 1.125rem;

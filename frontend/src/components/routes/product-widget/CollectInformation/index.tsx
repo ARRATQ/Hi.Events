@@ -11,7 +11,7 @@ import {
     TextInput,
     Tooltip
 } from "@mantine/core";
-import {IconArrowRight, IconCheck, IconCircleCheck, IconClock} from "@tabler/icons-react";
+import {IconArrowRight, IconCalendarEvent, IconCheck, IconCircleCheck, IconClock, IconMapPin} from "@tabler/icons-react";
 import {t, Trans} from "@lingui/macro";
 import {useForm} from "@mantine/form";
 import {notifications} from "@mantine/notifications";
@@ -28,6 +28,7 @@ import {getConfig} from "../../../../utilites/config.ts";
 import {HomepageInfoMessage} from "../../../common/HomepageInfoMessage";
 import {InlineOrderSummary} from "../../../common/InlineOrderSummary";
 import {eventCheckoutPath, eventHomepagePath} from "../../../../utilites/urlHelper.ts";
+import {prettyDate} from "../../../../utilites/dates.ts";
 import {showInfo} from "../../../../utilites/notifications.tsx";
 import countries from "../../../../../data/countries.json";
 import classes from "./CollectInformation.module.scss";
@@ -419,6 +420,36 @@ export const CollectInformation = () => {
                 {(event && order && order.is_payment_required) && (
                     <InlineOrderSummary event={event} order={order} defaultExpanded={true}/>
                 )}
+
+                {(event && order && !order.is_payment_required) && (() => {
+                    const coverImage = event.images?.find(img => img.type === 'EVENT_COVER');
+                    const location = event.settings?.location_details?.city ||
+                        event.settings?.location_details?.venue_name || null;
+                    return (
+                        <div className={classes.freeEventBanner}>
+                            {coverImage ? (
+                                <img src={coverImage.url} alt={event.title} className={classes.freeEventCover}/>
+                            ) : (
+                                <div className={classes.freeEventCoverPlaceholder}>
+                                    <IconCalendarEvent size={32}/>
+                                </div>
+                            )}
+                            <div className={classes.freeEventInfo}>
+                                <div className={classes.freeEventTitle}>{event.title}</div>
+                                <div className={classes.freeEventMeta}>
+                                    <IconCalendarEvent size={14}/>
+                                    <span>{prettyDate(event.start_date, event.timezone, false)}</span>
+                                </div>
+                                {location && (
+                                    <div className={classes.freeEventMeta}>
+                                        <IconMapPin size={14}/>
+                                        <span>{location}</span>
+                                    </div>
+                                )}
+                            </div>
+                        </div>
+                    );
+                })()}
 
                 <h2 className={classes.sectionHeading}>
                     {t`Your Details`}
