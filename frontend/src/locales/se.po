@@ -64,7 +64,7 @@ msgstr "{0} tillgängliga"
 msgid "{0} created successfully"
 msgstr "{0} skapades framgångsrikt"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:102
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
 msgid "{0} email(s) imported"
 msgstr "{0} e-post(ar) importerade"
 
@@ -444,7 +444,7 @@ msgstr "Aktiv"
 msgid "Active Events"
 msgstr "Aktiva evenemang"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
 msgid "Add"
 msgstr "Lägg till"
 
@@ -476,7 +476,7 @@ msgstr "Lägg till fråga"
 msgid "Add description"
 msgstr "Lägg till beskrivning"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:161
 msgid "Add emails"
 msgstr "Lägg till e-postadresser"
 
@@ -802,7 +802,7 @@ msgstr "Svaret uppdaterades"
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "Eventuella frågor från produktinnehavare kommer att skickas till denna e-postadress. Detta kommer också att användas som \"svarsadress\" för alla e-postmeddelanden från detta evenemang"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:151
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:155
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Alla som inte finns på den här listan kommer att se ett fel när de försöker checka ut."
 
@@ -3046,7 +3046,7 @@ msgstr "Giltiga incheckningslistor"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:190
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:199
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3063,7 +3063,7 @@ msgstr "E-post- och aviseringsinställningar"
 msgid "Email & Templates"
 msgstr "E-post och mallar"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:79
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:80
 msgid "Email added"
 msgstr "E-post tillagd"
 
@@ -3164,7 +3164,7 @@ msgstr "Aktivera självservice för deltagare"
 msgid "Enable attendee self-service by default"
 msgstr "Aktivera självservice för deltagare som standard"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:133
 msgid "Enable guest list restriction"
 msgstr "Aktivera gästlistebegränsning"
 
@@ -3317,7 +3317,7 @@ msgstr "Fel vid bekräftelse av ändring av e-postadress"
 msgid "Error loading logs"
 msgstr "Fel vid inläsning av loggar"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:138
 msgid "Error message"
 msgstr "Felmeddelande"
 
@@ -3656,7 +3656,7 @@ msgstr "Misslyckade jobb"
 msgid "Failed to abandon order. Please try again."
 msgstr "Misslyckades med att avbryta ordern. Försök igen."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:81
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:82
 msgid "Failed to add email"
 msgstr "Det gick inte att lägga till e-post"
 
@@ -3693,7 +3693,7 @@ msgstr "Misslyckades med att skapa mall"
 msgid "Failed to delete configuration"
 msgstr "Misslyckades med att ta bort konfiguration"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:112
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Failed to delete email"
 msgstr "Det gick inte att ta bort e-post"
 
@@ -3743,7 +3743,7 @@ msgstr "Misslyckades med att exportera ordrar"
 msgid "Failed to export report. Please try again."
 msgstr "Misslyckades med att exportera rapport. Försök igen."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:104
 msgid "Failed to import emails"
 msgstr "Det gick inte att importera e-postadresser"
 
@@ -4205,7 +4205,7 @@ msgstr "Bruttoförsäljning"
 msgid "Guest List"
 msgstr "Gästlista"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:121
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:125
 msgid "Guest List Restriction"
 msgstr "Gästlistebegränsning"
 
@@ -4492,11 +4492,11 @@ msgstr "Impersonering startad"
 msgid "Impersonation stopped"
 msgstr "Impersonering stoppad"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:178
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:182
 msgid "Import"
 msgstr "Importera"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "Importera från CSV- eller TXT-fil (ett e-postadress per rad)"
 
@@ -5144,7 +5144,7 @@ msgstr "Meddelande schemalagt"
 msgid "Message Sent"
 msgstr "Meddelande skickat"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:139
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "Meddelande som visas för besökare vars e-post inte finns på listan. Lämna tomt för att använda standardmeddelandet."
 
@@ -5392,7 +5392,7 @@ msgstr "Ingen data att visa. Välj ett datumintervall"
 msgid "No Discount"
 msgstr "Ingen rabatt"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:217
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:231
 msgid "No emails added yet."
 msgstr "Inga e-postadresser tillagda ännu."
 
@@ -5575,7 +5575,7 @@ msgstr "Inga kommande evenemang"
 msgid "No users found"
 msgstr "Inga användare hittades"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:97
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:98
 msgid "No valid emails found in file"
 msgstr "Inga giltiga e-postadresser hittades i filen"
 
@@ -7241,7 +7241,7 @@ msgstr "Återställ detta evenemang för att göra det synligt igen."
 msgid "Restore this organizer and make it active again."
 msgstr "Återställ denna arrangör och gör den aktiv igen."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:122
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:126
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "Begränsa registreringen till en lista med inbjudna e-postadresser. Bara personer vars e-post finns på listan kan slutföra kassan."
 
@@ -7369,7 +7369,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:143
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:147
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -8301,7 +8301,7 @@ msgstr "SEO-inställningarna uppdaterades"
 msgid "Successfully Updated SEO Settings"
 msgstr "SEO-inställningarna uppdaterades"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:67
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:68
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "Inställningar uppdaterade"
@@ -8702,7 +8702,7 @@ msgstr "Den här koden används för att spåra försäljning. Endast bokstäver
 msgid "This color combination may be hard to read for some users"
 msgstr "Den här färgkombinationen kan vara svår att läsa för vissa användare"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:140
 msgid "This email address is not on the guest list for this event."
 msgstr "Den här e-postadressen finns inte på gästlistan för det här evenemanget."
 
@@ -10020,7 +10020,7 @@ msgstr "När detta är aktiverat visar nya evenemang en kryssruta för marknadsf
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "När aktiverat kommer inga applikationsavgifter att debiteras på Stripe Connect-transaktioner. Använd detta för länder där applikationsavgifter inte stöds."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:130
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "När aktiverat kan bara e-postadresser i listan nedan slutföra kassan."
 

@@ -64,7 +64,7 @@ msgstr "{0} mevcut"
 msgid "{0} created successfully"
 msgstr "{0} başarıyla oluşturuldu"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:102
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
 msgid "{0} email(s) imported"
 msgstr "{0} e-posta içe aktarıldı"
 
@@ -444,7 +444,7 @@ msgstr "Etkin"
 msgid "Active Events"
 msgstr "Aktif Etkinlikler"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
 msgid "Add"
 msgstr "Ekle"
 
@@ -476,7 +476,7 @@ msgstr "Ödeme sırasında ek bilgi toplamak için özel sorular ekleyin"
 msgid "Add description"
 msgstr "Açıklama ekle"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:161
 msgid "Add emails"
 msgstr "E-posta ekle"
 
@@ -802,7 +802,7 @@ msgstr "Cevap başarıyla güncellendi."
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "Ürün sahiplerinden gelen tüm sorular bu e-posta adresine gönderilecektir. Bu aynı zamanda bu etkinlikten gönderilen tüm e-postalar için \"yanıtla\" adresi olarak da kullanılacaktır"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:151
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:155
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Bu listede olmayan herhangi biri ödeme yapmaya çalıştığında bir hata görecektir."
 
@@ -3046,7 +3046,7 @@ msgstr "Uygun Giriş Listeleri"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:190
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:199
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3063,7 +3063,7 @@ msgstr "E-posta ve Bildirim Ayarları"
 msgid "Email & Templates"
 msgstr "E-posta ve Şablonlar"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:79
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:80
 msgid "Email added"
 msgstr "E-posta eklendi"
 
@@ -3164,7 +3164,7 @@ msgstr "Katılımcı self-servisini etkinleştir"
 msgid "Enable attendee self-service by default"
 msgstr "Katılımcı self-servisini varsayılan olarak etkinleştir"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:133
 msgid "Enable guest list restriction"
 msgstr "Misafir listesi kısıtlamasını etkinleştir"
 
@@ -3317,7 +3317,7 @@ msgstr "E-posta değişikliğini onaylama hatası"
 msgid "Error loading logs"
 msgstr "Günlükler yüklenirken hata oluştu"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:138
 msgid "Error message"
 msgstr "Hata mesajı"
 
@@ -3656,7 +3656,7 @@ msgstr "Başarısız işler"
 msgid "Failed to abandon order. Please try again."
 msgstr "Sipariş terk edilemedi. Lütfen tekrar deneyin."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:81
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:82
 msgid "Failed to add email"
 msgstr "E-posta eklenemedi"
 
@@ -3693,7 +3693,7 @@ msgstr "Şablon oluşturulamadı"
 msgid "Failed to delete configuration"
 msgstr "Yapılandırma silinemedi"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:112
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Failed to delete email"
 msgstr "E-posta silinemedi"
 
@@ -3743,7 +3743,7 @@ msgstr "Siparişler dışa aktarılamadı"
 msgid "Failed to export report. Please try again."
 msgstr "Rapor dışa aktarılamadı. Lütfen tekrar deneyin."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:104
 msgid "Failed to import emails"
 msgstr "E-postalar içe aktarılamadı"
 
@@ -4205,7 +4205,7 @@ msgstr "Brüt Satışlar"
 msgid "Guest List"
 msgstr "Misafir Listesi"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:121
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:125
 msgid "Guest List Restriction"
 msgstr "Misafir Listesi Kısıtlaması"
 
@@ -4492,11 +4492,11 @@ msgstr "Taklit başlatıldı"
 msgid "Impersonation stopped"
 msgstr "Taklit durduruldu"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:178
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:182
 msgid "Import"
 msgstr "İçe Aktar"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "CSV veya TXT dosyasından içe aktar (satır başına bir e-posta)"
 
@@ -5144,7 +5144,7 @@ msgstr "Mesaj zamanlandı"
 msgid "Message Sent"
 msgstr "Mesaj Gönderildi"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:139
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "E-postası listede olmayan ziyaretçilere gösterilecek mesaj. Varsayılan mesajı kullanmak için boş bırakın."
 
@@ -5392,7 +5392,7 @@ msgstr "Gösterilecek veri yok. Lütfen bir tarih aralığı seçin"
 msgid "No Discount"
 msgstr "İndirim Yok"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:217
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:231
 msgid "No emails added yet."
 msgstr "Henüz e-posta eklenmedi."
 
@@ -5575,7 +5575,7 @@ msgstr "Yaklaşan etkinlik yok"
 msgid "No users found"
 msgstr "Kullanıcı bulunamadı"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:97
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:98
 msgid "No valid emails found in file"
 msgstr "Dosyada geçerli e-posta bulunamadı"
 
@@ -7241,7 +7241,7 @@ msgstr "Bu etkinliği yeniden görünür hale getirmek için geri yükleyin."
 msgid "Restore this organizer and make it active again."
 msgstr "Bu organizatörü geri yükleyin ve yeniden aktif hale getirin."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:122
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:126
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "Kaydı davet edilen e-posta adresleri listesiyle sınırlandırın. Yalnızca e-postası listede olan kişiler ödemeyi tamamlayabilir."
 
@@ -7369,7 +7369,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:143
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:147
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -8301,7 +8301,7 @@ msgstr "SEO Ayarları Başarıyla Güncellendi"
 msgid "Successfully Updated SEO Settings"
 msgstr "SEO Ayarları Başarıyla Güncellendi"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:67
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:68
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "Ayarlar başarıyla güncellendi"
@@ -8702,7 +8702,7 @@ msgstr "Bu kod satışları izlemek için kullanılacaktır. Yalnızca harfler, 
 msgid "This color combination may be hard to read for some users"
 msgstr "Bu renk kombinasyonu bazı kullanıcılar için okunması zor olabilir"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:140
 msgid "This email address is not on the guest list for this event."
 msgstr "Bu e-posta adresi bu etkinliğin misafir listesinde yer almıyor."
 
@@ -10020,7 +10020,7 @@ msgstr "Etkinleştirildiğinde, yeni etkinlikler ödeme sırasında pazarlama on
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "Etkinleştirildiğinde, Stripe Connect işlemlerinde uygulama ücreti alınmaz. Uygulama ücretlerinin desteklenmediği ülkeler için kullanın."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:130
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "Etkinleştirildiğinde, yalnızca aşağıdaki listedeki e-postalar ödemeyi tamamlayabilir."
 

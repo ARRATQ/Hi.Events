@@ -64,7 +64,7 @@ msgstr "{0}可用"
 msgid "{0} created successfully"
 msgstr "成功创建 {0}"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:102
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
 msgid "{0} email(s) imported"
 msgstr "已导入 {0} 封邮件"
 
@@ -444,7 +444,7 @@ msgstr "活跃"
 msgid "Active Events"
 msgstr "活跃活动"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
 msgid "Add"
 msgstr "添加"
 
@@ -476,7 +476,7 @@ msgstr "添加自定义问题以在结账时收集额外信息"
 msgid "Add description"
 msgstr "添加描述"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:161
 msgid "Add emails"
 msgstr "添加邮箱"
 
@@ -802,7 +802,7 @@ msgstr "答案更新成功。"
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "产品持有者的任何查询都将发送到此电子邮件地址。此地址还将用作从此活动发送的所有电子邮件的“回复至”地址"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:151
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:155
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "不在此列表上的任何人在结账时都会看到错误。"
 
@@ -3046,7 +3046,7 @@ msgstr "符合条件的签到列表"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:190
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:199
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3063,7 +3063,7 @@ msgstr "电子邮件和通知设置"
 msgid "Email & Templates"
 msgstr "电子邮件和模板"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:79
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:80
 msgid "Email added"
 msgstr "邮箱已添加"
 
@@ -3164,7 +3164,7 @@ msgstr "启用参与者自助服务"
 msgid "Enable attendee self-service by default"
 msgstr "默认启用参与者自助服务"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:133
 msgid "Enable guest list restriction"
 msgstr "启用宾客名单限制"
 
@@ -3317,7 +3317,7 @@ msgstr "确认更改电子邮件时出错"
 msgid "Error loading logs"
 msgstr "加载日志时出错"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:138
 msgid "Error message"
 msgstr "错误信息"
 
@@ -3656,7 +3656,7 @@ msgstr "失败任务"
 msgid "Failed to abandon order. Please try again."
 msgstr "放弃订单失败。请重试。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:81
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:82
 msgid "Failed to add email"
 msgstr "添加邮箱失败"
 
@@ -3693,7 +3693,7 @@ msgstr "创建模板失败"
 msgid "Failed to delete configuration"
 msgstr "配置删除失败"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:112
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Failed to delete email"
 msgstr "删除邮箱失败"
 
@@ -3743,7 +3743,7 @@ msgstr "导出订单失败"
 msgid "Failed to export report. Please try again."
 msgstr "导出报告失败。请重试。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:104
 msgid "Failed to import emails"
 msgstr "导入邮箱失败"
 
@@ -4205,7 +4205,7 @@ msgstr "总销售额"
 msgid "Guest List"
 msgstr "宾客名单"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:121
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:125
 msgid "Guest List Restriction"
 msgstr "宾客名单限制"
 
@@ -4492,11 +4492,11 @@ msgstr "模拟已开始"
 msgid "Impersonation stopped"
 msgstr "模拟已停止"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:178
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:182
 msgid "Import"
 msgstr "导入"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "从CSV或TXT文件导入（每行一个邮箱）"
 
@@ -5144,7 +5144,7 @@ msgstr "消息已定时"
 msgid "Message Sent"
 msgstr "发送的信息"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:139
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "向邮件不在列表中的访客显示的消息。留空则使用默认消息。"
 
@@ -5392,7 +5392,7 @@ msgstr "无数据显示。请选择日期范围"
 msgid "No Discount"
 msgstr "无折扣"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:217
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:231
 msgid "No emails added yet."
 msgstr "尚未添加任何邮箱。"
 
@@ -5575,7 +5575,7 @@ msgstr "没有即将到来的活动"
 msgid "No users found"
 msgstr "未找到用户"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:97
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:98
 msgid "No valid emails found in file"
 msgstr "文件中未找到有效邮箱"
 
@@ -7241,7 +7241,7 @@ msgstr "恢复此活动以使其重新可见。"
 msgid "Restore this organizer and make it active again."
 msgstr "恢复此主办方并使其重新活跃。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:122
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:126
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "将注册限制为受邀电子邮件地址列表。只有电子邮件在列表上的人才能完成结账。"
 
@@ -7369,7 +7369,7 @@ msgstr "旧金山"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:143
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:147
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -8301,7 +8301,7 @@ msgstr "成功更新搜索引擎设置"
 msgid "Successfully Updated SEO Settings"
 msgstr "SEO 设置更新成功"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:67
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:68
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "设置更新成功"
@@ -8702,7 +8702,7 @@ msgstr "此代码将用于跟踪销售。只允许字母、数字、连字符和
 msgid "This color combination may be hard to read for some users"
 msgstr "此颜色组合对某些用户来说可能难以阅读"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:140
 msgid "This email address is not on the guest list for this event."
 msgstr "此电子邮件地址不在该活动的宾客名单中。"
 
@@ -10020,7 +10020,7 @@ msgstr "启用后，新活动将在结账时显示营销订阅复选框。此设
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "启用后，Stripe Connect交易将不收取应用费用。用于不支持应用费用的国家。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:130
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "启用后，只有下方列表中的邮箱才能完成结账。"
 

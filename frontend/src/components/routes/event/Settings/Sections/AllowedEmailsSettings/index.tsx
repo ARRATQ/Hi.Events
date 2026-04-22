@@ -17,7 +17,7 @@ import {
 import {useForm} from "@mantine/form";
 import {useParams} from "react-router";
 import {useEffect, useRef, useState} from "react";
-import {IconInfoCircle, IconTrash, IconUpload} from "@tabler/icons-react";
+import {IconChevronDown, IconChevronUp, IconInfoCircle, IconTrash, IconUpload} from "@tabler/icons-react";
 import {Card} from "../../../../../common/Card";
 import {HeadingWithDescription} from "../../../../../common/Card/CardHeading";
 import {showError, showSuccess} from "../../../../../../utilites/notifications.tsx";
@@ -39,6 +39,7 @@ export const AllowedEmailsSettings = () => {
     const resetCsvRef = useRef<() => void>(null);
 
     const [emailInput, setEmailInput] = useState('');
+    const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
 
     const form = useForm({
         initialValues: {
@@ -113,7 +114,10 @@ export const AllowedEmailsSettings = () => {
         });
     };
 
-    const emails = allowedEmailsQuery.data ?? [];
+    const emails = [...(allowedEmailsQuery.data ?? [])].sort((a, b) => {
+        const cmp = a.email.localeCompare(b.email);
+        return sortOrder === 'asc' ? cmp : -cmp;
+    });
 
     return (
         <Card>
@@ -183,11 +187,21 @@ export const AllowedEmailsSettings = () => {
                         </Group>
 
                         {emails.length > 0 && (
-                            <ScrollArea mah={400} mt="sm">
-                                <Table striped withTableBorder>
+                            <ScrollArea h={350} type="auto" mt="sm">
+                                <Table striped withTableBorder stickyHeader>
                                     <Table.Thead>
                                         <Table.Tr>
-                                            <Table.Th>{t`Email`}</Table.Th>
+                                            <Table.Th
+                                                style={{cursor: 'pointer', userSelect: 'none'}}
+                                                onClick={() => setSortOrder(o => o === 'asc' ? 'desc' : 'asc')}
+                                            >
+                                                <Group gap={4} wrap="nowrap">
+                                                    {t`Email`}
+                                                    {sortOrder === 'asc'
+                                                        ? <IconChevronUp size={14}/>
+                                                        : <IconChevronDown size={14}/>}
+                                                </Group>
+                                            </Table.Th>
                                             <Table.Th style={{width: 60}}/>
                                         </Table.Tr>
                                     </Table.Thead>

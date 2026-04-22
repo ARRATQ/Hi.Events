@@ -64,7 +64,7 @@ msgstr ""
 msgid "{0} created successfully"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:102
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
 msgid "{0} email(s) imported"
 msgstr "{0} email(ов) импортировано"
 
@@ -444,7 +444,7 @@ msgstr ""
 msgid "Active Events"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
 msgid "Add"
 msgstr "Добавить"
 
@@ -476,7 +476,7 @@ msgstr ""
 msgid "Add description"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:161
 msgid "Add emails"
 msgstr "Добавить email"
 
@@ -802,7 +802,7 @@ msgstr ""
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:151
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:155
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Все, кто нет в этом списке, увидят ошибку при попытке оформить заказ."
 
@@ -3044,7 +3044,7 @@ msgstr ""
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:190
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:199
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3061,7 +3061,7 @@ msgstr ""
 msgid "Email & Templates"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:79
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:80
 msgid "Email added"
 msgstr "Email добавлен"
 
@@ -3162,7 +3162,7 @@ msgstr "Включить самообслуживание для участни�
 msgid "Enable attendee self-service by default"
 msgstr "Включить самообслуживание для участников по умолчанию"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:133
 msgid "Enable guest list restriction"
 msgstr "Включить ограничение по списку гостей"
 
@@ -3315,7 +3315,7 @@ msgstr ""
 msgid "Error loading logs"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:138
 msgid "Error message"
 msgstr ""
 
@@ -3654,7 +3654,7 @@ msgstr ""
 msgid "Failed to abandon order. Please try again."
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:81
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:82
 msgid "Failed to add email"
 msgstr "Не удалось добавить email"
 
@@ -3691,7 +3691,7 @@ msgstr ""
 msgid "Failed to delete configuration"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:112
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Failed to delete email"
 msgstr "Не удалось удалить email"
 
@@ -3741,7 +3741,7 @@ msgstr ""
 msgid "Failed to export report. Please try again."
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:104
 msgid "Failed to import emails"
 msgstr "Не удалось импортировать email-адреса"
 
@@ -4203,7 +4203,7 @@ msgstr ""
 msgid "Guest List"
 msgstr "Список гостей"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:121
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:125
 msgid "Guest List Restriction"
 msgstr "Ограничение по списку гостей"
 
@@ -4490,11 +4490,11 @@ msgstr ""
 msgid "Impersonation stopped"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:178
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:182
 msgid "Import"
 msgstr "Импорт"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "Импортировать из CSV или TXT файла (один email на строку)"
 
@@ -5142,7 +5142,7 @@ msgstr "Сообщение запланировано"
 msgid "Message Sent"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:139
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr ""
 
@@ -5390,7 +5390,7 @@ msgstr ""
 msgid "No Discount"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:217
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:231
 msgid "No emails added yet."
 msgstr "Ещё нет добавленных email-адресов."
 
@@ -5573,7 +5573,7 @@ msgstr ""
 msgid "No users found"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:97
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:98
 msgid "No valid emails found in file"
 msgstr "В файле не найдено допустимых email-адресов"
 
@@ -7237,7 +7237,7 @@ msgstr ""
 msgid "Restore this organizer and make it active again."
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:122
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:126
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "Ограничьте регистрацию списком приглашённых адресов email. Только люди, чей email есть в списке, смогут завершить оформление заказа."
 
@@ -7365,7 +7365,7 @@ msgstr ""
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:143
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:147
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -8297,7 +8297,7 @@ msgstr ""
 msgid "Successfully Updated SEO Settings"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:67
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:68
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr ""
@@ -8698,7 +8698,7 @@ msgstr ""
 msgid "This color combination may be hard to read for some users"
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:140
 msgid "This email address is not on the guest list for this event."
 msgstr ""
 
@@ -10016,7 +10016,7 @@ msgstr "При включении новые мероприятия будут �
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr ""
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:130
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "Если включено, только email-адреса из списка ниже могут завершить оформление заказа."
 
