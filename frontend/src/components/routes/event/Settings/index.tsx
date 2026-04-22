@@ -17,6 +17,7 @@ import {
     IconCreditCard,
     IconHome,
     IconListCheck,
+    IconMailCheck,
     IconMapPin,
     IconPercentage,
 } from "@tabler/icons-react";
@@ -26,6 +27,7 @@ import {Card} from "../../../common/Card";
 import {PaymentAndInvoicingSettings} from "./Sections/PaymentSettings";
 import {PlatformFeesSettings} from "./Sections/PlatformFeesSettings";
 import {WaitlistSettings} from "./Sections/WaitlistSettings";
+import {AllowedEmailsSettings} from "./Sections/AllowedEmailsSettings";
 import {DangerZoneSettings} from "./Sections/DangerZoneSettings";
 import {useGetAccount} from "../../../../queries/useGetAccount.ts";
 
@@ -76,6 +78,12 @@ export const Settings = () => {
                 label: t`Waitlist`,
                 icon: IconListCheck,
                 component: WaitlistSettings,
+            },
+            {
+                id: 'allowed-emails-settings',
+                label: t`Guest List`,
+                icon: IconMailCheck,
+                component: AllowedEmailsSettings,
             },
             {
                 id: 'payment-settings',
