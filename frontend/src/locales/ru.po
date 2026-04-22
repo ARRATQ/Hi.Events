@@ -64,6 +64,10 @@ msgstr ""
 msgid "{0} created successfully"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:102
+msgid "{0} email(s) imported"
+msgstr "{0} email(ов) импортировано"
+
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:399
 msgid "{0} left"
 msgstr ""
@@ -77,7 +81,7 @@ msgstr ""
 msgid "{0} organizers"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:596
+#: src/components/routes/product-widget/CollectInformation/index.tsx:627
 msgid "{0} tickets"
 msgstr ""
 
@@ -200,7 +204,7 @@ msgstr "За 1 день до мероприятия"
 msgid "1 hour before event"
 msgstr "За 1 час до мероприятия"
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:595
+#: src/components/routes/product-widget/CollectInformation/index.tsx:626
 msgid "1 ticket"
 msgstr ""
 
@@ -440,6 +444,10 @@ msgstr ""
 msgid "Active Events"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+msgid "Add"
+msgstr "Добавить"
+
 #: src/components/forms/CheckInListForm/index.tsx:53
 msgid "Add a description for this check-in list"
 msgstr ""
@@ -467,6 +475,10 @@ msgstr ""
 #: src/components/forms/QuestionForm/index.tsx:202
 msgid "Add description"
 msgstr ""
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+msgid "Add emails"
+msgstr "Добавить email"
 
 #: src/components/routes/event/GettingStarted/index.tsx:142
 msgid "Add event details and manage event settings."
@@ -525,7 +537,7 @@ msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:172
 msgid "Add tracking pixels to your public event pages and organizer homepage. A cookie consent banner will be shown to visitors when tracking is active."
-msgstr ""
+msgstr "Добавьте пиксели отслеживания на свои публичные страницы мероприятий и главную страницу организатора. Когда отслеживание активно, посетителям будет показан баннер согласия на использование файлов cookie."
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:223
 #: src/components/common/WebhookTable/index.tsx:223
@@ -559,8 +571,8 @@ msgstr ""
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:122
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:80
-#: src/components/routes/product-widget/CollectInformation/index.tsx:519
-#: src/components/routes/product-widget/CollectInformation/index.tsx:520
+#: src/components/routes/product-widget/CollectInformation/index.tsx:550
+#: src/components/routes/product-widget/CollectInformation/index.tsx:551
 msgid "Address Line 1"
 msgstr ""
 
@@ -570,8 +582,8 @@ msgstr ""
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:127
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:85
-#: src/components/routes/product-widget/CollectInformation/index.tsx:524
-#: src/components/routes/product-widget/CollectInformation/index.tsx:525
+#: src/components/routes/product-widget/CollectInformation/index.tsx:555
+#: src/components/routes/product-widget/CollectInformation/index.tsx:556
 msgid "Address Line 2"
 msgstr ""
 
@@ -644,7 +656,7 @@ msgid "All Archived Events"
 msgstr ""
 
 #: src/components/common/MessageList/index.tsx:29
-#: src/components/routes/product-widget/CollectInformation/index.tsx:501
+#: src/components/routes/product-widget/CollectInformation/index.tsx:532
 msgid "All attendees"
 msgstr ""
 
@@ -790,6 +802,10 @@ msgstr ""
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:151
+msgid "Anyone not on this list will see an error when they try to check out."
+msgstr "Все, кто нет в этом списке, увидят ошибку при попытке оформить заказ."
+
 #: src/components/common/WidgetEditor/index.tsx:216
 msgid "Appearance"
 msgstr ""
@@ -920,12 +936,12 @@ msgid "Are you sure you want to leave?"
 msgstr ""
 
 #: src/components/layouts/Event/index.tsx:154
-#: src/components/routes/event/EventDashboard/index.tsx:78
+#: src/components/routes/event/EventDashboard/index.tsx:81
 msgid "Are you sure you want to make this event draft? This will make the event invisible to the public"
 msgstr ""
 
 #: src/components/layouts/Event/index.tsx:155
-#: src/components/routes/event/EventDashboard/index.tsx:79
+#: src/components/routes/event/EventDashboard/index.tsx:82
 msgid "Are you sure you want to make this event public? This will make the event visible to the public"
 msgstr ""
 
@@ -1043,7 +1059,7 @@ msgstr ""
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:54
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:55
 #: src/components/common/QuestionsTable/index.tsx:461
-#: src/components/routes/product-widget/CollectInformation/index.tsx:627
+#: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Attendee"
 msgstr ""
 
@@ -1134,7 +1150,7 @@ msgstr ""
 msgid "Attendees registered"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:330
+#: src/components/routes/event/EventDashboard/index.tsx:333
 msgid "Attendees Registered"
 msgstr ""
 
@@ -1176,7 +1192,7 @@ msgstr ""
 
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:61
 msgid "Automatically offer tickets to the next person when capacity becomes available. If disabled, you can manually process the waitlist from the Waitlist page."
-msgstr ""
+msgstr "Автоматически предлагайте билеты следующему человеку, когда появляется место. Если отключено, вы можете вручную обрабатывать список ожидания со страницы Список ожидания."
 
 #: src/components/common/WidgetEditor/index.tsx:238
 msgid "Automatically resize the widget height based on the content. When disabled, the widget will fill the height of the container."
@@ -1233,9 +1249,9 @@ msgid "Back to Accounts"
 msgstr ""
 
 #: src/components/forms/StripeCheckoutForm/index.tsx:108
-#: src/components/routes/product-widget/CollectInformation/index.tsx:330
-#: src/components/routes/product-widget/CollectInformation/index.tsx:360
-#: src/components/routes/product-widget/CollectInformation/index.tsx:389
+#: src/components/routes/product-widget/CollectInformation/index.tsx:331
+#: src/components/routes/product-widget/CollectInformation/index.tsx:361
+#: src/components/routes/product-widget/CollectInformation/index.tsx:390
 msgid "Back to Event"
 msgstr ""
 
@@ -1280,7 +1296,7 @@ msgstr ""
 msgid "Before your event can go live, there are a few things you need to do. Complete all the steps below to get started."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:513
+#: src/components/routes/product-widget/CollectInformation/index.tsx:544
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:288
 msgid "Billing Address"
 msgstr ""
@@ -1340,9 +1356,9 @@ msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:245
 msgid "By adding tracking pixels, you acknowledge that you and this platform are joint controllers of the data collected. You are responsible for ensuring you have a lawful basis for this processing under applicable privacy laws (GDPR, CCPA, etc.)."
-msgstr ""
+msgstr "Добавляя пиксели отслеживания, вы признаёте, что вы и эта платформа являетесь совместными контролёрами собранных данных. Вы несёте ответственность за обеспечение законного основания для такой обработки в соответствии с применимыми законами о конфиденциальности (GDPR, CCPA и т.д.)."
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:716
+#: src/components/routes/product-widget/CollectInformation/index.tsx:747
 #: src/components/routes/product-widget/Payment/index.tsx:152
 msgid "By continuing, you agree to the <0>{0} Terms of Service</0>"
 msgstr ""
@@ -1614,7 +1630,7 @@ msgstr ""
 msgid "Checked In"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:52
+#: src/components/routes/event/Settings/index.tsx:54
 msgid "Checkout"
 msgstr ""
 
@@ -1658,8 +1674,8 @@ msgstr ""
 #: src/components/common/CheckoutQuestion/index.tsx:162
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:134
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:92
-#: src/components/routes/product-widget/CollectInformation/index.tsx:533
-#: src/components/routes/product-widget/CollectInformation/index.tsx:534
+#: src/components/routes/product-widget/CollectInformation/index.tsx:564
+#: src/components/routes/product-widget/CollectInformation/index.tsx:565
 msgid "City"
 msgstr ""
 
@@ -1784,17 +1800,17 @@ msgstr ""
 msgid "Communication Preferences"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:712
+#: src/components/routes/product-widget/CollectInformation/index.tsx:743
 msgid "Complete Order"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:340
+#: src/components/routes/product-widget/CollectInformation/index.tsx:341
 #: src/components/routes/product-widget/Payment/index.tsx:148
 msgid "Complete Payment"
 msgstr ""
 
 #: src/components/common/StripeConnectButton/index.tsx:87
-#: src/components/routes/event/EventDashboard/index.tsx:246
+#: src/components/routes/event/EventDashboard/index.tsx:249
 msgid "Complete Stripe Setup"
 msgstr ""
 
@@ -1802,15 +1818,15 @@ msgstr ""
 msgid "Complete the setup below to continue"
 msgstr "Завершите настройку ниже для продолжения"
 
-#: src/components/routes/event/EventDashboard/index.tsx:168
+#: src/components/routes/event/EventDashboard/index.tsx:171
 msgid "Complete these steps to start selling tickets for your event."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:413
+#: src/components/routes/product-widget/CollectInformation/index.tsx:414
 msgid "Complete your order to secure your tickets. This offer is time-limited, so don't wait too long."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:338
+#: src/components/routes/product-widget/CollectInformation/index.tsx:339
 msgid "Complete your payment to secure your tickets."
 msgstr ""
 
@@ -1831,7 +1847,7 @@ msgstr ""
 msgid "Completed orders"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:328
+#: src/components/routes/event/EventDashboard/index.tsx:331
 msgid "Completed Orders"
 msgstr ""
 
@@ -1873,7 +1889,7 @@ msgstr ""
 msgid "Configurations"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:158
+#: src/components/routes/event/Settings/index.tsx:166
 msgid "Configure event details, location, checkout options, and email notifications."
 msgstr ""
 
@@ -1893,10 +1909,10 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:458
-#: src/components/routes/product-widget/CollectInformation/index.tsx:459
-#: src/components/routes/product-widget/CollectInformation/index.tsx:671
-#: src/components/routes/product-widget/CollectInformation/index.tsx:672
+#: src/components/routes/product-widget/CollectInformation/index.tsx:489
+#: src/components/routes/product-widget/CollectInformation/index.tsx:490
+#: src/components/routes/product-widget/CollectInformation/index.tsx:702
+#: src/components/routes/product-widget/CollectInformation/index.tsx:703
 msgid "Confirm Email Address"
 msgstr ""
 
@@ -1956,7 +1972,7 @@ msgstr "Подключить и обновить"
 msgid "Connect Documentation"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:233
+#: src/components/routes/event/EventDashboard/index.tsx:236
 msgid "Connect payment processing"
 msgstr ""
 
@@ -1973,7 +1989,7 @@ msgstr ""
 msgid "Connect Stripe to enable messaging"
 msgstr "Подключите Stripe для включения сообщений"
 
-#: src/components/routes/event/EventDashboard/index.tsx:246
+#: src/components/routes/event/EventDashboard/index.tsx:249
 msgid "Connect to Stripe"
 msgstr ""
 
@@ -2066,7 +2082,7 @@ msgstr ""
 msgid "Continue to next step"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:712
+#: src/components/routes/product-widget/CollectInformation/index.tsx:743
 msgid "Continue to Payment"
 msgstr ""
 
@@ -2082,7 +2098,7 @@ msgstr ""
 msgid "Copied"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:636
+#: src/components/routes/product-widget/CollectInformation/index.tsx:667
 msgid "Copied from above"
 msgstr ""
 
@@ -2120,9 +2136,9 @@ msgstr ""
 
 #: src/components/common/OrdersTable/index.tsx:161
 msgid "Copy customer link"
-msgstr ""
+msgstr "Скопировать ссылку клиента"
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:477
+#: src/components/routes/product-widget/CollectInformation/index.tsx:508
 msgid "Copy details to first attendee"
 msgstr ""
 
@@ -2140,7 +2156,7 @@ msgstr ""
 msgid "Copy Link"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:487
+#: src/components/routes/product-widget/CollectInformation/index.tsx:518
 msgid "Copy my details to:"
 msgstr ""
 
@@ -2160,7 +2176,7 @@ msgstr ""
 #: src/components/common/CheckoutQuestion/index.tsx:174
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:152
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:110
-#: src/components/routes/product-widget/CollectInformation/index.tsx:554
+#: src/components/routes/product-widget/CollectInformation/index.tsx:585
 msgid "Country"
 msgstr ""
 
@@ -2451,7 +2467,7 @@ msgstr ""
 
 #: src/components/common/OrdersTable/index.tsx:159
 msgid "Customer link copied to clipboard"
-msgstr ""
+msgstr "Ссылка клиента скопирована в буфер обмена"
 
 #: src/components/modals/RefundOrderModal/index.tsx:125
 msgid "Customer will receive an email confirming the refund"
@@ -2546,7 +2562,7 @@ msgstr ""
 
 #: src/components/common/AttendeeTable/index.tsx:367
 #: src/components/common/DangerZone/index.tsx:30
-#: src/components/routes/event/Settings/index.tsx:88
+#: src/components/routes/event/Settings/index.tsx:96
 #: src/components/routes/organizer/Settings/index.tsx:78
 msgid "Danger Zone"
 msgstr ""
@@ -3028,6 +3044,7 @@ msgstr ""
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:190
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3040,9 +3057,13 @@ msgstr ""
 msgid "Email & Notification Settings"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:64
+#: src/components/routes/event/Settings/index.tsx:66
 msgid "Email & Templates"
 msgstr ""
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:79
+msgid "Email added"
+msgstr "Email добавлен"
 
 #: src/components/modals/CreateAttendeeModal/index.tsx:143
 #: src/components/modals/ManageAttendeeModal/index.tsx:114
@@ -3050,10 +3071,10 @@ msgstr ""
 msgid "Email address"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:450
-#: src/components/routes/product-widget/CollectInformation/index.tsx:451
-#: src/components/routes/product-widget/CollectInformation/index.tsx:662
-#: src/components/routes/product-widget/CollectInformation/index.tsx:663
+#: src/components/routes/product-widget/CollectInformation/index.tsx:481
+#: src/components/routes/product-widget/CollectInformation/index.tsx:482
+#: src/components/routes/product-widget/CollectInformation/index.tsx:693
+#: src/components/routes/product-widget/CollectInformation/index.tsx:694
 msgid "Email Address"
 msgstr ""
 
@@ -3062,8 +3083,8 @@ msgstr ""
 msgid "Email address copied to clipboard"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:111
-#: src/components/routes/product-widget/CollectInformation/index.tsx:118
+#: src/components/routes/product-widget/CollectInformation/index.tsx:112
+#: src/components/routes/product-widget/CollectInformation/index.tsx:119
 msgid "Email addresses do not match"
 msgstr ""
 
@@ -3141,6 +3162,10 @@ msgstr "Включить самообслуживание для участни�
 msgid "Enable attendee self-service by default"
 msgstr "Включить самообслуживание для участников по умолчанию"
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+msgid "Enable guest list restriction"
+msgstr "Включить ограничение по списку гостей"
+
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:181
 msgid "Enable Invoicing"
 msgstr ""
@@ -3189,7 +3214,7 @@ msgid "Ended"
 msgstr ""
 
 #: src/components/common/LanguageSwitcher/index.tsx:18
-#: src/components/common/LanguageSwitcher/index.tsx:58
+#: src/components/common/LanguageSwitcher/index.tsx:65
 #: src/components/modals/CreateAttendeeModal/index.tsx:156
 msgid "English"
 msgstr ""
@@ -3290,6 +3315,10 @@ msgstr ""
 msgid "Error loading logs"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+msgid "Error message"
+msgstr ""
+
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/index.tsx:68
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/VatSettings/VatSettingsModal.tsx:30
 msgid "EU VAT-registered businesses: Reverse charge mechanism applies (0% - Article 196 of VAT Directive 2006/112/EC)"
@@ -3320,7 +3349,7 @@ msgstr ""
 #: src/components/routes/admin/Dashboard/index.tsx:305
 #: src/components/routes/admin/Messages/index.tsx:163
 #: src/components/routes/admin/Messages/index.tsx:277
-#: src/components/routes/event/EventDashboard/index.tsx:296
+#: src/components/routes/event/EventDashboard/index.tsx:299
 #: src/components/routes/events/Dashboard/index.tsx:184
 #: src/components/routes/organizer/Reports/CheckInSummaryReport/index.tsx:19
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:41
@@ -3331,7 +3360,7 @@ msgstr ""
 
 #: src/components/forms/WebhookForm/index.tsx:55
 msgid "Event Archived"
-msgstr ""
+msgstr "Мероприятие архивировано"
 
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:54
 msgid "Event archived successfully"
@@ -3347,7 +3376,7 @@ msgstr ""
 
 #: src/components/forms/WebhookForm/index.tsx:43
 msgid "Event Created"
-msgstr ""
+msgstr "Мероприятие создано"
 
 #: src/components/common/EmailTemplateSettings/EmailTemplateSettingsBase.tsx:223
 msgid "Event custom template"
@@ -3382,9 +3411,9 @@ msgstr ""
 msgid "Event details"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:40
+#: src/components/routes/event/Settings/index.tsx:42
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:68
-#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:606
+#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:644
 msgid "Event Details"
 msgstr ""
 
@@ -3447,14 +3476,14 @@ msgid "Event restored successfully"
 msgstr ""
 
 #: src/components/layouts/Event/index.tsx:104
-#: src/components/routes/event/Settings/index.tsx:159
+#: src/components/routes/event/Settings/index.tsx:167
 msgid "Event Settings"
 msgstr ""
 
 #: src/components/common/EventCard/index.tsx:70
 #: src/components/common/StatusToggle/index.tsx:63
 #: src/components/layouts/Event/index.tsx:170
-#: src/components/routes/event/EventDashboard/index.tsx:93
+#: src/components/routes/event/EventDashboard/index.tsx:96
 #: src/components/routes/event/GettingStarted/index.tsx:68
 msgid "Event status update failed. Please try again later"
 msgstr ""
@@ -3462,7 +3491,7 @@ msgstr ""
 #: src/components/common/EventCard/index.tsx:67
 #: src/components/common/StatusToggle/index.tsx:55
 #: src/components/layouts/Event/index.tsx:166
-#: src/components/routes/event/EventDashboard/index.tsx:90
+#: src/components/routes/event/EventDashboard/index.tsx:93
 #: src/components/routes/event/GettingStarted/index.tsx:65
 msgid "Event status updated"
 msgstr ""
@@ -3500,7 +3529,7 @@ msgstr ""
 
 #: src/components/forms/WebhookForm/index.tsx:49
 msgid "Event Updated"
-msgstr ""
+msgstr "Мероприятие обновлено"
 
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:40
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:74
@@ -3625,6 +3654,10 @@ msgstr ""
 msgid "Failed to abandon order. Please try again."
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:81
+msgid "Failed to add email"
+msgstr "Не удалось добавить email"
+
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:43
 msgid "Failed to assign configuration"
 msgstr ""
@@ -3657,6 +3690,10 @@ msgstr ""
 #: src/components/routes/admin/Configurations/index.tsx:42
 msgid "Failed to delete configuration"
 msgstr ""
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:112
+msgid "Failed to delete email"
+msgstr "Не удалось удалить email"
 
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:38
 msgid "Failed to delete event"
@@ -3704,6 +3741,10 @@ msgstr ""
 msgid "Failed to export report. Please try again."
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
+msgid "Failed to import emails"
+msgstr "Не удалось импортировать email-адреса"
+
 #: src/components/modals/EditCheckInListModal/index.tsx:79
 msgid "Failed to load Check-In List"
 msgstr ""
@@ -3727,7 +3768,7 @@ msgstr ""
 
 #: src/components/common/WaitlistTable/index.tsx:107
 msgid "Failed to remove from waitlist"
-msgstr ""
+msgstr "Не удалось удалить из списка ожидания"
 
 #: src/components/common/QuestionsTable/index.tsx:184
 msgid "Failed to reorder questions"
@@ -3887,8 +3928,8 @@ msgstr ""
 msgid "File is too large. Maximum size is 5MB."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:469
-#: src/components/routes/product-widget/CollectInformation/index.tsx:489
+#: src/components/routes/product-widget/CollectInformation/index.tsx:500
+#: src/components/routes/product-widget/CollectInformation/index.tsx:520
 msgid "Fill in your details above first"
 msgstr ""
 
@@ -3922,19 +3963,19 @@ msgstr "Завершить настройку"
 msgid "Finish Stripe Setup"
 msgstr "Завершить настройку Stripe"
 
-#: src/components/routes/event/EventDashboard/index.tsx:279
+#: src/components/routes/event/EventDashboard/index.tsx:282
 msgid "First 30 days from event start"
 msgstr "Первые 30 дней с начала мероприятия"
 
-#: src/components/routes/event/EventDashboard/index.tsx:271
+#: src/components/routes/event/EventDashboard/index.tsx:274
 msgid "First 7 days from event start"
 msgstr "Первые 7 дней с начала мероприятия"
 
-#: src/components/routes/event/EventDashboard/index.tsx:287
+#: src/components/routes/event/EventDashboard/index.tsx:290
 msgid "First 90 days from event start"
 msgstr "Первые 90 дней с начала мероприятия"
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:500
+#: src/components/routes/product-widget/CollectInformation/index.tsx:531
 msgid "First attendee"
 msgstr ""
 
@@ -3945,8 +3986,8 @@ msgstr ""
 #: src/components/modals/CreateAttendeeModal/index.tsx:129
 #: src/components/modals/ManageAttendeeModal/index.tsx:110
 #: src/components/modals/ManageOrderModal/index.tsx:144
-#: src/components/routes/product-widget/CollectInformation/index.tsx:435
-#: src/components/routes/product-widget/CollectInformation/index.tsx:647
+#: src/components/routes/product-widget/CollectInformation/index.tsx:466
+#: src/components/routes/product-widget/CollectInformation/index.tsx:678
 msgid "First name"
 msgstr ""
 
@@ -3956,8 +3997,8 @@ msgstr ""
 #: src/components/modals/JoinWaitlistModal/index.tsx:161
 #: src/components/routes/auth/AcceptInvitation/index.tsx:97
 #: src/components/routes/auth/Register/index.tsx:90
-#: src/components/routes/product-widget/CollectInformation/index.tsx:434
-#: src/components/routes/product-widget/CollectInformation/index.tsx:646
+#: src/components/routes/product-widget/CollectInformation/index.tsx:465
+#: src/components/routes/product-widget/CollectInformation/index.tsx:677
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:53
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:53
 #: src/components/routes/profile/ManageProfile/index.tsx:152
@@ -4053,7 +4094,7 @@ msgstr ""
 msgid "French"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:295
+#: src/components/routes/event/EventDashboard/index.tsx:298
 msgid "Full event duration"
 msgstr "Полная продолжительность мероприятия"
 
@@ -4106,7 +4147,7 @@ msgstr ""
 msgid "Get Tickets"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:166
+#: src/components/routes/event/EventDashboard/index.tsx:169
 msgid "Get your event ready"
 msgstr ""
 
@@ -4123,7 +4164,7 @@ msgstr ""
 msgid "Go back to profile"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:377
+#: src/components/routes/product-widget/CollectInformation/index.tsx:378
 msgid "Go to Event Page"
 msgstr ""
 
@@ -4152,17 +4193,25 @@ msgid "Gross sales"
 msgstr ""
 
 #: src/components/routes/admin/Dashboard/index.tsx:259
-#: src/components/routes/event/EventDashboard/index.tsx:367
+#: src/components/routes/event/EventDashboard/index.tsx:370
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:119
 #: src/components/routes/organizer/Reports/RevenueSummaryReport/index.tsx:30
 msgid "Gross Sales"
 msgstr ""
 
+#: src/components/routes/event/Settings/index.tsx:84
+msgid "Guest List"
+msgstr "Список гостей"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:121
+msgid "Guest List Restriction"
+msgstr "Ограничение по списку гостей"
+
 #: src/components/layouts/Event/index.tsx:117
 msgid "Guest Management"
 msgstr ""
 
-#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:617
+#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:600
 msgid "Guests"
 msgstr ""
 
@@ -4199,7 +4248,7 @@ msgstr ""
 msgid "Here's what to expect:"
 msgstr "Вот что ожидать:"
 
-#: src/components/routes/event/EventDashboard/index.tsx:118
+#: src/components/routes/event/EventDashboard/index.tsx:121
 msgid "Hi {0} 👋"
 msgstr ""
 
@@ -4362,7 +4411,7 @@ msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:249
 msgid "I acknowledge my responsibilities as a data controller"
-msgstr ""
+msgstr "Я признаю свои обязанности как контролёр данных"
 
 #: src/components/modals/JoinWaitlistModal/index.tsx:177
 msgid "I agree to receive email notifications related to this event"
@@ -4441,6 +4490,14 @@ msgstr ""
 msgid "Impersonation stopped"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:178
+msgid "Import"
+msgstr "Импорт"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
+msgid "Import from CSV or TXT file (one email per line)"
+msgstr "Импортировать из CSV или TXT файла (один email на строку)"
+
 #: src/components/routes/organizer/Reports/PlatformFeesReport/index.tsx:114
 msgid "Important Notice"
 msgstr ""
@@ -4449,7 +4506,7 @@ msgstr ""
 msgid "Important: Changing your email address will update the link to access this order. You will be redirected to the new order link after saving."
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:134
+#: src/components/routes/event/EventDashboard/index.tsx:137
 msgid "Important: Stripe reconnection required"
 msgstr ""
 
@@ -4620,7 +4677,7 @@ msgstr ""
 msgid "Italian"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:627
+#: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Item"
 msgstr ""
 
@@ -4672,7 +4729,7 @@ msgstr "Присоединиться к списку ожидания"
 
 #: src/components/modals/JoinWaitlistModal/index.tsx:143
 msgid "Join Waitlist for {productDisplayName}"
-msgstr ""
+msgstr "Вступить в список ожидания для {productDisplayName}"
 
 #: src/components/common/JoinWaitlistButton/index.tsx:30
 #: src/components/common/WaitlistTable/index.tsx:197
@@ -4687,7 +4744,7 @@ msgstr "Просто нажмите кнопку ниже для перепод�
 msgid "Just looking for your tickets?"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:567
+#: src/components/routes/product-widget/CollectInformation/index.tsx:598
 msgid "Keep me updated on news and events from {0}"
 msgstr ""
 
@@ -4722,7 +4779,7 @@ msgstr ""
 
 #: src/components/common/OrganizerReportTable/index.tsx:56
 #: src/components/common/ReportTable/index.tsx:48
-#: src/components/routes/event/EventDashboard/index.tsx:263
+#: src/components/routes/event/EventDashboard/index.tsx:266
 msgid "Last 30 days"
 msgstr "Последние 30 дней"
 
@@ -4762,10 +4819,10 @@ msgstr ""
 #: src/components/modals/JoinWaitlistModal/index.tsx:166
 #: src/components/routes/auth/AcceptInvitation/index.tsx:102
 #: src/components/routes/auth/Register/index.tsx:96
-#: src/components/routes/product-widget/CollectInformation/index.tsx:440
-#: src/components/routes/product-widget/CollectInformation/index.tsx:441
-#: src/components/routes/product-widget/CollectInformation/index.tsx:652
-#: src/components/routes/product-widget/CollectInformation/index.tsx:653
+#: src/components/routes/product-widget/CollectInformation/index.tsx:471
+#: src/components/routes/product-widget/CollectInformation/index.tsx:472
+#: src/components/routes/product-widget/CollectInformation/index.tsx:683
+#: src/components/routes/product-widget/CollectInformation/index.tsx:684
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:60
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:60
 #: src/components/routes/profile/ManageProfile/index.tsx:154
@@ -4815,7 +4872,7 @@ msgstr ""
 msgid "Link to ticket"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:235
+#: src/components/routes/event/EventDashboard/index.tsx:238
 msgid "Link your Stripe account to receive funds from ticket sales."
 msgstr ""
 
@@ -4853,7 +4910,7 @@ msgstr ""
 
 #: src/components/modals/OrganizerWebhookLogsModal/index.tsx:144
 msgid "Loading webhook logs..."
-msgstr ""
+msgstr "Загрузка журналов webhook..."
 
 #: src/components/routes/event/Webhooks/index.tsx:21
 #: src/components/routes/organizer/Webhooks/index.tsx:22
@@ -4869,7 +4926,7 @@ msgstr ""
 
 #: src/components/common/AttendeeTicket/index.tsx:91
 #: src/components/layouts/EventHomepage/index.tsx:419
-#: src/components/routes/event/Settings/index.tsx:46
+#: src/components/routes/event/Settings/index.tsx:48
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:84
 #: src/components/routes/my-tickets/index.tsx:73
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:313
@@ -4927,7 +4984,7 @@ msgstr ""
 msgid "Make this question mandatory"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:189
+#: src/components/routes/event/EventDashboard/index.tsx:192
 msgid "Make your event live"
 msgstr ""
 
@@ -4975,7 +5032,7 @@ msgstr ""
 
 #: src/components/routes/event/SoldOutWaitlist/index.tsx:48
 msgid "Manage your event's waitlist, view stats, and offer tickets to attendees."
-msgstr ""
+msgstr "Управляйте списком ожидания вашего мероприятия, просматривайте статистику и предлагайте билеты участникам."
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:817
 msgid "Manage your payment processing and view platform fees"
@@ -5085,6 +5142,10 @@ msgstr "Сообщение запланировано"
 msgid "Message Sent"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
+msgstr ""
+
 #: src/components/layouts/Admin/index.tsx:18
 #: src/components/layouts/Event/index.tsx:120
 #: src/components/routes/event/messages.tsx:225
@@ -5112,7 +5173,7 @@ msgstr ""
 msgid "minutes"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:70
+#: src/components/routes/event/Settings/index.tsx:72
 msgid "Miscellaneous"
 msgstr ""
 
@@ -5136,7 +5197,7 @@ msgstr ""
 msgid "Monitor and manage failed background jobs"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:280
+#: src/components/routes/event/EventDashboard/index.tsx:283
 msgid "Month"
 msgstr "Месяц"
 
@@ -5329,6 +5390,10 @@ msgstr ""
 msgid "No Discount"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:217
+msgid "No emails added yet."
+msgstr "Ещё нет добавленных email-адресов."
+
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:439
 msgid "No end date"
 msgstr ""
@@ -5473,7 +5538,7 @@ msgstr ""
 
 #: src/components/modals/OrganizerWebhookLogsModal/index.tsx:79
 msgid "No Response"
-msgstr ""
+msgstr "Нет ответа"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:141
 #: src/components/common/WebhookTable/index.tsx:141
@@ -5508,6 +5573,10 @@ msgstr ""
 msgid "No users found"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:97
+msgid "No valid emails found in file"
+msgstr "В файле не найдено допустимых email-адресов"
+
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:308
 msgid "No VAT settings configured"
 msgstr ""
@@ -5540,7 +5609,7 @@ msgid "Non-VAT registered businesses or individuals: Irish VAT at 23% applies"
 msgstr ""
 
 #: src/components/common/PromoCodeTable/index.tsx:82
-#: src/components/routes/product-widget/CollectInformation/index.tsx:499
+#: src/components/routes/product-widget/CollectInformation/index.tsx:530
 msgid "None"
 msgstr ""
 
@@ -5786,7 +5855,7 @@ msgstr ""
 msgid "Order & Ticket"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:357
+#: src/components/routes/product-widget/CollectInformation/index.tsx:358
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:354
 msgid "Order cancelled"
 msgstr ""
@@ -5795,7 +5864,7 @@ msgstr ""
 msgid "Order Cancelled"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:347
+#: src/components/routes/product-widget/CollectInformation/index.tsx:348
 #: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:364
 msgid "Order complete"
 msgstr ""
@@ -5825,7 +5894,7 @@ msgstr ""
 #: src/components/common/OrdersTable/index.tsx:277
 #: src/components/modals/ManageAttendeeModal/index.tsx:166
 #: src/components/modals/ManageOrderModal/index.tsx:86
-#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:592
+#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:630
 msgid "Order Details"
 msgstr ""
 
@@ -5882,7 +5951,7 @@ msgstr ""
 msgid "Order Marked as Paid"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:372
+#: src/components/routes/product-widget/CollectInformation/index.tsx:373
 msgid "Order not found"
 msgstr ""
 
@@ -5962,7 +6031,7 @@ msgstr "Заказ успешно обновлен"
 msgid "Order URL"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:327
+#: src/components/routes/product-widget/CollectInformation/index.tsx:328
 msgid "Order was cancelled"
 msgstr ""
 
@@ -6256,7 +6325,7 @@ msgstr ""
 msgid "Payment"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:82
+#: src/components/routes/event/Settings/index.tsx:90
 msgid "Payment & Invoicing"
 msgstr ""
 
@@ -6427,7 +6496,7 @@ msgid "Platform fee of {0} deducted from your payout"
 msgstr ""
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:248
-#: src/components/routes/event/Settings/index.tsx:98
+#: src/components/routes/event/Settings/index.tsx:106
 #: src/components/routes/event/Settings/Sections/PlatformFeesSettings/index.tsx:46
 #: src/components/routes/organizer/Reports/index.tsx:41
 #: src/components/routes/organizer/Settings/index.tsx:88
@@ -6637,7 +6706,7 @@ msgstr ""
 msgid "Primary Text Color"
 msgstr ""
 
-#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:626
+#: src/components/routes/product-widget/OrderSummaryAndProducts/index.tsx:609
 msgid "Print All Tickets"
 msgstr ""
 
@@ -6705,7 +6774,7 @@ msgstr ""
 msgid "Product Price Type"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:308
+#: src/components/routes/event/EventDashboard/index.tsx:311
 #: src/components/routes/event/Reports/index.tsx:17
 msgid "Product Sales"
 msgstr ""
@@ -6742,7 +6811,7 @@ msgstr ""
 
 #: src/components/routes/admin/Dashboard/index.tsx:258
 #: src/components/routes/admin/Dashboard/index.tsx:355
-#: src/components/routes/event/EventDashboard/index.tsx:329
+#: src/components/routes/event/EventDashboard/index.tsx:332
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:125
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:68
 msgid "Products Sold"
@@ -6813,7 +6882,7 @@ msgstr ""
 msgid "Publish"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:200
+#: src/components/routes/event/EventDashboard/index.tsx:203
 msgid "Publish Event"
 msgstr ""
 
@@ -6841,7 +6910,7 @@ msgstr ""
 msgid "Quantity Available"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:288
+#: src/components/routes/event/EventDashboard/index.tsx:291
 msgid "Quarter"
 msgstr "Квартал"
 
@@ -6908,7 +6977,7 @@ msgstr ""
 msgid "Receive product updates from {0}."
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:264
+#: src/components/routes/event/EventDashboard/index.tsx:267
 msgid "Recent"
 msgstr "Недавние"
 
@@ -6943,7 +7012,7 @@ msgstr "Получатели"
 msgid "Recipients are available after the message is sent"
 msgstr "Получатели доступны после отправки сообщения"
 
-#: src/components/routes/event/EventDashboard/index.tsx:140
+#: src/components/routes/event/EventDashboard/index.tsx:143
 msgid "Reconnect Stripe →"
 msgstr ""
 
@@ -7135,11 +7204,11 @@ msgstr ""
 
 #: src/components/modals/OrganizerWebhookLogsModal/index.tsx:116
 msgid "Response"
-msgstr ""
+msgstr "Ответ"
 
 #: src/components/common/OrganizerWebhookTable/index.tsx:168
 msgid "Response Details"
-msgstr ""
+msgstr "Детали ответа"
 
 #: src/components/routes/event/Settings/Sections/DangerZoneSettings/index.tsx:61
 #: src/components/routes/organizer/Settings/Sections/DangerZoneSettings/index.tsx:67
@@ -7168,6 +7237,10 @@ msgstr ""
 msgid "Restore this organizer and make it active again."
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:122
+msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
+msgstr "Ограничьте регистрацию списком приглашённых адресов email. Только люди, чей email есть в списке, смогут завершить оформление заказа."
+
 #: src/components/routes/admin/FailedJobs/index.tsx:199
 msgid "Retry"
 msgstr ""
@@ -7192,7 +7265,7 @@ msgstr ""
 #: src/components/common/AffiliateTable/index.tsx:157
 #: src/components/common/EventCard/index.tsx:235
 #: src/components/routes/admin/Attribution/index.tsx:137
-#: src/components/routes/event/EventDashboard/index.tsx:340
+#: src/components/routes/event/EventDashboard/index.tsx:343
 msgid "Revenue"
 msgstr ""
 
@@ -7207,7 +7280,7 @@ msgstr ""
 
 #: src/components/common/WaitlistTable/index.tsx:78
 msgid "Revoke Offer"
-msgstr ""
+msgstr "Отозвать предложение"
 
 #: src/components/modals/EditUserModal/index.tsx:93
 #: src/components/modals/InviteUserModal/index.tsx:64
@@ -7292,6 +7365,7 @@ msgstr ""
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:143
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7685,7 +7759,7 @@ msgstr ""
 msgid "Sent to each attendee with their ticket details"
 msgstr ""
 
-#: src/components/routes/event/Settings/index.tsx:58
+#: src/components/routes/event/Settings/index.tsx:60
 #: src/components/routes/organizer/Settings/index.tsx:60
 msgid "SEO"
 msgstr ""
@@ -7899,7 +7973,7 @@ msgstr ""
 
 #: src/components/common/ErrorDisplay/index.tsx:15
 #: src/components/routes/auth/AcceptInvitation/index.tsx:48
-#: src/components/routes/product-widget/CollectInformation/index.tsx:386
+#: src/components/routes/product-widget/CollectInformation/index.tsx:387
 #: src/components/routes/product-widget/Payment/PaymentMethods/Stripe/index.tsx:64
 msgid "Something went wrong"
 msgstr ""
@@ -7934,7 +8008,7 @@ msgstr ""
 msgid "Something went wrong. Please try again."
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:136
+#: src/components/routes/event/EventDashboard/index.tsx:139
 msgid "Sorry for the inconvenience."
 msgstr ""
 
@@ -7984,8 +8058,8 @@ msgstr ""
 #: src/components/common/CheckoutQuestion/index.tsx:165
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:139
 #: src/components/routes/organizer/Settings/Sections/AddressSettings/index.tsx:97
-#: src/components/routes/product-widget/CollectInformation/index.tsx:539
-#: src/components/routes/product-widget/CollectInformation/index.tsx:540
+#: src/components/routes/product-widget/CollectInformation/index.tsx:570
+#: src/components/routes/product-widget/CollectInformation/index.tsx:571
 msgid "State or Region"
 msgstr ""
 
@@ -8209,7 +8283,7 @@ msgstr ""
 
 #: src/components/modals/EditProductModal/index.tsx:95
 msgid "Successfully updated product"
-msgstr ""
+msgstr "Продукт успешно обновлён"
 
 #: src/components/modals/EditPromoCodeModal/index.tsx:52
 msgid "Successfully Updated Promo Code"
@@ -8223,6 +8297,7 @@ msgstr ""
 msgid "Successfully Updated SEO Settings"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:67
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr ""
@@ -8233,7 +8308,7 @@ msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:158
 msgid "Successfully Updated Tracking Settings"
-msgstr ""
+msgstr "Настройки отслеживания успешно обновлены"
 
 #: src/components/modals/EditOrganizerWebhookModal/index.tsx:44
 #: src/components/modals/EditWebhookModal/index.tsx:44
@@ -8623,6 +8698,10 @@ msgstr ""
 msgid "This color combination may be hard to read for some users"
 msgstr ""
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
+msgid "This email address is not on the guest list for this event."
+msgstr ""
+
 #: src/components/layouts/EventHomepage/index.tsx:351
 msgid "This event has ended"
 msgstr "Это мероприятие закончилось"
@@ -8684,7 +8763,7 @@ msgstr ""
 msgid "This order has been cancelled."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:315
+#: src/components/routes/product-widget/CollectInformation/index.tsx:316
 msgid "This order has expired. Please start again."
 msgstr ""
 
@@ -8700,11 +8779,11 @@ msgstr ""
 msgid "This order page is no longer available."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:328
+#: src/components/routes/product-widget/CollectInformation/index.tsx:329
 msgid "This order was abandoned. You can start a new order anytime."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:358
+#: src/components/routes/product-widget/CollectInformation/index.tsx:359
 msgid "This order was cancelled. You can start a new order anytime."
 msgstr ""
 
@@ -9003,7 +9082,7 @@ msgstr ""
 msgid "Total Fee"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:366
+#: src/components/routes/event/EventDashboard/index.tsx:369
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:149
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:97
 msgid "Total Fees"
@@ -9025,11 +9104,11 @@ msgstr ""
 msgid "Total refunded"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:369
+#: src/components/routes/event/EventDashboard/index.tsx:372
 msgid "Total Refunded"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:368
+#: src/components/routes/event/EventDashboard/index.tsx:371
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:143
 #: src/components/routes/organizer/Reports/EventsPerformanceReport/index.tsx:91
 msgid "Total Tax"
@@ -9054,7 +9133,7 @@ msgstr ""
 #: src/components/routes/organizer/Settings/index.tsx:72
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:171
 msgid "Tracking & Analytics"
-msgstr ""
+msgstr "Отслеживание и аналитика"
 
 #: src/components/routes/account/ManageAccount/sections/PaymentSettings/index.tsx:264
 msgid "Transaction Fee:"
@@ -9201,7 +9280,7 @@ msgstr ""
 msgid "Unpaid Order"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:211
+#: src/components/routes/event/EventDashboard/index.tsx:214
 msgid "Unpublish Event"
 msgstr ""
 
@@ -9559,7 +9638,7 @@ msgid "View Order"
 msgstr ""
 
 #: src/components/forms/StripeCheckoutForm/index.tsx:96
-#: src/components/routes/product-widget/CollectInformation/index.tsx:350
+#: src/components/routes/product-widget/CollectInformation/index.tsx:351
 msgid "View Order Details"
 msgstr ""
 
@@ -9613,12 +9692,12 @@ msgstr ""
 msgid "Waiting"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:337
+#: src/components/routes/product-widget/CollectInformation/index.tsx:338
 msgid "Waiting for payment"
 msgstr ""
 
 #: src/components/layouts/Event/index.tsx:121
-#: src/components/routes/event/Settings/index.tsx:76
+#: src/components/routes/event/Settings/index.tsx:78
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:51
 #: src/components/routes/event/SoldOutWaitlist/index.tsx:49
 msgid "Waitlist"
@@ -9628,9 +9707,9 @@ msgstr "Список ожидания"
 msgid "Waitlist Enabled"
 msgstr "Список ожидания включён"
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:372
+#: src/components/routes/product-widget/CollectInformation/index.tsx:373
 msgid "Waitlist offer expired"
-msgstr ""
+msgstr "Предложение из списка ожидания истекло"
 
 #: src/components/routes/admin/Configurations/index.tsx:212
 msgid "Warning: This is the system default configuration. Changes will affect all accounts that don't have a specific configuration assigned."
@@ -9660,7 +9739,7 @@ msgstr ""
 msgid "We couldn't find the ticket you're looking for. The link may have expired or the ticket details may have changed."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:375
+#: src/components/routes/product-widget/CollectInformation/index.tsx:376
 msgid "We couldn't find this order. It may have been removed."
 msgstr ""
 
@@ -9672,7 +9751,7 @@ msgstr ""
 msgid "We couldn't reorder the categories. Please try again."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:387
+#: src/components/routes/product-widget/CollectInformation/index.tsx:388
 msgid "We hit a snag loading this page. Please try again."
 msgstr ""
 
@@ -9703,9 +9782,9 @@ msgstr ""
 
 #: src/components/modals/JoinWaitlistModal/index.tsx:100
 msgid "We'll notify you by email if a spot becomes available for {productDisplayName}."
-msgstr ""
+msgstr "Мы уведомим вас по email, если появится место для {productDisplayName}."
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:427
+#: src/components/routes/product-widget/CollectInformation/index.tsx:458
 msgid "We'll send your tickets to this email"
 msgstr ""
 
@@ -9721,7 +9800,7 @@ msgstr ""
 msgid "We've officially moved our headquarters to Ireland 🇮🇪. As part of this transition, we're now using Stripe Ireland instead of Stripe Canada. To keep your payouts running smoothly, you'll need to reconnect your Stripe account."
 msgstr "Мы официально переместили наш главный офис в Ирландию 🇮🇪. В рамках этого перехода мы теперь используем Stripe Ирландия вместо Stripe Канада. Чтобы ваши выплаты проходили гладко, вам нужно переподключить ваш аккаунт Stripe."
 
-#: src/components/routes/event/EventDashboard/index.tsx:135
+#: src/components/routes/event/EventDashboard/index.tsx:138
 msgid "We've relocated our headquarters to Ireland. As a result, we need you to reconnect your Stripe account. This quick process takes just a few minutes. Your sales and existing data remain completely unaffected."
 msgstr ""
 
@@ -9773,7 +9852,7 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:272
+#: src/components/routes/event/EventDashboard/index.tsx:275
 msgid "Week"
 msgstr "Неделя"
 
@@ -9789,7 +9868,7 @@ msgstr ""
 msgid "Welcome back"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:112
+#: src/components/routes/event/EventDashboard/index.tsx:115
 msgid "Welcome back{0} 👋"
 msgstr ""
 
@@ -9851,7 +9930,7 @@ msgstr ""
 
 #: src/components/forms/WebhookForm/index.tsx:45
 msgid "When a new event is created"
-msgstr ""
+msgstr "Когда создаётся новое мероприятие"
 
 #: src/components/forms/WebhookForm/index.tsx:75
 msgid "When a new order is created"
@@ -9871,7 +9950,7 @@ msgstr ""
 
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:52
 msgid "When a product sells out, customers can join a waitlist to be notified when spots become available."
-msgstr ""
+msgstr "Когда продукт распродан, покупатели могут встать в список ожидания, чтобы получить уведомление о появлении мест."
 
 #: src/components/forms/WebhookForm/index.tsx:117
 msgid "When an attendee is cancelled"
@@ -9887,11 +9966,11 @@ msgstr ""
 
 #: src/components/forms/WebhookForm/index.tsx:57
 msgid "When an event is archived"
-msgstr ""
+msgstr "Когда мероприятие архивируется"
 
 #: src/components/forms/WebhookForm/index.tsx:51
 msgid "When an event is updated"
-msgstr ""
+msgstr "Когда мероприятие обновляется"
 
 #: src/components/forms/WebhookForm/index.tsx:99
 msgid "When an order is cancelled"
@@ -9936,6 +10015,10 @@ msgstr "При включении новые мероприятия будут �
 #: src/components/routes/admin/Configurations/index.tsx:259
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr ""
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:130
+msgid "When enabled, only emails on the list below can complete checkout."
+msgstr "Если включено, только email-адреса из списка ниже могут завершить оформление заказа."
 
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:141
 msgid "When offline payments are enabled, users will be able to complete their orders and receive their tickets. Their tickets will clearly indicate the order is not paid, and the check-in tool will notify the check-in staff if an order requires payment."
@@ -10112,7 +10195,7 @@ msgstr ""
 
 #: src/components/routes/organizer/Settings/Sections/TrackingPixelSettings/index.tsx:144
 msgid "You must acknowledge your responsibilities before saving"
-msgstr ""
+msgstr "Перед сохранением необходимо подтвердить свои обязанности"
 
 #: src/components/modals/JoinWaitlistModal/index.tsx:48
 msgid "You must agree to receive messages"
@@ -10178,7 +10261,7 @@ msgstr ""
 msgid "You're on the waitlist!"
 msgstr "Вы в списке ожидания!"
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:410
+#: src/components/routes/product-widget/CollectInformation/index.tsx:411
 msgid "You've been offered a spot!"
 msgstr ""
 
@@ -10214,7 +10297,7 @@ msgstr ""
 msgid "Your current order will be lost."
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:424
+#: src/components/routes/product-widget/CollectInformation/index.tsx:455
 msgid "Your Details"
 msgstr ""
 
@@ -10230,7 +10313,7 @@ msgstr ""
 msgid "Your event is live!"
 msgstr ""
 
-#: src/components/routes/event/EventDashboard/index.tsx:191
+#: src/components/routes/event/EventDashboard/index.tsx:194
 msgid "Your event must be live before you can sell tickets to attendees."
 msgstr ""
 
@@ -10332,7 +10415,7 @@ msgstr ""
 msgid "Your ticket for"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:348
+#: src/components/routes/product-widget/CollectInformation/index.tsx:349
 msgid "Your tickets have been confirmed."
 msgstr ""
 
@@ -10344,15 +10427,15 @@ msgstr ""
 msgid "Your VAT number will be validated when you save"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:374
+#: src/components/routes/product-widget/CollectInformation/index.tsx:375
 msgid "Your waitlist offer has expired and we were unable to complete your order. Please rejoin the waitlist to be notified when more spots become available."
-msgstr ""
+msgstr "Ваше предложение из списка ожидания истекло, и мы не смогли завершить ваш заказ. Пожалуйста, снова вступите в список ожидания, чтобы получить уведомление, когда появятся новые места."
 
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:67
 msgid "YouTube"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:548
+#: src/components/routes/product-widget/CollectInformation/index.tsx:579
 msgid "ZIP / Postal Code"
 msgstr ""
 
@@ -10362,6 +10445,6 @@ msgstr ""
 msgid "Zip or Postal Code"
 msgstr ""
 
-#: src/components/routes/product-widget/CollectInformation/index.tsx:549
+#: src/components/routes/product-widget/CollectInformation/index.tsx:580
 msgid "ZIP or Postal Code"
 msgstr ""

@@ -144,6 +144,9 @@ class PartialUpdateEventSettingsHandler
 
                 // Guest list settings
                 'allowed_emails_only' => $eventSettingsDTO->settings['allowed_emails_only'] ?? $existingSettings->getAllowedEmailsOnly(),
+                'allowed_emails_message' => array_key_exists('allowed_emails_message', $eventSettingsDTO->settings)
+                    ? $eventSettingsDTO->settings['allowed_emails_message']
+                    : $existingSettings->getAllowedEmailsMessage(),
             ]),
         );
     }

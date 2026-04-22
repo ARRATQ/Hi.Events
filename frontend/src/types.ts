@@ -257,6 +257,10 @@ export interface EventSettings {
     // Waitlist settings
     waitlist_auto_process?: boolean;
     waitlist_offer_timeout_minutes?: number | null;
+
+    // Allowed emails settings
+    allowed_emails_only?: boolean;
+    allowed_emails_message?: string | null;
 }
 
 export interface VenueAddress {
@@ -848,6 +852,13 @@ export enum MessageType {
     TicketHolders = 'TICKET_HOLDERS',
     AllAttendees = 'ALL_ATTENDEES',
     OrderOwnersWithProduct = 'ORDER_OWNERS_WITH_PRODUCT',
+}
+
+export interface EventAllowedEmail {
+    id?: number;
+    event_id?: number;
+    email: string;
+    created_at?: string;
 }
 
 export interface PromoCode {

@@ -10,6 +10,7 @@ import {
     Switch,
     Table,
     Text,
+    Textarea,
     TextInput,
     Tooltip,
 } from "@mantine/core";
@@ -42,6 +43,7 @@ export const AllowedEmailsSettings = () => {
     const form = useForm({
         initialValues: {
             allowed_emails_only: false,
+            allowed_emails_message: '',
         }
     });
 
@@ -49,13 +51,17 @@ export const AllowedEmailsSettings = () => {
         if (eventSettingsQuery?.isFetched && eventSettingsQuery?.data) {
             form.setValues({
                 allowed_emails_only: eventSettingsQuery.data.allowed_emails_only ?? false,
+                allowed_emails_message: eventSettingsQuery.data.allowed_emails_message ?? '',
             });
         }
     }, [eventSettingsQuery.isFetched]);
 
     const handleToggleSubmit = (values: typeof form.values) => {
         updateMutation.mutate({
-            eventSettings: values,
+            eventSettings: {
+                ...values,
+                allowed_emails_message: values.allowed_emails_message || null,
+            },
             eventId,
         }, {
             onSuccess: () => showSuccess(t`Successfully Updated Settings`),
@@ -122,6 +128,16 @@ export const AllowedEmailsSettings = () => {
                         {...form.getInputProps('allowed_emails_only', {type: 'checkbox'})}
                         label={t`Enable guest list restriction`}
                         description={t`When enabled, only emails on the list below can complete checkout.`}
+                    />
+                    <Textarea
+                        {...form.getInputProps('allowed_emails_message')}
+                        label={t`Error message`}
+                        description={t`Message shown to visitors whose email is not on the list. Leave blank to use the default message.`}
+                        placeholder={t`This email address is not on the guest list for this event.`}
+                        autosize
+                        minRows={2}
+                        maxRows={5}
+                        mt="md"
                     />
                     <Button loading={updateMutation.isPending} type="submit" mt="md">
                         {t`Save`}

@@ -86,6 +86,7 @@ class EventSettingsResource extends JsonResource
 
             // Guest list settings
             'allowed_emails_only' => $this->getAllowedEmailsOnly(),
+            'allowed_emails_message' => $this->getAllowedEmailsMessage(),
         ];
     }
 }

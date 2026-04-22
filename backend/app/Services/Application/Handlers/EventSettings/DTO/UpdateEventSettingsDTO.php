@@ -90,6 +90,7 @@ class UpdateEventSettingsDTO extends BaseDTO
 
         // Guest list settings
         public readonly bool                    $allowed_emails_only = false,
+        public readonly ?string                 $allowed_emails_message = null,
     )
     {
     }

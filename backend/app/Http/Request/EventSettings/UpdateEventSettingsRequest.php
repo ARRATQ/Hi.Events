@@ -105,6 +105,10 @@ class UpdateEventSettingsRequest extends BaseRequest
             // Waitlist settings
             'waitlist_auto_process' => ['boolean'],
             'waitlist_offer_timeout_minutes' => ['nullable', 'integer', 'min:1', 'max:10080'],
+
+            // Allowed emails settings
+            'allowed_emails_only' => ['nullable', 'boolean'],
+            'allowed_emails_message' => ['nullable', 'string', 'max:500'],
         ];
     }
 

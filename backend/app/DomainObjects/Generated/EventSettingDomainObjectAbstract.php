@@ -67,6 +67,8 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
     final public const WAITLIST_ENABLED = 'waitlist_enabled';
     final public const WAITLIST_AUTO_PROCESS = 'waitlist_auto_process';
     final public const WAITLIST_OFFER_TIMEOUT_MINUTES = 'waitlist_offer_timeout_minutes';
+    final public const ALLOWED_EMAILS_ONLY = 'allowed_emails_only';
+    final public const ALLOWED_EMAILS_MESSAGE = 'allowed_emails_message';
 
     protected int $id;
     protected int $event_id;
@@ -125,6 +127,8 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
     protected bool $waitlist_enabled = false;
     protected bool $waitlist_auto_process = false;
     protected ?int $waitlist_offer_timeout_minutes = null;
+    protected bool $allowed_emails_only = false;
+    protected ?string $allowed_emails_message = null;
 
     public function toArray(): array
     {
@@ -186,6 +190,8 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
                     'waitlist_enabled' => $this->waitlist_enabled ?? null,
                     'waitlist_auto_process' => $this->waitlist_auto_process ?? null,
                     'waitlist_offer_timeout_minutes' => $this->waitlist_offer_timeout_minutes ?? null,
+                    'allowed_emails_only' => $this->allowed_emails_only ?? null,
+                    'allowed_emails_message' => $this->allowed_emails_message ?? null,
                 ];
     }
 
@@ -815,5 +821,27 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
     public function getWaitlistOfferTimeoutMinutes(): ?int
     {
         return $this->waitlist_offer_timeout_minutes;
+    }
+
+    public function setAllowedEmailsOnly(bool $allowed_emails_only): self
+    {
+        $this->allowed_emails_only = $allowed_emails_only;
+        return $this;
+    }
+
+    public function getAllowedEmailsOnly(): bool
+    {
+        return $this->allowed_emails_only;
+    }
+
+    public function setAllowedEmailsMessage(?string $allowed_emails_message): self
+    {
+        $this->allowed_emails_message = $allowed_emails_message;
+        return $this;
+    }
+
+    public function getAllowedEmailsMessage(): ?string
+    {
+        return $this->allowed_emails_message;
     }
 }

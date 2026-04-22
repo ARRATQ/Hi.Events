@@ -27,6 +27,7 @@ use HiEvents\Helper\IdHelper;
 use HiEvents\Repository\Eloquent\Value\Relationship;
 use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
 use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
+use HiEvents\Repository\Interfaces\EventAllowedEmailRepositoryInterface;
 use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
 use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
 use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
@@ -44,6 +45,7 @@ use HiEvents\Services\Infrastructure\DomainEvents\Enums\DomainEventType;
 use HiEvents\Services\Infrastructure\DomainEvents\Events\OrderEvent;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 use RuntimeException;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 
@@ -53,15 +55,16 @@ use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 class CompleteOrderHandler
 {
     public function __construct(
-        private readonly OrderRepositoryInterface          $orderRepository,
-        private readonly AffiliateRepositoryInterface      $affiliateRepository,
-        private readonly AttendeeRepositoryInterface       $attendeeRepository,
-        private readonly QuestionAnswerRepositoryInterface $questionAnswersRepository,
-        private readonly ProductQuantityUpdateService      $productQuantityUpdateService,
-        private readonly ProductPriceRepositoryInterface   $productPriceRepository,
-        private readonly DomainEventDispatcherService      $domainEventDispatcherService,
-        private readonly EventSettingsRepositoryInterface  $eventSettingsRepository,
-        private readonly CheckoutSessionManagementService  $sessionManagementService,
+        private readonly OrderRepositoryInterface               $orderRepository,
+        private readonly AffiliateRepositoryInterface           $affiliateRepository,
+        private readonly AttendeeRepositoryInterface            $attendeeRepository,
+        private readonly QuestionAnswerRepositoryInterface      $questionAnswersRepository,
+        private readonly ProductQuantityUpdateService           $productQuantityUpdateService,
+        private readonly ProductPriceRepositoryInterface        $productPriceRepository,
+        private readonly DomainEventDispatcherService           $domainEventDispatcherService,
+        private readonly EventSettingsRepositoryInterface       $eventSettingsRepository,
+        private readonly CheckoutSessionManagementService       $sessionManagementService,
+        private readonly EventAllowedEmailRepositoryInterface   $allowedEmailRepository,
     )
     {
     }
@@ -75,6 +78,8 @@ class CompleteOrderHandler
         $eventSettings = $this->eventSettingsRepository->findFirstWhere([
             'event_id' => $orderData->event_id,
         ]);
+
+        $this->validateAllowedEmail($orderData->event_id, $orderData->order->email, $eventSettings);
 
         $updatedOrder = DB::transaction(function () use ($orderData, $orderShortId, $eventSettings) {
             $orderDTO = $orderData->order;
@@ -383,5 +388,28 @@ class CompleteOrderHandler
     {
         return $orderItems->first(fn(OrderItemDomainObject $orderItem) => $orderItem->getProductPriceId() === $priceId)
             ->getProductType();
+    }
+
+    /**
+     * @throws ValidationException
+     */
+    private function validateAllowedEmail(int $eventId, string $email, EventSettingDomainObject $eventSettings): void
+    {
+        if (!$eventSettings->getAllowedEmailsOnly()) {
+            return;
+        }
+
+        $allowed = $this->allowedEmailRepository->findFirstWhere([
+            'event_id' => $eventId,
+            'email' => strtolower(trim($email)),
+        ]);
+
+        if ($allowed === null) {
+            $message = $eventSettings->getAllowedEmailsMessage()
+                ?: __('This email address is not on the guest list for this event.');
+            throw ValidationException::withMessages([
+                'order.email' => $message,
+            ]);
+        }
     }
 }

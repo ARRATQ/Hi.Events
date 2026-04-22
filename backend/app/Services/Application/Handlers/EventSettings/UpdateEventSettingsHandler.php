@@ -104,6 +104,7 @@ class UpdateEventSettingsHandler
 
                     // Guest list settings
                     'allowed_emails_only' => $settings->allowed_emails_only,
+                    'allowed_emails_message' => $settings->allowed_emails_message,
                 ],
                 where: [
                     'event_id' => $settings->event_id,
