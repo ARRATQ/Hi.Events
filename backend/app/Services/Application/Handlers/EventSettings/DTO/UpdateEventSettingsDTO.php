@@ -87,6 +87,9 @@ class UpdateEventSettingsDTO extends BaseDTO
         // Waitlist settings
         public readonly ?bool                   $waitlist_auto_process = null,
         public readonly ?int                    $waitlist_offer_timeout_minutes = null,
+
+        // Guest list settings
+        public readonly bool                    $allowed_emails_only = false,
     )
     {
     }

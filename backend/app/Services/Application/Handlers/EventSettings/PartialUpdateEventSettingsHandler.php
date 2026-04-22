@@ -141,6 +141,9 @@ class PartialUpdateEventSettingsHandler
                 // Waitlist settings
                 'waitlist_auto_process' => $eventSettingsDTO->settings['waitlist_auto_process'] ?? $existingSettings->getWaitlistAutoProcess(),
                 'waitlist_offer_timeout_minutes' => $eventSettingsDTO->settings['waitlist_offer_timeout_minutes'] ?? $existingSettings->getWaitlistOfferTimeoutMinutes(),
+
+                // Guest list settings
+                'allowed_emails_only' => $eventSettingsDTO->settings['allowed_emails_only'] ?? $existingSettings->getAllowedEmailsOnly(),
             ]),
         );
     }

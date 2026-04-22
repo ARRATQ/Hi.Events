@@ -101,6 +101,9 @@ class UpdateEventSettingsHandler
                     // Waitlist settings
                     'waitlist_auto_process' => $settings->waitlist_auto_process,
                     'waitlist_offer_timeout_minutes' => $settings->waitlist_offer_timeout_minutes,
+
+                    // Guest list settings
+                    'allowed_emails_only' => $settings->allowed_emails_only,
                 ],
                 where: [
                     'event_id' => $settings->event_id,
