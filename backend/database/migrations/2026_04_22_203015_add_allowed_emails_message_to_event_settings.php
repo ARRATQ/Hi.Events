@@ -7,9 +7,11 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void
     {
-        Schema::table('event_settings', function (Blueprint $table) {
-            $table->text('allowed_emails_message')->nullable();
-        });
+        if (!Schema::hasColumn('event_settings', 'allowed_emails_message')) {
+            Schema::table('event_settings', function (Blueprint $table) {
+                $table->text('allowed_emails_message')->nullable();
+            });
+        }
     }
 
     public function down(): void
