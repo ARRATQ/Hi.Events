@@ -83,6 +83,9 @@ class EventSettingsResource extends JsonResource
             // Waitlist settings
             'waitlist_auto_process' => $this->getWaitlistAutoProcess(),
             'waitlist_offer_timeout_minutes' => $this->getWaitlistOfferTimeoutMinutes(),
+
+            // Guest list settings
+            'allowed_emails_only' => $this->getAllowedEmailsOnly(),
         ];
     }
 }
