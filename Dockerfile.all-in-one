@@ -28,6 +28,7 @@ RUN apk add --no-cache nodejs yarn nginx supervisor dos2unix
 
 COPY --from=node-frontend /app/frontend /app/frontend
 
+# Cache bust: 2026-04-23
 COPY ./backend /app/backend
 COPY ./VERSION /app/backend/VERSION
 RUN mkdir -p /app/backend/bootstrap/cache \
