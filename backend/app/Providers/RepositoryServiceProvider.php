@@ -48,6 +48,7 @@ use HiEvents\Repository\Eloquent\StripePayoutsRepository;
 use HiEvents\Repository\Eloquent\TaxAndFeeRepository;
 use HiEvents\Repository\Eloquent\TicketLookupTokenRepository;
 use HiEvents\Repository\Eloquent\UserRepository;
+use HiEvents\Repository\Eloquent\EventAllowedEmailRepository;
 use HiEvents\Repository\Eloquent\WaitlistEntryRepository;
 use HiEvents\Repository\Eloquent\WebhookLogRepository;
 use HiEvents\Repository\Eloquent\WebhookRepository;
@@ -95,6 +96,7 @@ use HiEvents\Repository\Interfaces\StripePayoutsRepositoryInterface;
 use HiEvents\Repository\Interfaces\TaxAndFeeRepositoryInterface;
 use HiEvents\Repository\Interfaces\TicketLookupTokenRepositoryInterface;
 use HiEvents\Repository\Interfaces\UserRepositoryInterface;
+use HiEvents\Repository\Interfaces\EventAllowedEmailRepositoryInterface;
 use HiEvents\Repository\Interfaces\WaitlistEntryRepositoryInterface;
 use HiEvents\Repository\Interfaces\WebhookLogRepositoryInterface;
 use HiEvents\Repository\Interfaces\WebhookRepositoryInterface;
@@ -153,6 +155,7 @@ class RepositoryServiceProvider extends ServiceProvider
         TicketLookupTokenRepositoryInterface::class => TicketLookupTokenRepository::class,
         AccountMessagingTierRepositoryInterface::class => AccountMessagingTierRepository::class,
         WaitlistEntryRepositoryInterface::class => WaitlistEntryRepository::class,
+        EventAllowedEmailRepositoryInterface::class => EventAllowedEmailRepository::class,
     ];
 
     public function register(): void

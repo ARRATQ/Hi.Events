@@ -8,6 +8,9 @@ use HiEvents\Http\Actions\Accounts\UpdateAccountAction;
 use HiEvents\Http\Actions\Accounts\Vat\GetAccountVatSettingAction;
 use HiEvents\Http\Actions\Accounts\Vat\UpsertAccountVatSettingAction;
 use HiEvents\Http\Actions\Affiliates\CreateAffiliateAction;
+use HiEvents\Http\Actions\EventAllowedEmails\CreateEventAllowedEmailsAction;
+use HiEvents\Http\Actions\EventAllowedEmails\DeleteEventAllowedEmailAction;
+use HiEvents\Http\Actions\EventAllowedEmails\GetEventAllowedEmailsAction;
 use HiEvents\Http\Actions\Affiliates\DeleteAffiliateAction;
 use HiEvents\Http\Actions\Affiliates\ExportAffiliatesAction;
 use HiEvents\Http\Actions\Affiliates\GetAffiliateAction;
@@ -382,6 +385,11 @@ $router->middleware(['auth:api'])->group(
         $router->post('/events/{event_id}/images', CreateEventImageAction::class);
         $router->get('/events/{event_id}/images', GetEventImagesAction::class);
         $router->delete('/events/{event_id}/images/{image_id}', DeleteEventImageAction::class);
+
+        // Allowed Emails
+        $router->get('/events/{event_id}/allowed-emails', GetEventAllowedEmailsAction::class);
+        $router->post('/events/{event_id}/allowed-emails', CreateEventAllowedEmailsAction::class);
+        $router->delete('/events/{event_id}/allowed-emails/{allowed_email_id}', DeleteEventAllowedEmailAction::class);
 
         // Promo Codes
         $router->post('/events/{event_id}/promo-codes', CreatePromoCodeAction::class);
