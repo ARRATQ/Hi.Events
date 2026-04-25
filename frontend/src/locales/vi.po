@@ -64,7 +64,7 @@ msgstr "{0} Có sẵn"
 msgid "{0} created successfully"
 msgstr "{0} đã tạo thành công"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
 msgid "{0} email(s) imported"
 msgstr "Đã nhập {0} e-mail"
 
@@ -444,7 +444,7 @@ msgstr "Hoạt động"
 msgid "Active Events"
 msgstr "Sự kiện hoạt động"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:237
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:238
 msgid "Add"
 msgstr "Thêm"
 
@@ -476,7 +476,7 @@ msgstr "Thêm câu hỏi tùy chỉnh để thu thập thông tin bổ sung tron
 msgid "Add description"
 msgstr "Thêm mô tả"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:222
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:223
 msgid "Add emails"
 msgstr "Thêm e-mail"
 
@@ -802,7 +802,7 @@ msgstr "Câu trả lời đã được cập nhật thành công."
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "Mọi thắc mắc từ chủ sở hữu sản phẩm sẽ được gửi đến địa chỉ email này. Địa chỉ này cũng sẽ được sử dụng làm địa chỉ \"trả lời\" cho tất cả email gửi từ sự kiện này."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:187
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:188
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Bất kỳ ai không có trong danh sách này sẽ thấy lỗi khi họ cố gắng thanh toán."
 
@@ -1055,7 +1055,7 @@ msgstr "Lần thử"
 msgid "Attendance and check-in rates across all events"
 msgstr "Tỷ lệ tham dự và check-in cho tất cả sự kiện"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:212
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:213
 msgid "Attendance rate"
 msgstr "Tỷ lệ tham dự"
 
@@ -1063,7 +1063,7 @@ msgstr "Tỷ lệ tham dự"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:54
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:55
 #: src/components/common/QuestionsTable/index.tsx:461
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:276
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:284
 #: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Attendee"
 msgstr "Người tham dự"
@@ -1143,7 +1143,7 @@ msgstr "Vé của người tham dự không có trong danh sách này"
 #: src/components/routes/admin/Messages/index.tsx:90
 #: src/components/routes/admin/Messages/index.tsx:139
 #: src/components/routes/event/attendees.tsx:173
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:204
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:205
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:131
 msgid "Attendees"
 msgstr "Người tham dự"
@@ -3052,7 +3052,7 @@ msgstr "Danh Sách Đăng Ký Đủ Điều Kiện"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:267
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:268
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3069,7 +3069,7 @@ msgstr "Cài đặt email & thông báo"
 msgid "Email & Templates"
 msgstr "Email & Mẫu"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:111
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Email added"
 msgstr "Đã thêm e-mail"
 
@@ -3170,7 +3170,7 @@ msgstr "Bật tự phục vụ cho người tham dự"
 msgid "Enable attendee self-service by default"
 msgstr "Bật tự phục vụ cho người tham dự theo mặc định"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:165
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
 msgid "Enable guest list restriction"
 msgstr "Bật hạn chế danh sách khách"
 
@@ -3323,7 +3323,7 @@ msgstr "Lỗi xác nhận thay đổi email"
 msgid "Error loading logs"
 msgstr "Lỗi khi tải nhật ký"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:170
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
 msgid "Error message"
 msgstr "Thông báo lỗi"
 
@@ -3662,7 +3662,7 @@ msgstr "Công việc thất bại"
 msgid "Failed to abandon order. Please try again."
 msgstr "Không thể hủy đơn hàng. Vui lòng thử lại."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:115
 msgid "Failed to add email"
 msgstr "Không thể thêm e-mail"
 
@@ -3699,7 +3699,7 @@ msgstr "Không thể tạo mẫu"
 msgid "Failed to delete configuration"
 msgstr "Không thể xóa cấu hình"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:144
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:146
 msgid "Failed to delete email"
 msgstr "Không thể xóa e-mail"
 
@@ -3749,7 +3749,7 @@ msgstr "Không thể xuất đơn hàng"
 msgid "Failed to export report. Please try again."
 msgstr "Xuất báo cáo thất bại. Vui lòng thử lại."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:137
 msgid "Failed to import emails"
 msgstr "Không thể nhập e-mail"
 
@@ -3952,6 +3952,10 @@ msgstr "Lọc theo sự kiện"
 #: src/components/routes/event/orders.tsx:123
 msgid "Filter Orders"
 msgstr "Lọc đơn hàng"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:286
+msgid "filtered"
+msgstr "đã lọc"
 
 #: src/components/common/FilterModal/index.tsx:87
 #: src/components/common/FilterModal/index.tsx:254
@@ -4211,7 +4215,7 @@ msgstr "Doanh thu gộp"
 msgid "Guest List"
 msgstr "Danh sách khách"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
 msgid "Guest List Restriction"
 msgstr "Hạn chế danh sách khách"
 
@@ -4498,11 +4502,11 @@ msgstr "Đã bắt đầu mạo danh"
 msgid "Impersonation stopped"
 msgstr "Đã dừng mạo danh"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:243
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:244
 msgid "Import"
 msgstr "Nhập"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:241
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:242
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "Nhập từ tệp CSV hoặc TXT (một email mỗi dòng)"
 
@@ -4652,7 +4656,7 @@ msgstr "Mời người dùng"
 msgid "Invite Your Team"
 msgstr "Mời nhóm của bạn"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:196
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:197
 msgid "Invited"
 msgstr "Được mời"
 
@@ -5154,7 +5158,7 @@ msgstr "Tin nhắn đã được lên lịch"
 msgid "Message Sent"
 msgstr "Tin nhắn được gửi"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "Thông báo hiển thị cho khách có email không có trong danh sách. Để trống để sử dụng thông báo mặc định."
 
@@ -5402,11 +5406,11 @@ msgstr "Không có dữ liệu để hiển thị. Vui lòng chọn khoảng th�
 msgid "No Discount"
 msgstr "Không giảm giá"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:324
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:335
 msgid "No emails added yet."
 msgstr "Chưa có e-mail nào được thêm."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:323
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:334
 msgid "No emails match your search."
 msgstr "Không có email nào phù hợp với tìm kiếm của bạn."
 
@@ -5589,7 +5593,7 @@ msgstr "Không có sự kiện sắp tới"
 msgid "No users found"
 msgstr "Không tìm thấy người dùng"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:131
 msgid "No valid emails found in file"
 msgstr "Không tìm thấy e-mail hợp lệ trong tệp"
 
@@ -7255,7 +7259,7 @@ msgstr "Khôi phục sự kiện này để làm cho nó hiển thị trở lạ
 msgid "Restore this organizer and make it active again."
 msgstr "Khôi phục ban tổ chức này và làm cho nó hoạt động trở lại."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:159
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "Giới hạn đăng ký cho danh sách các địa chỉ e-mail được mời. Chỉ những người có e-mail trong danh sách mới có thể hoàn tất thanh toán."
 
@@ -7383,7 +7387,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:179
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7523,7 +7527,7 @@ msgstr "Tìm kiếm phân bổ sức chứa..."
 msgid "Search check-in lists..."
 msgstr "Tìm kiếm danh sách check-in..."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:252
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:253
 msgid "Search emails…"
 msgstr "Tìm kiếm email…"
 
@@ -7891,9 +7895,17 @@ msgstr "Chia sẻ trang nhà tổ chức"
 msgid "Shared Capacity Management"
 msgstr "Quản lý sức chứa chung"
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show all"
+msgstr "Hiển thị tất cả"
+
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:232
 msgid "Show all platforms ({0} more with values)"
 msgstr "Hiển thị tất cả nền tảng ({0} có giá trị khác)"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show attendees only"
+msgstr "Chỉ hiển thị người tham dự"
 
 #: src/components/forms/ProductForm/index.tsx:475
 msgid "Show available product quantity"
@@ -8319,7 +8331,7 @@ msgstr "Cập nhật cài đặt SEO thành công"
 msgid "Successfully Updated SEO Settings"
 msgstr "Cập nhật cài đặt SEO thành công"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:99
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:101
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "Cập nhật cài đặt thành công"
@@ -8720,7 +8732,7 @@ msgstr "Mã này sẽ được dùng để theo dõi doanh số. Chỉ cho phép
 msgid "This color combination may be hard to read for some users"
 msgstr "Kết hợp màu này có thể khó đọc đối với một số người dùng"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:173
 msgid "This email address is not on the guest list for this event."
 msgstr "Địa chỉ email này không có trong danh sách khách mời của sự kiện này."
 
@@ -10038,7 +10050,7 @@ msgstr "Khi được bật, các sự kiện mới sẽ hiển thị hộp kiể
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "Khi được bật, không có phí ứng dụng nào sẽ được tính cho các giao dịch Stripe Connect. Sử dụng cho các quốc gia không hỗ trợ phí ứng dụng."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:167
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "Khi được bật, chỉ những e-mail trong danh sách bên dưới mới có thể hoàn tất thanh toán."
 
@@ -10110,7 +10122,7 @@ msgstr "Từ đầu năm đến nay"
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:250
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:277
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:288
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:299
 msgid "Yes"
 msgstr "Có"
 

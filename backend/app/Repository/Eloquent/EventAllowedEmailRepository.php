@@ -40,6 +40,16 @@ class EventAllowedEmailRepository extends BaseRepository implements EventAllowed
                 $params->query,
                 fn($q) => $q->where('event_allowed_emails.email', 'like', '%' . $params->query . '%')
             )
+            ->when(
+                $params->query_params?->get('attendees_only'),
+                fn($q) => $q->whereExists(
+                    fn($sub) => $sub->select(DB::raw(1))
+                        ->from('attendees')
+                        ->whereColumn('attendees.email', 'event_allowed_emails.email')
+                        ->where('attendees.event_id', $eventId)
+                        ->whereNull('attendees.deleted_at')
+                )
+            )
             ->orderBy('event_allowed_emails.created_at', 'desc');
 
         return $this->paginateWhere(

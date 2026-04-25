@@ -64,7 +64,7 @@ msgstr "{0} elérhető"
 msgid "{0} created successfully"
 msgstr "{0} sikeresen létrehozva"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
 msgid "{0} email(s) imported"
 msgstr "{0} e-mail importálva"
 
@@ -444,7 +444,7 @@ msgstr "Aktív"
 msgid "Active Events"
 msgstr "Aktív események"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:237
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:238
 msgid "Add"
 msgstr "Hozzáadás"
 
@@ -476,7 +476,7 @@ msgstr "Egyedi kérdések hozzáadása további információk gyűjtéséhez a p
 msgid "Add description"
 msgstr "Leírás hozzáadása"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:222
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:223
 msgid "Add emails"
 msgstr "E-mailek hozzáadása"
 
@@ -802,7 +802,7 @@ msgstr "Válasz sikeresen frissítve."
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "A terméktulajdonosoktól érkező bármilyen kérdés erre az e-mail címre kerül elküldésre. Ez lesz az „válasz” cím is az eseményről küldött összes e-mailhez."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:187
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:188
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Bárki, aki nincs ezen a listán, hibaüzenetet lát, amikor megpróbál fizetni."
 
@@ -1055,7 +1055,7 @@ msgstr "Próbálkozások"
 msgid "Attendance and check-in rates across all events"
 msgstr "Részvétel és bejelentkezési arányok minden eseményen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:212
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:213
 msgid "Attendance rate"
 msgstr "Részvételi arány"
 
@@ -1063,7 +1063,7 @@ msgstr "Részvételi arány"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:54
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:55
 #: src/components/common/QuestionsTable/index.tsx:461
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:276
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:284
 #: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Attendee"
 msgstr "Résztvevő"
@@ -1143,7 +1143,7 @@ msgstr "A résztvevő jegye nincs ebben a listában"
 #: src/components/routes/admin/Messages/index.tsx:90
 #: src/components/routes/admin/Messages/index.tsx:139
 #: src/components/routes/event/attendees.tsx:173
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:204
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:205
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:131
 msgid "Attendees"
 msgstr "Résztvevők"
@@ -3052,7 +3052,7 @@ msgstr "Jogosult bejelentkezési listák"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:267
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:268
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3069,7 +3069,7 @@ msgstr "E-mail és értesítési beállítások"
 msgid "Email & Templates"
 msgstr "E-mail és sablonok"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:111
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Email added"
 msgstr "E-mail hozzáadva"
 
@@ -3170,7 +3170,7 @@ msgstr "Résztvevői önkiszolgálás engedélyezése"
 msgid "Enable attendee self-service by default"
 msgstr "Résztvevői önkiszolgálás alapértelmezett engedélyezése"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:165
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
 msgid "Enable guest list restriction"
 msgstr "Vendéglista-korlátozás engedélyezése"
 
@@ -3323,7 +3323,7 @@ msgstr "Hiba az e-mail cím módosításának megerősítésekor"
 msgid "Error loading logs"
 msgstr "Hiba a naplók betöltésekor"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:170
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
 msgid "Error message"
 msgstr "Hibaüzenet"
 
@@ -3662,7 +3662,7 @@ msgstr "Sikertelen feladatok"
 msgid "Failed to abandon order. Please try again."
 msgstr "A rendelés feladása sikertelen. Kérjük, próbálja újra."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:115
 msgid "Failed to add email"
 msgstr "Az e-mail hozzáadása sikertelen"
 
@@ -3699,7 +3699,7 @@ msgstr "A sablon létrehozása sikertelen"
 msgid "Failed to delete configuration"
 msgstr "A konfiguráció törlése sikertelen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:144
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:146
 msgid "Failed to delete email"
 msgstr "Az e-mail törlése sikertelen"
 
@@ -3749,7 +3749,7 @@ msgstr "Megrendelések exportálása sikertelen"
 msgid "Failed to export report. Please try again."
 msgstr "A jelentés exportálása sikertelen. Kérjük, próbálja újra."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:137
 msgid "Failed to import emails"
 msgstr "Az e-mailek importálása sikertelen"
 
@@ -3952,6 +3952,10 @@ msgstr "Szűrés esemény szerint"
 #: src/components/routes/event/orders.tsx:123
 msgid "Filter Orders"
 msgstr "Megrendelések szűrése"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:286
+msgid "filtered"
+msgstr "szűrve"
 
 #: src/components/common/FilterModal/index.tsx:87
 #: src/components/common/FilterModal/index.tsx:254
@@ -4211,7 +4215,7 @@ msgstr "Bruttó értékesítés"
 msgid "Guest List"
 msgstr "Vendéglista"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
 msgid "Guest List Restriction"
 msgstr "Vendéglista-korlátozás"
 
@@ -4498,11 +4502,11 @@ msgstr "Megszemélyesítés elindítva"
 msgid "Impersonation stopped"
 msgstr "Megszemélyesítés leállítva"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:243
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:244
 msgid "Import"
 msgstr "Importálás"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:241
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:242
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "Importálás CSV- vagy TXT-fájlból (soronként egy e-mail)"
 
@@ -4652,7 +4656,7 @@ msgstr "Felhasználó meghívása"
 msgid "Invite Your Team"
 msgstr "Hívja meg csapatát"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:196
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:197
 msgid "Invited"
 msgstr "Meghívottak"
 
@@ -5154,7 +5158,7 @@ msgstr "Üzenet ütemezve"
 msgid "Message Sent"
 msgstr "Üzenet elküldve"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "Az üzenet, amelyet a vendégek látnak, ha e-mail-jük nincs a listán. Hagyja üresen az alapértelmezett üzenet használatához."
 
@@ -5402,11 +5406,11 @@ msgstr "Nincs megjeleníthető adat. Kérjük, válasszon dátumtartományt."
 msgid "No Discount"
 msgstr "Nincs kedvezmény"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:324
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:335
 msgid "No emails added yet."
 msgstr "Még nem adtak hozzá e-mailt."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:323
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:334
 msgid "No emails match your search."
 msgstr "Nincs az Ön keresésének megfelelő email."
 
@@ -5589,7 +5593,7 @@ msgstr "Nincsenek közelgő események"
 msgid "No users found"
 msgstr "Nem találhatók felhasználók"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:131
 msgid "No valid emails found in file"
 msgstr "Nem találhatók érvényes e-mail-ek a fájlban"
 
@@ -7255,7 +7259,7 @@ msgstr "Állítsa vissza ezt az eseményt, hogy ismét látható legyen."
 msgid "Restore this organizer and make it active again."
 msgstr "Állítsa vissza ezt a szervezőt, és tegye ismét aktívvá."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:159
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "A regisztrációt korlátozzák a meghívott e-mail-címek listájára. Csak azok tudják befejezni a fizetési folyamatot, akiknek e-mail-je szerepel a listán."
 
@@ -7383,7 +7387,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:179
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7523,7 +7527,7 @@ msgstr "Kapacitás-hozzárendelések keresése..."
 msgid "Search check-in lists..."
 msgstr "Bejelentkezési listák keresése..."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:252
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:253
 msgid "Search emails…"
 msgstr "E-mailek keresése…"
 
@@ -7891,9 +7895,17 @@ msgstr "Szervezői oldal megosztása"
 msgid "Shared Capacity Management"
 msgstr "Megosztott kapacitás kezelés"
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show all"
+msgstr "Összes megjelenítése"
+
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:232
 msgid "Show all platforms ({0} more with values)"
 msgstr "Összes platform megjelenítése (további {0} értékkel)"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show attendees only"
+msgstr "Csak résztvevők megjelenítése"
 
 #: src/components/forms/ProductForm/index.tsx:475
 msgid "Show available product quantity"
@@ -8319,7 +8331,7 @@ msgstr "Keresőoptimalizálási beállítások sikeresen frissítve"
 msgid "Successfully Updated SEO Settings"
 msgstr "Keresőoptimalizálási beállítások sikeresen frissítve"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:99
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:101
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "Beállítások sikeresen frissítve"
@@ -8720,7 +8732,7 @@ msgstr "Ezt a kódot az értékesítések nyomon követésére használjuk. Csak
 msgid "This color combination may be hard to read for some users"
 msgstr "Ez a színkombináció nehezen olvasható lehet egyes felhasználók számára"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:173
 msgid "This email address is not on the guest list for this event."
 msgstr "Ez az e-mail cím nem szerepel az esemény vendéglistáján."
 
@@ -10038,7 +10050,7 @@ msgstr "Ha engedélyezve van, az új események marketing opt-in jelölőnégyze
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "Ha engedélyezve van, a Stripe Connect tranzakciókra nem számítanak fel alkalmazási díjakat. Használja olyan országokban, ahol az alkalmazási díjak nem támogatottak."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:167
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "Ha engedélyezve van, csak az alábbi listán szereplő e-mailek fejezhetik be a fizetési folyamatot."
 
@@ -10110,7 +10122,7 @@ msgstr "Év elejétől napjainkig"
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:250
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:277
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:288
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:299
 msgid "Yes"
 msgstr "Igen"
 

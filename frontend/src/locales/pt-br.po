@@ -64,7 +64,7 @@ msgstr "{0} disponível"
 msgid "{0} created successfully"
 msgstr "{0} criado com sucesso"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
 msgid "{0} email(s) imported"
 msgstr "{0} e-mail(s) importado(s)"
 
@@ -444,7 +444,7 @@ msgstr "Ativo"
 msgid "Active Events"
 msgstr "Eventos ativos"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:237
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:238
 msgid "Add"
 msgstr "Adicionar"
 
@@ -476,7 +476,7 @@ msgstr "Adicione perguntas personalizadas para coletar informações adicionais 
 msgid "Add description"
 msgstr "Adicionar descrição"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:222
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:223
 msgid "Add emails"
 msgstr "Adicionar e-mails"
 
@@ -802,7 +802,7 @@ msgstr "Resposta atualizada com sucesso."
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "Quaisquer perguntas dos portadores de produtos serão enviadas para este endereço de e-mail. Este também será usado como o endereço de \"responder para\" em todos os e-mails enviados deste evento"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:187
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:188
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Qualquer pessoa que não esteja nesta lista verá um erro ao tentar finalizar a compra."
 
@@ -1055,7 +1055,7 @@ msgstr "Tentativas"
 msgid "Attendance and check-in rates across all events"
 msgstr "Presença e taxas de check-in em todos os eventos"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:212
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:213
 msgid "Attendance rate"
 msgstr "Taxa de comparecimento"
 
@@ -1063,7 +1063,7 @@ msgstr "Taxa de comparecimento"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:54
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:55
 #: src/components/common/QuestionsTable/index.tsx:461
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:276
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:284
 #: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Attendee"
 msgstr "Participante"
@@ -1143,7 +1143,7 @@ msgstr "O ingresso do participante não está incluído nesta lista"
 #: src/components/routes/admin/Messages/index.tsx:90
 #: src/components/routes/admin/Messages/index.tsx:139
 #: src/components/routes/event/attendees.tsx:173
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:204
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:205
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:131
 msgid "Attendees"
 msgstr "Participantes"
@@ -3052,7 +3052,7 @@ msgstr "Listas de Check-In Elegíveis"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:267
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:268
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3069,7 +3069,7 @@ msgstr "Configurações de e-mail e notificação"
 msgid "Email & Templates"
 msgstr "E-mail e Modelos"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:111
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Email added"
 msgstr "E-mail adicionado"
 
@@ -3170,7 +3170,7 @@ msgstr "Ativar autoatendimento para participantes"
 msgid "Enable attendee self-service by default"
 msgstr "Ativar autoatendimento para participantes por padrão"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:165
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
 msgid "Enable guest list restriction"
 msgstr "Ativar restrição de lista de convidados"
 
@@ -3323,7 +3323,7 @@ msgstr "Erro ao confirmar a alteração do e-mail"
 msgid "Error loading logs"
 msgstr "Erro ao carregar os registros"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:170
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
 msgid "Error message"
 msgstr "Mensagem de erro"
 
@@ -3662,7 +3662,7 @@ msgstr "Trabalhos com falha"
 msgid "Failed to abandon order. Please try again."
 msgstr "Falha ao abandonar o pedido. Por favor, tente novamente."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:115
 msgid "Failed to add email"
 msgstr "Falha ao adicionar e-mail"
 
@@ -3699,7 +3699,7 @@ msgstr "Falha ao criar modelo"
 msgid "Failed to delete configuration"
 msgstr "Falha ao excluir configuração"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:144
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:146
 msgid "Failed to delete email"
 msgstr "Falha ao excluir e-mail"
 
@@ -3749,7 +3749,7 @@ msgstr "Falha ao exportar pedidos"
 msgid "Failed to export report. Please try again."
 msgstr "Falha ao exportar relatório. Por favor, tente novamente."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:137
 msgid "Failed to import emails"
 msgstr "Falha ao importar e-mails"
 
@@ -3952,6 +3952,10 @@ msgstr "Filtrar por evento"
 #: src/components/routes/event/orders.tsx:123
 msgid "Filter Orders"
 msgstr "Filtrar pedidos"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:286
+msgid "filtered"
+msgstr "filtrado"
 
 #: src/components/common/FilterModal/index.tsx:87
 #: src/components/common/FilterModal/index.tsx:254
@@ -4211,7 +4215,7 @@ msgstr "Vendas brutas"
 msgid "Guest List"
 msgstr "Lista de convidados"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
 msgid "Guest List Restriction"
 msgstr "Restrição de lista de convidados"
 
@@ -4498,11 +4502,11 @@ msgstr "Personificação iniciada"
 msgid "Impersonation stopped"
 msgstr "Personificação parada"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:243
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:244
 msgid "Import"
 msgstr "Importar"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:241
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:242
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "Importar de arquivo CSV ou TXT (um e-mail por linha)"
 
@@ -4652,7 +4656,7 @@ msgstr "Convidar usuário"
 msgid "Invite Your Team"
 msgstr "Convide sua equipe"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:196
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:197
 msgid "Invited"
 msgstr "Convidados"
 
@@ -5154,7 +5158,7 @@ msgstr "Mensagem agendada"
 msgid "Message Sent"
 msgstr "Mensagem enviada"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "Mensagem exibida aos visitantes cujo e-mail não está na lista. Deixe em branco para usar a mensagem padrão."
 
@@ -5402,11 +5406,11 @@ msgstr "Nenhum dado para mostrar. Por favor, selecione um intervalo de datas"
 msgid "No Discount"
 msgstr "Sem desconto"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:324
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:335
 msgid "No emails added yet."
 msgstr "Nenhum e-mail adicionado ainda."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:323
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:334
 msgid "No emails match your search."
 msgstr "Nenhum e-mail corresponde à sua pesquisa."
 
@@ -5589,7 +5593,7 @@ msgstr "Nenhum evento futuro"
 msgid "No users found"
 msgstr "Nenhum usuário encontrado"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:131
 msgid "No valid emails found in file"
 msgstr "Nenhum e-mail válido encontrado no arquivo"
 
@@ -7255,7 +7259,7 @@ msgstr "Restaure este evento para torná-lo visível novamente."
 msgid "Restore this organizer and make it active again."
 msgstr "Restaure este organizador e torne-o ativo novamente."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:159
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "Restringir o registro a uma lista de endereços de e-mail convidados. Somente pessoas cujo e-mail esteja na lista poderão concluir o checkout."
 
@@ -7383,7 +7387,7 @@ msgstr "São Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:179
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7523,7 +7527,7 @@ msgstr "Pesquisar atribuições de capacidade..."
 msgid "Search check-in lists..."
 msgstr "Pesquisar listas de registro..."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:252
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:253
 msgid "Search emails…"
 msgstr "Pesquisar e-mails…"
 
@@ -7891,9 +7895,17 @@ msgstr "Compartilhar página do organizador"
 msgid "Shared Capacity Management"
 msgstr "Gestão de capacidade compartilhada"
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show all"
+msgstr "Mostrar todos"
+
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:232
 msgid "Show all platforms ({0} more with values)"
 msgstr "Mostrar todas as plataformas ({0} com valores)"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show attendees only"
+msgstr "Mostrar apenas participantes"
 
 #: src/components/forms/ProductForm/index.tsx:475
 msgid "Show available product quantity"
@@ -8319,7 +8331,7 @@ msgstr "Configurações de SEO atualizadas com sucesso"
 msgid "Successfully Updated SEO Settings"
 msgstr "Configurações de SEO atualizadas com sucesso"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:99
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:101
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "Configurações atualizadas com sucesso"
@@ -8720,7 +8732,7 @@ msgstr "Este código será usado para rastrear vendas. Apenas são permitidas le
 msgid "This color combination may be hard to read for some users"
 msgstr "Esta combinação de cores pode ser difícil de ler para alguns usuários"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:173
 msgid "This email address is not on the guest list for this event."
 msgstr "Este endereço de e-mail não está na lista de convidados deste evento."
 
@@ -10038,7 +10050,7 @@ msgstr "Quando ativado, novos eventos exibirão uma caixa de seleção de opt-in
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "Quando ativado, não serão cobradas taxas de aplicação nas transações Stripe Connect. Use isso para países onde as taxas de aplicação não são suportadas."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:167
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "Quando ativado, somente os e-mails da lista abaixo podem concluir o checkout."
 
@@ -10110,7 +10122,7 @@ msgstr "Ano até agora"
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:250
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:277
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:288
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:299
 msgid "Yes"
 msgstr "Sim"
 

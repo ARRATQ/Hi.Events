@@ -64,7 +64,7 @@ msgstr "{0}可用"
 msgid "{0} created successfully"
 msgstr "成功創建 {0}"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:136
 msgid "{0} email(s) imported"
 msgstr "已匯入 {0} 封電郵"
 
@@ -444,7 +444,7 @@ msgstr "活躍"
 msgid "Active Events"
 msgstr "活躍活動"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:237
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:238
 msgid "Add"
 msgstr "新增"
 
@@ -476,7 +476,7 @@ msgstr "新增自訂問題以在結帳時收集額外資訊"
 msgid "Add description"
 msgstr "添加描述"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:222
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:223
 msgid "Add emails"
 msgstr "新增電郵"
 
@@ -802,7 +802,7 @@ msgstr "答案更新成功。"
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "產品持有者的任何查詢都將發送到此電子郵件地址。此地址還將用作從此活動發送的所有電子郵件的“回覆至”地址"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:187
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:188
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "不在此列表上的任何人在結帳時都會看到錯誤。"
 
@@ -1055,7 +1055,7 @@ msgstr "嘗試次數"
 msgid "Attendance and check-in rates across all events"
 msgstr "所有活動的出席率和簽到率"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:212
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:213
 msgid "Attendance rate"
 msgstr "出席率"
 
@@ -1063,7 +1063,7 @@ msgstr "出席率"
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:54
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:55
 #: src/components/common/QuestionsTable/index.tsx:461
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:276
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:284
 #: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Attendee"
 msgstr "參加者"
@@ -1143,7 +1143,7 @@ msgstr "參與者的票不包含在此列表中"
 #: src/components/routes/admin/Messages/index.tsx:90
 #: src/components/routes/admin/Messages/index.tsx:139
 #: src/components/routes/event/attendees.tsx:173
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:204
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:205
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:131
 msgid "Attendees"
 msgstr "參與者"
@@ -3052,7 +3052,7 @@ msgstr "符合條件的簽到列表"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:267
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:268
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3069,7 +3069,7 @@ msgstr "電子郵件和通知設置"
 msgid "Email & Templates"
 msgstr "電子郵件和模板"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:111
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Email added"
 msgstr "電郵已新增"
 
@@ -3170,7 +3170,7 @@ msgstr "啟用參與者自助服務"
 msgid "Enable attendee self-service by default"
 msgstr "預設啟用參與者自助服務"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:165
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
 msgid "Enable guest list restriction"
 msgstr "啟用賓客名單限制"
 
@@ -3323,7 +3323,7 @@ msgstr "確認更改電子郵件時出錯"
 msgid "Error loading logs"
 msgstr "加載日誌時出錯"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:170
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
 msgid "Error message"
 msgstr "錯誤訊息"
 
@@ -3662,7 +3662,7 @@ msgstr "失敗任務"
 msgid "Failed to abandon order. Please try again."
 msgstr "放棄訂單失敗。請重試。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:115
 msgid "Failed to add email"
 msgstr "新增電郵失敗"
 
@@ -3699,7 +3699,7 @@ msgstr "建立範本失敗"
 msgid "Failed to delete configuration"
 msgstr "刪除配置失敗"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:144
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:146
 msgid "Failed to delete email"
 msgstr "刪除電郵失敗"
 
@@ -3749,7 +3749,7 @@ msgstr "導出訂單失敗"
 msgid "Failed to export report. Please try again."
 msgstr "匯出報告失敗。請重試。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:137
 msgid "Failed to import emails"
 msgstr "匯入電郵失敗"
 
@@ -3952,6 +3952,10 @@ msgstr "按活動篩選"
 #: src/components/routes/event/orders.tsx:123
 msgid "Filter Orders"
 msgstr "篩選訂單"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:286
+msgid "filtered"
+msgstr "已篩選"
 
 #: src/components/common/FilterModal/index.tsx:87
 #: src/components/common/FilterModal/index.tsx:254
@@ -4211,7 +4215,7 @@ msgstr "總銷售額"
 msgid "Guest List"
 msgstr "賓客名單"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
 msgid "Guest List Restriction"
 msgstr "賓客名單限制"
 
@@ -4498,11 +4502,11 @@ msgstr "模擬已開始"
 msgid "Impersonation stopped"
 msgstr "模擬已停止"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:243
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:244
 msgid "Import"
 msgstr "匯入"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:241
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:242
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "從CSV或TXT文件匯入（每行一個電郵）"
 
@@ -4652,7 +4656,7 @@ msgstr "邀請用户"
 msgid "Invite Your Team"
 msgstr "邀請您的團隊"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:196
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:197
 msgid "Invited"
 msgstr "受邀"
 
@@ -5154,7 +5158,7 @@ msgstr "訊息已排程"
 msgid "Message Sent"
 msgstr "發送的信息"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "向電郵不在名單上的訪客顯示的訊息。留空則使用預設訊息。"
 
@@ -5402,11 +5406,11 @@ msgstr "無數據顯示。請選擇日期範圍"
 msgid "No Discount"
 msgstr "無折扣"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:324
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:335
 msgid "No emails added yet."
 msgstr "尚未新增任何電郵。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:323
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:334
 msgid "No emails match your search."
 msgstr "沒有找到匹配的郵件。"
 
@@ -5589,7 +5593,7 @@ msgstr "沒有即將舉行的活動"
 msgid "No users found"
 msgstr "未找到用戶"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:131
 msgid "No valid emails found in file"
 msgstr "文件中未找到有效電郵"
 
@@ -7255,7 +7259,7 @@ msgstr "還原此活動以使其再次可見。"
 msgid "Restore this organizer and make it active again."
 msgstr "還原此主辦方並使其重新活躍。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:159
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "將注册限制為受邀電郵地址列表。只有電郵在列表上的人才能完成結帳。"
 
@@ -7383,7 +7387,7 @@ msgstr "舊金山"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:179
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7523,7 +7527,7 @@ msgstr "搜索容量分配..."
 msgid "Search check-in lists..."
 msgstr "搜索簽到列表..."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:252
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:253
 msgid "Search emails…"
 msgstr "搜尋郵件…"
 
@@ -7891,9 +7895,17 @@ msgstr "分享主辦單位頁面"
 msgid "Shared Capacity Management"
 msgstr "共享容量管理"
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show all"
+msgstr "顯示全部"
+
 #: src/components/routes/organizer/Settings/Sections/SocialLinks/index.tsx:232
 msgid "Show all platforms ({0} more with values)"
 msgstr "顯示所有平台（另有 {0} 個有內容）"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:275
+msgid "Show attendees only"
+msgstr "僅顯示參與者"
 
 #: src/components/forms/ProductForm/index.tsx:475
 msgid "Show available product quantity"
@@ -8319,7 +8331,7 @@ msgstr "成功更新搜索引擎設置"
 msgid "Successfully Updated SEO Settings"
 msgstr "SEO 設定已成功更新"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:99
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:101
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "設定更新成功"
@@ -8720,7 +8732,7 @@ msgstr "呢個代碼會用嚟追蹤銷售。只可以用字母、數字、連字
 msgid "This color combination may be hard to read for some users"
 msgstr "對某些使用者來說，此顏色組合可能難以閱讀"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:173
 msgid "This email address is not on the guest list for this event."
 msgstr "此電郵地址不在此活動的賓客名單上。"
 
@@ -10038,7 +10050,7 @@ msgstr "啟用後，新活動將在結帳時顯示營銷訂閱複選框。此設
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "啟用後，Stripe Connect交易將不收取應用費用。用於不支持應用費用的國家。"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:167
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "啟用後，只有下方列表中的電郵才能完成結帳。"
 
@@ -10110,7 +10122,7 @@ msgstr "年度至今"
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:250
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:277
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:288
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:299
 msgid "Yes"
 msgstr "是"
 

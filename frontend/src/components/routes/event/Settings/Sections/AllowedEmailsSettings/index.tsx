@@ -57,17 +57,19 @@ export const AllowedEmailsSettings = () => {
     const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
     const [page, setPage] = useState(1);
     const [searchQuery, setSearchQuery] = useState('');
+    const [attendeesOnly, setAttendeesOnly] = useState(false);
     const [debouncedSearch] = useDebouncedValue(searchQuery, 300);
 
     useEffect(() => {
         setPage(1);
-    }, [debouncedSearch]);
+    }, [debouncedSearch, attendeesOnly]);
 
     const allowedEmailsQuery = useGetEventAllowedEmails(eventId, {
         pageNumber: page,
         perPage: PER_PAGE,
         query: debouncedSearch || undefined,
         sortDirection: sortOrder,
+        additionalParams: attendeesOnly ? {attendees_only: 1} : {},
     });
 
     const statsQuery = useGetEventAllowedEmailsStats(eventId);
@@ -269,11 +271,21 @@ export const AllowedEmailsSettings = () => {
                                                         : <IconChevronDown size={14}/>}
                                                 </Group>
                                             </Table.Th>
-                                            <Table.Th style={{width: 110}}>
-                                                <Group gap={4} wrap="nowrap">
-                                                    <IconUserCheck size={14}/>
-                                                    {t`Attendee`}
-                                                </Group>
+                                            <Table.Th style={{width: 130}}>
+                                                <Tooltip label={attendeesOnly ? t`Show all` : t`Show attendees only`}>
+                                                    <Group
+                                                        gap={4}
+                                                        wrap="nowrap"
+                                                        style={{cursor: 'pointer', userSelect: 'none'}}
+                                                        onClick={() => setAttendeesOnly(v => !v)}
+                                                    >
+                                                        <IconUserCheck size={14} color={attendeesOnly ? 'var(--mantine-color-green-6)' : undefined}/>
+                                                        <Text size="sm" fw={attendeesOnly ? 700 : undefined} c={attendeesOnly ? 'green' : undefined}>
+                                                            {t`Attendee`}
+                                                        </Text>
+                                                        {attendeesOnly && <Badge size="xs" color="green"><Trans>filtered</Trans></Badge>}
+                                                    </Group>
+                                                </Tooltip>
                                             </Table.Th>
                                             <Table.Th style={{width: 60}}/>
                                         </Table.Tr>
