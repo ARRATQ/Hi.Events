@@ -30,7 +30,7 @@ class EventAllowedEmailRepository extends BaseRepository implements EventAllowed
             ->selectRaw(
                 'event_allowed_emails.*, EXISTS(
                     SELECT 1 FROM attendees
-                    WHERE attendees.email = event_allowed_emails.email
+                    WHERE LOWER(attendees.email) = LOWER(event_allowed_emails.email)
                       AND attendees.event_id = ?
                       AND attendees.deleted_at IS NULL
                 ) as is_attendee',
@@ -38,14 +38,17 @@ class EventAllowedEmailRepository extends BaseRepository implements EventAllowed
             )
             ->when(
                 $params->query,
-                fn($q) => $q->where('event_allowed_emails.email', 'like', '%' . $params->query . '%')
+                fn($q) => $q->whereRaw(
+                    'LOWER(event_allowed_emails.email) LIKE ?',
+                    ['%' . strtolower($params->query) . '%']
+                )
             )
             ->when(
                 $params->query_params?->get('attendees_only'),
                 fn($q) => $q->whereExists(
                     fn($sub) => $sub->select(DB::raw(1))
                         ->from('attendees')
-                        ->whereColumn('attendees.email', 'event_allowed_emails.email')
+                        ->whereRaw('LOWER(attendees.email) = LOWER(event_allowed_emails.email)')
                         ->where('attendees.event_id', $eventId)
                         ->whereNull('attendees.deleted_at')
                 )
@@ -67,7 +70,7 @@ class EventAllowedEmailRepository extends BaseRepository implements EventAllowed
             ->whereExists(
                 fn($q) => $q->select(DB::raw(1))
                     ->from('attendees')
-                    ->whereColumn('attendees.email', 'event_allowed_emails.email')
+                    ->whereRaw('LOWER(attendees.email) = LOWER(event_allowed_emails.email)')
                     ->where('attendees.event_id', $eventId)
                     ->whereNull('attendees.deleted_at')
             )
