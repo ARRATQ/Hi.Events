@@ -145,9 +145,8 @@ export const AllowedEmailsSettings = () => {
         });
     };
 
-    const paginationData = allowedEmailsQuery.data as any;
-    const emails = paginationData?.data ?? [];
-    const totalPages = paginationData?.last_page ?? 1;
+    const emails = allowedEmailsQuery.data?.data ?? [];
+    const totalPages = allowedEmailsQuery.data?.meta?.last_page ?? 1;
 
     const stats = statsQuery.data;
 
@@ -280,7 +279,7 @@ export const AllowedEmailsSettings = () => {
                                         </Table.Tr>
                                     </Table.Thead>
                                     <Table.Tbody>
-                                        {emails.map((entry: any) => (
+                                        {emails.map((entry) => (
                                             <Table.Tr key={entry.id}>
                                                 <Table.Td>{entry.email}</Table.Td>
                                                 <Table.Td>

@@ -8,8 +8,7 @@ export const useGetEventAllowedEmails = (eventId: IdParam, pagination: QueryFilt
     return useQuery({
         queryKey: [GET_EVENT_ALLOWED_EMAILS_QUERY_KEY, eventId, pagination],
         queryFn: async () => {
-            const res = await eventAllowedEmailsClient.all(eventId, pagination);
-            return res.data;
+            return await eventAllowedEmailsClient.all(eventId, pagination);
         },
     });
 };
