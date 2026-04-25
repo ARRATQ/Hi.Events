@@ -17,6 +17,7 @@ class EventAllowedEmailResource extends JsonResource
             'id' => $this->getId(),
             'event_id' => $this->getEventId(),
             'email' => $this->getEmail(),
+            'is_attendee' => $this->getIsAttendee(),
             'created_at' => $this->getCreatedAt(),
         ];
     }

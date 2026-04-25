@@ -2,10 +2,13 @@ import {t, Trans} from "@lingui/macro";
 import {
     ActionIcon,
     Alert,
+    Badge,
     Button,
     FileButton,
     Group,
-    ScrollArea,
+    Pagination,
+    Paper,
+    SimpleGrid,
     Stack,
     Switch,
     Table,
@@ -14,10 +17,20 @@ import {
     TextInput,
     Tooltip,
 } from "@mantine/core";
+import {useDebouncedValue} from "@mantine/hooks";
 import {useForm} from "@mantine/form";
 import {useParams} from "react-router";
 import {useEffect, useRef, useState} from "react";
-import {IconChevronDown, IconChevronUp, IconInfoCircle, IconTrash, IconUpload} from "@tabler/icons-react";
+import {
+    IconCheck,
+    IconChevronDown,
+    IconChevronUp,
+    IconInfoCircle,
+    IconSearch,
+    IconTrash,
+    IconUpload,
+    IconUserCheck,
+} from "@tabler/icons-react";
 import {Card} from "../../../../../common/Card";
 import {HeadingWithDescription} from "../../../../../common/Card/CardHeading";
 import {showError, showSuccess} from "../../../../../../utilites/notifications.tsx";
@@ -25,14 +38,16 @@ import {useFormErrorResponseHandler} from "../../../../../../hooks/useFormErrorR
 import {useUpdateEventSettings} from "../../../../../../mutations/useUpdateEventSettings.ts";
 import {useGetEventSettings} from "../../../../../../queries/useGetEventSettings.ts";
 import {useGetEventAllowedEmails} from "../../../../../../queries/useGetEventAllowedEmails.ts";
+import {useGetEventAllowedEmailsStats} from "../../../../../../queries/useGetEventAllowedEmailsStats.ts";
 import {useCreateEventAllowedEmails} from "../../../../../../mutations/useCreateEventAllowedEmails.ts";
 import {useDeleteEventAllowedEmail} from "../../../../../../mutations/useDeleteEventAllowedEmail.ts";
+
+const PER_PAGE = 50;
 
 export const AllowedEmailsSettings = () => {
     const {eventId} = useParams();
     const eventSettingsQuery = useGetEventSettings(eventId);
     const updateMutation = useUpdateEventSettings();
-    const allowedEmailsQuery = useGetEventAllowedEmails(eventId, {perPage: 500, pageNumber: 1});
     const createMutation = useCreateEventAllowedEmails();
     const deleteMutation = useDeleteEventAllowedEmail();
     const formErrorHandle = useFormErrorResponseHandler();
@@ -40,6 +55,22 @@ export const AllowedEmailsSettings = () => {
 
     const [emailInput, setEmailInput] = useState('');
     const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
+    const [page, setPage] = useState(1);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [debouncedSearch] = useDebouncedValue(searchQuery, 300);
+
+    useEffect(() => {
+        setPage(1);
+    }, [debouncedSearch]);
+
+    const allowedEmailsQuery = useGetEventAllowedEmails(eventId, {
+        pageNumber: page,
+        perPage: PER_PAGE,
+        query: debouncedSearch || undefined,
+        sortDirection: sortOrder,
+    });
+
+    const statsQuery = useGetEventAllowedEmailsStats(eventId);
 
     const form = useForm({
         initialValues: {
@@ -114,10 +145,11 @@ export const AllowedEmailsSettings = () => {
         });
     };
 
-    const emails = [...(allowedEmailsQuery.data ?? [])].sort((a, b) => {
-        const cmp = a.email.localeCompare(b.email);
-        return sortOrder === 'asc' ? cmp : -cmp;
-    });
+    const paginationData = allowedEmailsQuery.data as any;
+    const emails = paginationData?.data ?? [];
+    const totalPages = paginationData?.last_page ?? 1;
+
+    const stats = statsQuery.data;
 
     return (
         <Card>
@@ -157,6 +189,35 @@ export const AllowedEmailsSettings = () => {
                         </Trans>
                     </Alert>
 
+                    {stats && (
+                        <SimpleGrid cols={3} mt="lg">
+                            <Paper withBorder p="md" radius="md">
+                                <Text size="xs" c="dimmed" tt="uppercase" fw={700}>
+                                    <Trans>Invited</Trans>
+                                </Text>
+                                <Text size="xl" fw={700} mt={4}>
+                                    {stats.total_invited}
+                                </Text>
+                            </Paper>
+                            <Paper withBorder p="md" radius="md">
+                                <Text size="xs" c="dimmed" tt="uppercase" fw={700}>
+                                    <Trans>Attendees</Trans>
+                                </Text>
+                                <Text size="xl" fw={700} mt={4}>
+                                    {stats.total_attendees}
+                                </Text>
+                            </Paper>
+                            <Paper withBorder p="md" radius="md">
+                                <Text size="xs" c="dimmed" tt="uppercase" fw={700}>
+                                    <Trans>Attendance rate</Trans>
+                                </Text>
+                                <Text size="xl" fw={700} mt={4}>
+                                    {stats.attendance_rate}%
+                                </Text>
+                            </Paper>
+                        </SimpleGrid>
+                    )}
+
                     <Stack mt="lg" gap="sm">
                         <Text fw={500}><Trans>Add emails</Trans></Text>
 
@@ -186,8 +247,15 @@ export const AllowedEmailsSettings = () => {
                             </FileButton>
                         </Group>
 
+                        <TextInput
+                            leftSection={<IconSearch size={16}/>}
+                            placeholder={t`Search emails…`}
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.currentTarget.value)}
+                        />
+
                         {emails.length > 0 && (
-                            <ScrollArea h={350} type="auto" mt="sm">
+                            <>
                                 <Table striped withTableBorder stickyHeader>
                                     <Table.Thead>
                                         <Table.Tr>
@@ -202,13 +270,25 @@ export const AllowedEmailsSettings = () => {
                                                         : <IconChevronDown size={14}/>}
                                                 </Group>
                                             </Table.Th>
+                                            <Table.Th style={{width: 110}}>
+                                                <Group gap={4} wrap="nowrap">
+                                                    <IconUserCheck size={14}/>
+                                                    {t`Attendee`}
+                                                </Group>
+                                            </Table.Th>
                                             <Table.Th style={{width: 60}}/>
                                         </Table.Tr>
                                     </Table.Thead>
                                     <Table.Tbody>
-                                        {emails.map((entry) => (
+                                        {emails.map((entry: any) => (
                                             <Table.Tr key={entry.id}>
                                                 <Table.Td>{entry.email}</Table.Td>
+                                                <Table.Td>
+                                                    {entry.is_attendee
+                                                        ? <Badge color="green" variant="light" leftSection={<IconCheck size={12}/>}><Trans>Yes</Trans></Badge>
+                                                        : <Text c="dimmed" size="sm">—</Text>
+                                                    }
+                                                </Table.Td>
                                                 <Table.Td>
                                                     <ActionIcon
                                                         color="red"
@@ -223,12 +303,26 @@ export const AllowedEmailsSettings = () => {
                                         ))}
                                     </Table.Tbody>
                                 </Table>
-                            </ScrollArea>
+
+                                {totalPages > 1 && (
+                                    <Group justify="center" mt="sm">
+                                        <Pagination
+                                            value={page}
+                                            onChange={setPage}
+                                            total={totalPages}
+                                            size="sm"
+                                        />
+                                    </Group>
+                                )}
+                            </>
                         )}
 
                         {emails.length === 0 && !allowedEmailsQuery.isLoading && (
                             <Text c="dimmed" size="sm">
-                                <Trans>No emails added yet.</Trans>
+                                {debouncedSearch
+                                    ? <Trans>No emails match your search.</Trans>
+                                    : <Trans>No emails added yet.</Trans>
+                                }
                             </Text>
                         )}
                     </Stack>

@@ -12,4 +12,6 @@ use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 interface EventAllowedEmailRepositoryInterface extends RepositoryInterface
 {
     public function findByEventId(int $eventId, QueryParamsDTO $params): LengthAwarePaginator;
+
+    public function getStatsByEventId(int $eventId): array;
 }

@@ -65,7 +65,7 @@ msgstr "{0} beschikbaar"
 msgid "{0} created successfully"
 msgstr "{0} succesvol aangemaakt"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
 msgid "{0} email(s) imported"
 msgstr "{0} e-mail(s) geïmporteerd"
 
@@ -445,7 +445,7 @@ msgstr "Actief"
 msgid "Active Events"
 msgstr "Actieve evenementen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:176
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:237
 msgid "Add"
 msgstr "Toevoegen"
 
@@ -477,7 +477,7 @@ msgstr "Voeg aangepaste vragen toe om extra informatie te verzamelen tijdens het
 msgid "Add description"
 msgstr "Beschrijving toevoegen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:161
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:222
 msgid "Add emails"
 msgstr "E-mails toevoegen"
 
@@ -803,7 +803,7 @@ msgstr "Antwoord succesvol bijgewerkt."
 msgid "Any queries from product holders will be sent to this email address. This will also be used as the \"reply-to\" address for all emails sent from this event"
 msgstr "Vragen van producthouders worden naar dit e-mailadres gestuurd. Dit e-mailadres wordt ook gebruikt als"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:155
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:187
 msgid "Anyone not on this list will see an error when they try to check out."
 msgstr "Iedereen die niet op deze lijst staat, krijgt een foutmelding te zien wanneer ze proberen af te rekenen."
 
@@ -1056,10 +1056,15 @@ msgstr "Pogingen"
 msgid "Attendance and check-in rates across all events"
 msgstr "Aanwezigheid en incheckpercentages voor alle evenementen"
 
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:212
+msgid "Attendance rate"
+msgstr "Aanwezigheidspercentage"
+
 #: src/components/common/AttendeeTicket/index.tsx:108
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:54
 #: src/components/common/Editor/Controls/InsertLiquidVariableControl.tsx:55
 #: src/components/common/QuestionsTable/index.tsx:461
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:276
 #: src/components/routes/product-widget/CollectInformation/index.tsx:658
 msgid "Attendee"
 msgstr "Deelnemer"
@@ -1139,6 +1144,7 @@ msgstr "Ticket van deelnemer niet opgenomen in deze lijst"
 #: src/components/routes/admin/Messages/index.tsx:90
 #: src/components/routes/admin/Messages/index.tsx:139
 #: src/components/routes/event/attendees.tsx:173
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:204
 #: src/components/routes/organizer/OrganizerDashboard/index.tsx:131
 msgid "Attendees"
 msgstr "Deelnemers"
@@ -3047,7 +3053,7 @@ msgstr "In Aanmerking Komende Incheck Lijsten"
 #: src/components/routes/auth/ForgotPassword/index.tsx:65
 #: src/components/routes/auth/Login/index.tsx:93
 #: src/components/routes/auth/Register/index.tsx:104
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:199
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:267
 #: src/components/routes/organizer/Settings/Sections/BasicSettings/index.tsx:78
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditAttendeeModal/index.tsx:68
 #: src/components/routes/product-widget/OrderSummaryAndProducts/EditOrderModal/index.tsx:68
@@ -3064,7 +3070,7 @@ msgstr "Instellingen voor e-mail en meldingen"
 msgid "Email & Templates"
 msgstr "E-mail & Sjablonen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:80
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:111
 msgid "Email added"
 msgstr "E-mail toegevoegd"
 
@@ -3165,7 +3171,7 @@ msgstr "Zelfbediening voor deelnemers inschakelen"
 msgid "Enable attendee self-service by default"
 msgstr "Zelfbediening voor deelnemers standaard inschakelen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:133
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:165
 msgid "Enable guest list restriction"
 msgstr "Gastlijstbeperking inschakelen"
 
@@ -3318,7 +3324,7 @@ msgstr "Fout bij het bevestigen van een e-mailwijziging"
 msgid "Error loading logs"
 msgstr "Fout bij het laden van logboeken"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:138
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:170
 msgid "Error message"
 msgstr "Foutmelding"
 
@@ -3657,7 +3663,7 @@ msgstr "Mislukte taken"
 msgid "Failed to abandon order. Please try again."
 msgstr "Bestelling annuleren mislukt. Probeer het opnieuw."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:82
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
 msgid "Failed to add email"
 msgstr "E-mail toevoegen mislukt"
 
@@ -3694,7 +3700,7 @@ msgstr "Sjabloon maken mislukt"
 msgid "Failed to delete configuration"
 msgstr "Kan configuratie niet verwijderen"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:113
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:144
 msgid "Failed to delete email"
 msgstr "E-mail verwijderen mislukt"
 
@@ -3744,7 +3750,7 @@ msgstr "Geen orders kunnen exporteren"
 msgid "Failed to export report. Please try again."
 msgstr "Export van rapport mislukt. Probeer het opnieuw."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:104
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:135
 msgid "Failed to import emails"
 msgstr "E-mails importeren mislukt"
 
@@ -4206,7 +4212,7 @@ msgstr "Bruto verkoop"
 msgid "Guest List"
 msgstr "Gastlijst"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:125
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:157
 msgid "Guest List Restriction"
 msgstr "Gastlijstbeperking"
 
@@ -4493,11 +4499,11 @@ msgstr "Imitatie gestart"
 msgid "Impersonation stopped"
 msgstr "Imitatie gestopt"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:182
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:243
 msgid "Import"
 msgstr "Importeren"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:241
 msgid "Import from CSV or TXT file (one email per line)"
 msgstr "Importeren vanuit CSV- of TXT-bestand (één e-mail per regel)"
 
@@ -4646,6 +4652,10 @@ msgstr "Gebruiker uitnodigen"
 #: src/components/layouts/OrganizerLayout/index.tsx:167
 msgid "Invite Your Team"
 msgstr "Nodig je team uit"
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:196
+msgid "Invited"
+msgstr "Uitgenodigd"
 
 #: src/components/common/OrdersTable/index.tsx:301
 msgid "Invoice"
@@ -5145,7 +5155,7 @@ msgstr "Bericht gepland"
 msgid "Message Sent"
 msgstr "Bericht verzonden"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:139
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:171
 msgid "Message shown to visitors whose email is not on the list. Leave blank to use the default message."
 msgstr "Bericht voor bezoekers van wie het e-mailadres niet op de lijst staat. Laat leeg om het standaardbericht te gebruiken."
 
@@ -5393,9 +5403,13 @@ msgstr "Geen gegevens om weer te geven. Selecteer een datumbereik"
 msgid "No Discount"
 msgstr "Geen Korting"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:231
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:324
 msgid "No emails added yet."
 msgstr "Nog geen e-mails toegevoegd."
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:323
+msgid "No emails match your search."
+msgstr "Geen e-mails komen overeen met uw zoekopdracht."
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:439
 msgid "No end date"
@@ -5576,7 +5590,7 @@ msgstr "Geen aankomende evenementen"
 msgid "No users found"
 msgstr "Geen gebruikers gevonden"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:98
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:129
 msgid "No valid emails found in file"
 msgstr "Geen geldige e-mails gevonden in het bestand"
 
@@ -7242,7 +7256,7 @@ msgstr "Herstel dit evenement om het weer zichtbaar te maken."
 msgid "Restore this organizer and make it active again."
 msgstr "Herstel deze organisator en maak hem weer actief."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:126
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:158
 msgid "Restrict registration to a list of invited email addresses. Only people whose email is on the list will be able to complete checkout."
 msgstr "Registratie beperken tot een lijst van uitgenodigde e-mailadressen. Alleen mensen van wie het e-mailadres op de lijst staat, kunnen het afrekenproces voltooien."
 
@@ -7370,7 +7384,7 @@ msgstr "San Francisco"
 
 #: src/components/common/PlatformFeesSettings/index.tsx:249
 #: src/components/common/QuestionAndAnswerList/index.tsx:142
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:147
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:179
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
 #: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
@@ -7509,6 +7523,10 @@ msgstr "Zoek capaciteitstoewijzingen..."
 #: src/components/routes/event/CheckInLists/index.tsx:39
 msgid "Search check-in lists..."
 msgstr "Check-in lijsten doorzoeken..."
+
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:252
+msgid "Search emails…"
+msgstr "E-mails zoeken…"
 
 #: src/components/routes/event/messages.tsx:242
 msgid "Search messages..."
@@ -8302,7 +8320,7 @@ msgstr "Succesvol bijgewerkte Seo-instellingen"
 msgid "Successfully Updated SEO Settings"
 msgstr "SEO-instellingen succesvol bijgewerkt"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:68
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:99
 #: src/components/routes/event/Settings/Sections/WaitlistSettings/index.tsx:40
 msgid "Successfully Updated Settings"
 msgstr "Instellingen succesvol bijgewerkt"
@@ -8703,7 +8721,7 @@ msgstr "Deze code wordt gebruikt om verkopen bij te houden. Alleen letters, cijf
 msgid "This color combination may be hard to read for some users"
 msgstr "Deze kleurencombinatie kan moeilijk leesbaar zijn voor sommige gebruikers"
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:140
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:172
 msgid "This email address is not on the guest list for this event."
 msgstr "Dit e-mailadres staat niet op de gastenlijst voor dit evenement."
 
@@ -10021,7 +10039,7 @@ msgstr "Indien ingeschakeld, tonen nieuwe evenementen een marketing opt-in selec
 msgid "When enabled, no application fees will be charged on Stripe Connect transactions. Use this for countries where application fees are not supported."
 msgstr "Indien ingeschakeld, worden er geen applicatiekosten in rekening gebracht bij Stripe Connect-transacties. Gebruik dit voor landen waar applicatiekosten niet worden ondersteund."
 
-#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:134
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:166
 msgid "When enabled, only emails on the list below can complete checkout."
 msgstr "Wanneer ingeschakeld, kunnen alleen e-mails op de onderstaande lijst het afrekenproces voltooien."
 
@@ -10093,6 +10111,7 @@ msgstr "Jaar tot nu toe"
 
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:250
 #: src/components/routes/admin/Accounts/AccountDetail/index.tsx:277
+#: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:288
 msgid "Yes"
 msgstr "Ja"
 

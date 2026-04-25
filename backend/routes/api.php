@@ -11,6 +11,7 @@ use HiEvents\Http\Actions\Affiliates\CreateAffiliateAction;
 use HiEvents\Http\Actions\EventAllowedEmails\CreateEventAllowedEmailsAction;
 use HiEvents\Http\Actions\EventAllowedEmails\DeleteEventAllowedEmailAction;
 use HiEvents\Http\Actions\EventAllowedEmails\GetEventAllowedEmailsAction;
+use HiEvents\Http\Actions\EventAllowedEmails\GetEventAllowedEmailsStatsAction;
 use HiEvents\Http\Actions\Affiliates\DeleteAffiliateAction;
 use HiEvents\Http\Actions\Affiliates\ExportAffiliatesAction;
 use HiEvents\Http\Actions\Affiliates\GetAffiliateAction;
@@ -388,6 +389,7 @@ $router->middleware(['auth:api'])->group(
 
         // Allowed Emails
         $router->get('/events/{event_id}/allowed-emails', GetEventAllowedEmailsAction::class);
+        $router->get('/events/{event_id}/allowed-emails/stats', GetEventAllowedEmailsStatsAction::class);
         $router->post('/events/{event_id}/allowed-emails', CreateEventAllowedEmailsAction::class);
         $router->delete('/events/{event_id}/allowed-emails/{allowed_email_id}', DeleteEventAllowedEmailAction::class);
 

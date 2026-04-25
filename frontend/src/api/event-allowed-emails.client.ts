@@ -1,5 +1,5 @@
 import {api} from "./client";
-import {EventAllowedEmail, GenericDataResponse, GenericPaginatedResponse, IdParam, QueryFilters} from "../types";
+import {EventAllowedEmail, EventAllowedEmailStats, GenericDataResponse, GenericPaginatedResponse, IdParam, QueryFilters} from "../types";
 import {queryParamsHelper} from "../utilites/queryParamsHelper.ts";
 
 export const eventAllowedEmailsClient = {
@@ -21,6 +21,13 @@ export const eventAllowedEmailsClient = {
     delete: async (eventId: IdParam, allowedEmailId: IdParam) => {
         const response = await api.delete(
             `events/${eventId}/allowed-emails/${allowedEmailId}`,
+        );
+        return response.data;
+    },
+
+    stats: async (eventId: IdParam) => {
+        const response = await api.get<GenericDataResponse<EventAllowedEmailStats>>(
+            `events/${eventId}/allowed-emails/stats`,
         );
         return response.data;
     },

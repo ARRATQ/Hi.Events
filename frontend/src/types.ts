@@ -858,7 +858,14 @@ export interface EventAllowedEmail {
     id?: number;
     event_id?: number;
     email: string;
+    is_attendee?: boolean;
     created_at?: string;
+}
+
+export interface EventAllowedEmailStats {
+    total_invited: number;
+    total_attendees: number;
+    attendance_rate: number;
 }
 
 export interface PromoCode {
