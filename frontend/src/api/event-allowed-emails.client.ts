@@ -26,7 +26,7 @@ export const eventAllowedEmailsClient = {
     },
 
     stats: async (eventId: IdParam) => {
-        const response = await api.get<GenericDataResponse<EventAllowedEmailStats>>(
+        const response = await api.get<EventAllowedEmailStats>(
             `events/${eventId}/allowed-emails/stats`,
         );
         return response.data;

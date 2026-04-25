@@ -8,8 +8,7 @@ export const useGetEventAllowedEmailsStats = (eventId: IdParam) => {
     return useQuery({
         queryKey: [GET_EVENT_ALLOWED_EMAILS_STATS_QUERY_KEY, eventId],
         queryFn: async () => {
-            const res = await eventAllowedEmailsClient.stats(eventId);
-            return res.data;
+            return await eventAllowedEmailsClient.stats(eventId);
         },
     });
 };
