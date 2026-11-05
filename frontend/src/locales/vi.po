@@ -712,6 +712,10 @@ msgstr "Cho phép người tham dự cập nhật thông tin vé của họ (tê
 msgid "Allow customers to join a waitlist when this product is sold out"
 msgstr "Cho phép khách hàng tham gia danh sách chờ khi sản phẩm này đã hết"
 
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:145
+msgid "Allow only one registration per email address"
+msgstr "Chỉ cho phép một lần đăng ký cho mỗi địa chỉ email"
+
 #: src/components/routes/event/Settings/Sections/SeoSettings/index.tsx:82
 #: src/components/routes/organizer/Settings/Sections/SeoSettings/index.tsx:82
 msgid "Allow search engine indexing"
@@ -1097,7 +1101,7 @@ msgstr "Email người tham dự"
 msgid "Attendee Information"
 msgstr "Thông tin người tham dự"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:114
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:118
 msgid "Attendee information collection"
 msgstr "Thu thập thông tin người tham dự"
 
@@ -1640,7 +1644,7 @@ msgstr "Đã check-in"
 msgid "Checkout"
 msgstr "Thanh toán"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:82
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:86
 msgid "Checkout Settings"
 msgstr "Cài đặt thanh toán"
 
@@ -1755,7 +1759,7 @@ msgstr "Hợp tác với nhóm của bạn để tạo nên những sự kiện 
 msgid "Collapse this product when the event page is initially loaded"
 msgstr "Thu gọn sản phẩm này khi trang sự kiện ban đầu được tải"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:42
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:44
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:34
 msgid "Collect attendee details for each ticket purchased."
 msgstr "Thu thập thông tin chi tiết người tham dự cho mỗi vé đã mua."
@@ -2503,7 +2507,7 @@ msgstr "Tùy chỉnh cài đặt email và thông báo cho sự kiện này"
 msgid "Customize the emails sent to your customers using Liquid templating. These templates will be used as defaults for all events in your organization."
 msgstr "Tùy chỉnh email gửi cho khách hàng bằng mẫu Liquid. Các mẫu này sẽ được dùng làm mặc định cho tất cả sự kiện trong tổ chức của bạn."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:83
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:87
 msgid "Customize the event homepage and checkout messaging"
 msgstr "Tùy chỉnh trang chủ sự kiện và tin nhắn thanh toán"
 
@@ -2758,7 +2762,7 @@ msgstr "Loại giảm giá"
 msgid "Dismiss this message"
 msgstr "Bỏ qua thông báo này"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:127
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:131
 msgid "Display a checkbox allowing customers to opt-in to receive marketing communications from this event organizer."
 msgstr "Hiển thị hộp kiểm cho phép khách hàng đăng ký nhận thông tin tiếp thị từ ban tổ chức sự kiện này."
 
@@ -4323,6 +4327,14 @@ msgstr "ẩn sản phẩm trừ khi người dùng có mã khuyến mãi áp d�
 msgid "Hide product when sold out"
 msgstr "Ẩn sản phẩm khi bán hết"
 
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:137
+msgid "Hide promo code field"
+msgstr "Ẩn trường mã khuyến mãi"
+
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:138
+msgid "Hide the \"Have a promo code?\" link on the ticket selection page. Promo codes shared via a link will still be applied."
+msgstr "Ẩn liên kết \"Bạn có mã khuyến mãi?\" trên trang chọn vé. Mã khuyến mãi được chia sẻ qua liên kết vẫn sẽ được áp dụng."
+
 #: src/components/routes/event/Settings/Sections/MiscSettings/index.tsx:93
 msgid "Hide the getting started page from the sidebar"
 msgstr "ẩn trang bắt đầu từ thanh bên"
@@ -4388,7 +4400,7 @@ msgstr "Homer"
 msgid "How long a customer has to complete their purchase after receiving an offer. Leave empty for no timeout."
 msgstr "Thời gian khách hàng phải hoàn tất mua hàng sau khi nhận được đề nghị. Để trống nếu không giới hạn thời gian."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:120
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:124
 msgid "How many minutes the customer has to complete their order. We recommend at least 15 minutes"
 msgstr "Khách hàng phải hoàn thành đơn đơn hàng bao nhiêu phút. "
 
@@ -6030,7 +6042,7 @@ msgstr "Trạng thái đơn hàng"
 msgid "Order Summary"
 msgstr "Tóm tắt đơn hàng"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:119
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:123
 msgid "Order timeout"
 msgstr "Thời gian chờ đơn hàng"
 
@@ -6432,12 +6444,12 @@ msgstr "Đang chờ xem xét"
 msgid "Per Attendee"
 msgstr "Theo người tham dự"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:46
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:48
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:38
 msgid "Per order"
 msgstr "Mỗi đơn hàng"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:40
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:42
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:32
 msgid "Per ticket"
 msgstr "Mỗi vé"
@@ -6657,7 +6669,7 @@ msgstr "Sự kiện phổ biến (14 ngày qua)"
 msgid "Portuguese"
 msgstr "Tiếng Bồ Đào Nha"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:95
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:99
 msgid "Post Checkout message"
 msgstr "Tin nhắn sau phần thanh toán"
 
@@ -6670,9 +6682,13 @@ msgstr "Tin Nhắn Sau Thanh Toán"
 msgid "Powered by"
 msgstr "Được cung cấp bởi"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:88
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:92
 msgid "Pre Checkout message"
 msgstr "Thông báo trước khi thanh toán"
+
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:146
+msgid "Prevent an email address from registering more than once for this event. Applies to buyer and attendee emails of completed orders and orders awaiting offline payment."
+msgstr "Ngăn một địa chỉ email đăng ký nhiều hơn một lần cho sự kiện này. Áp dụng cho email của người mua và người tham dự trong các đơn hàng đã hoàn tất và đơn hàng đang chờ thanh toán ngoại tuyến."
 
 #: src/components/routes/event/CapacityAssignments/index.tsx:32
 msgid "Prevent overselling by sharing inventory across multiple ticket types."
@@ -7390,7 +7406,7 @@ msgstr "San Francisco"
 #: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:151
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:166
 #: src/components/routes/event/Settings/Sections/MiscSettings/index.tsx:102
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:265
@@ -7915,7 +7931,7 @@ msgstr "Hiển thị số lượng sản phẩm có sẵn"
 msgid "Show fewer platforms"
 msgstr "Hiển thị ít nền tảng hơn"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:126
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:130
 msgid "Show marketing opt-in checkbox"
 msgstr "Hiển thị hộp kiểm đăng ký tiếp thị"
 
@@ -7940,11 +7956,11 @@ msgstr "Hiển thị thuế và phí riêng biệt"
 msgid "Showing {0} of {totalRows} records"
 msgstr "Hiển thị {0} trong {totalRows} bản ghi"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:100
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:104
 msgid "Shown to the customer after they checkout, on the order summary page."
 msgstr "Hiển thị cho khách hàng sau khi họ thanh toán, trên trang Tóm tắt đơn hàng."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:90
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:94
 msgid "Shown to the customer before they checkout"
 msgstr "Hiển thị cho khách hàng trước khi họ thanh toán"
 
@@ -8283,7 +8299,7 @@ msgstr "Đã cập nhật mặc định sự kiện thành công"
 msgid "Successfully Updated Homepage Design"
 msgstr "Thiết kế trang sự kiện được cập nhật thành công"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:71
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:75
 msgid "Successfully Updated Homepage Settings"
 msgstr "Cài đặt trang chủ được cập nhật thành công"
 
@@ -8777,7 +8793,7 @@ msgstr "Liên kết này không còn hợp lệ"
 msgid "This message will be included in the footer of all emails sent from this event"
 msgstr "Thông báo này sẽ được bao gồm trong phần chân trang của tất cả các email được gửi từ sự kiện này"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:107
 msgid "This message will only be shown if order is completed successfully. Orders awaiting payment will not show this message"
 msgstr "Thông báo này sẽ chỉ được hiển thị nếu đơn hàng được hoàn thành thành công. Đơn chờ thanh toán sẽ không hiển thị thông báo này."
 
@@ -9423,7 +9439,7 @@ msgstr "Sử dụng phiên bản làm mờ của ảnh bìa làm nền"
 msgid "Use cover image"
 msgstr "Sử dụng hình ảnh bìa"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:48
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:50
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:40
 msgid "Use order details for all attendees. Attendee names and emails will match the buyer's information."
 msgstr "Sử dụng thông tin đơn hàng cho tất cả người tham dự. Tên và email của người tham dự sẽ khớp với thông tin người mua."

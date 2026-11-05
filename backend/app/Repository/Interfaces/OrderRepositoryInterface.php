@@ -39,4 +39,10 @@ interface OrderRepositoryInterface extends RepositoryInterface
     ): LengthAwarePaginator;
 
     public function hasCompletedPaidOrderForAccount(int $accountId): bool;
+
+    /**
+     * @param string[] $emails
+     * @param string[] $orderStatuses
+     */
+    public function hasRegistrationForEmails(int $eventId, array $emails, array $orderStatuses): bool;
 }

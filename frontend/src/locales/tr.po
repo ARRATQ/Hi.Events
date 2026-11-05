@@ -712,6 +712,10 @@ msgstr "Katılımcıların sipariş onayıyla gönderilen güvenli bir bağlant�
 msgid "Allow customers to join a waitlist when this product is sold out"
 msgstr "Bu ürün tükendiğinde müşterilerin bekleme listesine katılmasına izin ver"
 
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:145
+msgid "Allow only one registration per email address"
+msgstr "E-posta adresi başına yalnızca bir kayda izin ver"
+
 #: src/components/routes/event/Settings/Sections/SeoSettings/index.tsx:82
 #: src/components/routes/organizer/Settings/Sections/SeoSettings/index.tsx:82
 msgid "Allow search engine indexing"
@@ -1097,7 +1101,7 @@ msgstr "Katılımcı E-postası"
 msgid "Attendee Information"
 msgstr "Katılımcı Bilgileri"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:114
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:118
 msgid "Attendee information collection"
 msgstr "Katılımcı bilgi toplama"
 
@@ -1640,7 +1644,7 @@ msgstr "Giriş Yapıldı"
 msgid "Checkout"
 msgstr "Ödeme"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:82
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:86
 msgid "Checkout Settings"
 msgstr "Ödeme Ayarları"
 
@@ -1755,7 +1759,7 @@ msgstr "Birlikte harika etkinlikler oluşturmak için ekibinizle işbirliği yap
 msgid "Collapse this product when the event page is initially loaded"
 msgstr "Etkinlik sayfası ilk yüklendiğinde bu ürünü daralt"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:42
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:44
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:34
 msgid "Collect attendee details for each ticket purchased."
 msgstr "Satın alınan her bilet için katılımcı bilgilerini toplayın."
@@ -2503,7 +2507,7 @@ msgstr "Bu etkinlik için e-posta ve bildirim ayarlarını özelleştirin"
 msgid "Customize the emails sent to your customers using Liquid templating. These templates will be used as defaults for all events in your organization."
 msgstr "Liquid şablonu kullanarak müşterilerinize gönderilen e-postaları özelleştirin. Bu şablonlar kuruluşunuzdaki tüm etkinlikler için varsayılan olarak kullanılacaktır."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:83
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:87
 msgid "Customize the event homepage and checkout messaging"
 msgstr "Etkinlik ana sayfası ve ödeme mesajlarını özelleştirin"
 
@@ -2758,7 +2762,7 @@ msgstr "İndirim Türü"
 msgid "Dismiss this message"
 msgstr "Bu mesajı kapat"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:127
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:131
 msgid "Display a checkbox allowing customers to opt-in to receive marketing communications from this event organizer."
 msgstr "Müşterilerin bu etkinlik organizatöründen pazarlama iletişimi almayı kabul etmelerini sağlayan bir onay kutusu göster."
 
@@ -4323,6 +4327,14 @@ msgstr "Kullanıcının uygun promosyon kodu yoksa ürünü gizle"
 msgid "Hide product when sold out"
 msgstr "Tükendiğinde ürünü gizle"
 
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:137
+msgid "Hide promo code field"
+msgstr "Promosyon kodu alanını gizle"
+
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:138
+msgid "Hide the \"Have a promo code?\" link on the ticket selection page. Promo codes shared via a link will still be applied."
+msgstr "Bilet seçim sayfasındaki \"Promosyon kodunuz var mı?\" bağlantısını gizleyin. Bağlantı ile paylaşılan promosyon kodları yine de uygulanır."
+
 #: src/components/routes/event/Settings/Sections/MiscSettings/index.tsx:93
 msgid "Hide the getting started page from the sidebar"
 msgstr "Başlarken sayfasını kenar çubuğundan gizle"
@@ -4388,7 +4400,7 @@ msgstr "Homer"
 msgid "How long a customer has to complete their purchase after receiving an offer. Leave empty for no timeout."
 msgstr "Bir müşterinin teklif aldıktan sonra satın almayı tamamlaması gereken süre. Zaman aşımı olmaması için boş bırakın."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:120
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:124
 msgid "How many minutes the customer has to complete their order. We recommend at least 15 minutes"
 msgstr "Müşterinin siparişini tamamlamak için kaç dakikası var. En az 15 dakika öneriyoruz"
 
@@ -6030,7 +6042,7 @@ msgstr "Sipariş durumları"
 msgid "Order Summary"
 msgstr "Sipariş Özeti"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:119
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:123
 msgid "Order timeout"
 msgstr "Sipariş zaman aşımı"
 
@@ -6432,12 +6444,12 @@ msgstr "İnceleme Bekliyor"
 msgid "Per Attendee"
 msgstr "Katılımcı Başına"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:46
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:48
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:38
 msgid "Per order"
 msgstr "Sipariş başına"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:40
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:42
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:32
 msgid "Per ticket"
 msgstr "Bilet başına"
@@ -6657,7 +6669,7 @@ msgstr "Popüler Etkinlikler (Son 14 Gün)"
 msgid "Portuguese"
 msgstr "Portekizce"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:95
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:99
 msgid "Post Checkout message"
 msgstr "Ödeme sonrası mesaj"
 
@@ -6670,9 +6682,13 @@ msgstr "Ödeme Sonrası Mesajı"
 msgid "Powered by"
 msgstr "Tarafından desteklenmektedir"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:88
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:92
 msgid "Pre Checkout message"
 msgstr "Ödeme öncesi mesaj"
+
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:146
+msgid "Prevent an email address from registering more than once for this event. Applies to buyer and attendee emails of completed orders and orders awaiting offline payment."
+msgstr "Bir e-posta adresinin bu etkinliğe birden fazla kez kaydolmasını engelleyin. Tamamlanan siparişlerin ve çevrimdışı ödeme bekleyen siparişlerin alıcı ve katılımcı e-postaları için geçerlidir."
 
 #: src/components/routes/event/CapacityAssignments/index.tsx:32
 msgid "Prevent overselling by sharing inventory across multiple ticket types."
@@ -7390,7 +7406,7 @@ msgstr "San Francisco"
 #: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:151
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:166
 #: src/components/routes/event/Settings/Sections/MiscSettings/index.tsx:102
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:265
@@ -7915,7 +7931,7 @@ msgstr "Mevcut ürün miktarını göster"
 msgid "Show fewer platforms"
 msgstr "Daha az platform göster"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:126
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:130
 msgid "Show marketing opt-in checkbox"
 msgstr "Pazarlama onay kutusunu göster"
 
@@ -7940,11 +7956,11 @@ msgstr "Vergi ve ücretleri ayrı göster"
 msgid "Showing {0} of {totalRows} records"
 msgstr "{totalRows} kayıttan {0} tanesi gösteriliyor"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:100
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:104
 msgid "Shown to the customer after they checkout, on the order summary page."
 msgstr "Müşteriye ödeme yaptıktan sonra sipariş özeti sayfasında gösterilir."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:90
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:94
 msgid "Shown to the customer before they checkout"
 msgstr "Müşteriye ödeme yapmadan önce gösterilir"
 
@@ -8283,7 +8299,7 @@ msgstr "Etkinlik Varsayılanları Başarıyla Güncellendi"
 msgid "Successfully Updated Homepage Design"
 msgstr "Ana Sayfa Tasarımı Başarıyla Güncellendi"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:71
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:75
 msgid "Successfully Updated Homepage Settings"
 msgstr "Ana Sayfa Ayarları Başarıyla Güncellendi"
 
@@ -8777,7 +8793,7 @@ msgstr "Bu bağlantı artık geçerli değil"
 msgid "This message will be included in the footer of all emails sent from this event"
 msgstr "Bu mesaj bu etkinlikten gönderilen tüm e-postaların altbilgisinde yer alacak"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:107
 msgid "This message will only be shown if order is completed successfully. Orders awaiting payment will not show this message"
 msgstr "Bu mesaj sadece sipariş başarılı bir şekilde tamamlandığında gösterilecek. Ödeme bekleyen siparişlerde bu mesaj gösterilmeyecek"
 
@@ -9423,7 +9439,7 @@ msgstr "Kapak resminin bulanıklaştırılmış halini arkaplan olarak kullan"
 msgid "Use cover image"
 msgstr "Kapak resmini kullan"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:48
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:50
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:40
 msgid "Use order details for all attendees. Attendee names and emails will match the buyer's information."
 msgstr "Tüm katılımcılar için sipariş bilgilerini kullanın. Katılımcı isimleri ve e-postaları alıcının bilgileriyle eşleşecektir."

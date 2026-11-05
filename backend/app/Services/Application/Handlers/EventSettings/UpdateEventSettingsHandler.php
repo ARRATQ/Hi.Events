@@ -105,6 +105,10 @@ class UpdateEventSettingsHandler
                     // Guest list settings
                     'allowed_emails_only' => $settings->allowed_emails_only,
                     'allowed_emails_message' => $settings->allowed_emails_message,
+
+                    // Registration settings
+                    'hide_promo_code_input' => $settings->hide_promo_code_input,
+                    'prevent_duplicate_email_registrations' => $settings->prevent_duplicate_email_registrations,
                 ],
                 where: [
                     'event_id' => $settings->event_id,

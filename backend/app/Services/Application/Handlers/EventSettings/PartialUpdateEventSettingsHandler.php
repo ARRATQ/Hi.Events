@@ -147,6 +147,10 @@ class PartialUpdateEventSettingsHandler
                 'allowed_emails_message' => array_key_exists('allowed_emails_message', $eventSettingsDTO->settings)
                     ? $eventSettingsDTO->settings['allowed_emails_message']
                     : $existingSettings->getAllowedEmailsMessage(),
+
+                // Registration settings
+                'hide_promo_code_input' => $eventSettingsDTO->settings['hide_promo_code_input'] ?? $existingSettings->getHidePromoCodeInput(),
+                'prevent_duplicate_email_registrations' => $eventSettingsDTO->settings['prevent_duplicate_email_registrations'] ?? $existingSettings->getPreventDuplicateEmailRegistrations(),
             ]),
         );
     }

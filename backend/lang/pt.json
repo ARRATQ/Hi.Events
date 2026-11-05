@@ -662,5 +662,6 @@
     "Stripe payment account not connected": "",
     "No completed paid orders on this account": "",
     "Event was created less than 24 hours ago": "",
-    "Review Message": ""
+    "Review Message": "",
+    "This email address is already registered for this event.": "Este endereço de email já está registado para este evento."
 }

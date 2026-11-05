@@ -553,7 +553,7 @@ const SelectProducts = (props: SelectProductsProps) => {
                 </form>
             )}
             <div className={'hi-promo-code-row'}>
-                {(!showPromoCodeInput && !form.values.promo_code) && (
+                {(!showPromoCodeInput && !form.values.promo_code && !event?.settings?.hide_promo_code_input) && (
                     <Anchor className={'hi-have-a-promo-code-link'} underline={'always'}
                             onClick={() => setShowPromoCodeInput(true)}>
                         {t`Have a promo code?`}
@@ -576,7 +576,7 @@ const SelectProducts = (props: SelectProductsProps) => {
                     </div>
                 )}
 
-                {(showPromoCodeInput && !form.values.promo_code) && (
+                {(showPromoCodeInput && !form.values.promo_code && !event?.settings?.hide_promo_code_input) && (
                     <Group className={'hi-promo-code-input-wrapper'} wrap={'nowrap'} gap={'20px'}>
                         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
                         {/*@ts-ignore*/}

@@ -69,6 +69,8 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
     final public const WAITLIST_OFFER_TIMEOUT_MINUTES = 'waitlist_offer_timeout_minutes';
     final public const ALLOWED_EMAILS_ONLY = 'allowed_emails_only';
     final public const ALLOWED_EMAILS_MESSAGE = 'allowed_emails_message';
+    final public const HIDE_PROMO_CODE_INPUT = 'hide_promo_code_input';
+    final public const PREVENT_DUPLICATE_EMAIL_REGISTRATIONS = 'prevent_duplicate_email_registrations';
 
     protected int $id;
     protected int $event_id;
@@ -129,6 +131,8 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
     protected ?int $waitlist_offer_timeout_minutes = null;
     protected bool $allowed_emails_only = false;
     protected ?string $allowed_emails_message = null;
+    protected bool $hide_promo_code_input = false;
+    protected bool $prevent_duplicate_email_registrations = false;
 
     public function toArray(): array
     {
@@ -192,6 +196,8 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
                     'waitlist_offer_timeout_minutes' => $this->waitlist_offer_timeout_minutes ?? null,
                     'allowed_emails_only' => $this->allowed_emails_only ?? null,
                     'allowed_emails_message' => $this->allowed_emails_message ?? null,
+                    'hide_promo_code_input' => $this->hide_promo_code_input ?? null,
+                    'prevent_duplicate_email_registrations' => $this->prevent_duplicate_email_registrations ?? null,
                 ];
     }
 
@@ -843,5 +849,27 @@ abstract class EventSettingDomainObjectAbstract extends \HiEvents\DomainObjects\
     public function getAllowedEmailsMessage(): ?string
     {
         return $this->allowed_emails_message;
+    }
+
+    public function setHidePromoCodeInput(bool $hide_promo_code_input): self
+    {
+        $this->hide_promo_code_input = $hide_promo_code_input;
+        return $this;
+    }
+
+    public function getHidePromoCodeInput(): bool
+    {
+        return $this->hide_promo_code_input;
+    }
+
+    public function setPreventDuplicateEmailRegistrations(bool $prevent_duplicate_email_registrations): self
+    {
+        $this->prevent_duplicate_email_registrations = $prevent_duplicate_email_registrations;
+        return $this;
+    }
+
+    public function getPreventDuplicateEmailRegistrations(): bool
+    {
+        return $this->prevent_duplicate_email_registrations;
     }
 }

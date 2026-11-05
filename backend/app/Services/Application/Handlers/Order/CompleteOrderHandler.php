@@ -80,6 +80,7 @@ class CompleteOrderHandler
         ]);
 
         $this->validateAllowedEmail($orderData->event_id, $orderData->order->email, $eventSettings);
+        $this->validateNoDuplicateRegistration($orderData, $eventSettings);
 
         $updatedOrder = DB::transaction(function () use ($orderData, $orderShortId, $eventSettings) {
             $orderDTO = $orderData->order;
@@ -388,6 +389,54 @@ class CompleteOrderHandler
     {
         return $orderItems->first(fn(OrderItemDomainObject $orderItem) => $orderItem->getProductPriceId() === $priceId)
             ->getProductType();
+    }
+
+    /**
+     * @throws ValidationException
+     */
+    private function validateNoDuplicateRegistration(CompleteOrderDTO $orderData, EventSettingDomainObject $eventSettings): void
+    {
+        if (!$eventSettings->getPreventDuplicateEmailRegistrations()) {
+            return;
+        }
+
+        $emailsByField = ['order.email' => $orderData->order->email];
+
+        if ($eventSettings->getAttendeeDetailsCollectionMethod() !== AttendeeDetailsCollectionMethod::PER_ORDER->name) {
+            foreach ($orderData->products as $index => $product) {
+                if (!empty($product->email)) {
+                    $emailsByField["products.$index.email"] = $product->email;
+                }
+            }
+        }
+
+        $registeredStatuses = [
+            OrderStatus::COMPLETED->name,
+            OrderStatus::AWAITING_OFFLINE_PAYMENT->name,
+        ];
+
+        $errors = [];
+        $checkedEmails = [];
+
+        foreach ($emailsByField as $field => $email) {
+            $normalizedEmail = strtolower(trim($email));
+
+            if (!array_key_exists($normalizedEmail, $checkedEmails)) {
+                $checkedEmails[$normalizedEmail] = $this->orderRepository->hasRegistrationForEmails(
+                    eventId: $orderData->event_id,
+                    emails: [$normalizedEmail],
+                    orderStatuses: $registeredStatuses,
+                );
+            }
+
+            if ($checkedEmails[$normalizedEmail]) {
+                $errors[$field] = __('This email address is already registered for this event.');
+            }
+        }
+
+        if (!empty($errors)) {
+            throw ValidationException::withMessages($errors);
+        }
     }
 
     /**

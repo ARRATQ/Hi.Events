@@ -91,6 +91,10 @@ class UpdateEventSettingsDTO extends BaseDTO
         // Guest list settings
         public readonly bool                    $allowed_emails_only = false,
         public readonly ?string                 $allowed_emails_message = null,
+
+        // Registration settings
+        public readonly bool                    $hide_promo_code_input = false,
+        public readonly bool                    $prevent_duplicate_email_registrations = false,
     )
     {
     }

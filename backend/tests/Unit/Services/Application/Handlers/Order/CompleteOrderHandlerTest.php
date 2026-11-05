@@ -13,6 +13,7 @@ use HiEvents\DomainObjects\Status\OrderStatus;
 use HiEvents\Exceptions\ResourceConflictException;
 use HiEvents\Repository\Interfaces\AffiliateRepositoryInterface;
 use HiEvents\Repository\Interfaces\AttendeeRepositoryInterface;
+use HiEvents\Repository\Interfaces\EventAllowedEmailRepositoryInterface;
 use HiEvents\Repository\Interfaces\EventSettingsRepositoryInterface;
 use HiEvents\Repository\Interfaces\OrderRepositoryInterface;
 use HiEvents\Repository\Interfaces\ProductPriceRepositoryInterface;
@@ -33,6 +34,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Queue;
+use Illuminate\Validation\ValidationException;
 use Mockery;
 use Mockery\MockInterface;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
@@ -50,6 +52,7 @@ class CompleteOrderHandlerTest extends TestCase
     private AffiliateRepositoryInterface|MockInterface $affiliateRepository;
     private EventSettingsRepositoryInterface $eventSettingsRepository;
     private CheckoutSessionManagementService|MockInterface $sessionManagementService;
+    private EventAllowedEmailRepositoryInterface|MockInterface $allowedEmailRepository;
 
     protected function setUp(): void
     {
@@ -69,6 +72,7 @@ class CompleteOrderHandlerTest extends TestCase
         $this->eventSettingsRepository = Mockery::mock(EventSettingsRepositoryInterface::class);
         $this->sessionManagementService = Mockery::mock(CheckoutSessionManagementService::class);
         $this->sessionManagementService->shouldReceive('verifySession')->andReturn(true)->byDefault();
+        $this->allowedEmailRepository = Mockery::mock(EventAllowedEmailRepositoryInterface::class);
 
         $this->completeOrderHandler = new CompleteOrderHandler(
             $this->orderRepository,
@@ -80,6 +84,7 @@ class CompleteOrderHandlerTest extends TestCase
             $this->domainEventDispatcherService,
             $this->eventSettingsRepository,
             $this->sessionManagementService,
+            $this->allowedEmailRepository,
         );
     }
 
@@ -270,6 +275,119 @@ class CompleteOrderHandlerTest extends TestCase
 
         $this->attendeeRepository->shouldReceive('insert')->andReturn(true);
         $this->attendeeRepository->shouldReceive('findWhere')->andReturn(new Collection());
+
+        $this->completeOrderHandler->handle($orderShortId, $orderData);
+    }
+
+    public function testDuplicateRegistrationIsNotCheckedWhenSettingDisabled(): void
+    {
+        $orderShortId = 'ABC123';
+        $orderData = $this->createMockCompleteOrderDTO();
+
+        $this->eventSettingsRepository->shouldReceive('findFirstWhere')->andReturn($this->createMockEventSetting());
+        $this->orderRepository->shouldNotReceive('hasRegistrationForEmails');
+        $this->orderRepository->shouldReceive('findByShortId')->with($orderShortId)->andReturnNull();
+        $this->orderRepository->shouldReceive('loadRelation')->andReturnSelf();
+
+        $this->expectException(ResourceNotFoundException::class);
+
+        $this->completeOrderHandler->handle($orderShortId, $orderData);
+    }
+
+    public function testThrowsValidationExceptionWhenBuyerEmailAlreadyRegistered(): void
+    {
+        $orderData = $this->createMockCompleteOrderDTO();
+
+        $this->eventSettingsRepository->shouldReceive('findFirstWhere')->andReturn(
+            $this->createMockEventSetting()->setPreventDuplicateEmailRegistrations(true)
+        );
+        $this->orderRepository->shouldReceive('hasRegistrationForEmails')
+            ->once()
+            ->with(1, ['john@example.com'], [OrderStatus::COMPLETED->name, OrderStatus::AWAITING_OFFLINE_PAYMENT->name])
+            ->andReturnTrue();
+        $this->orderRepository->shouldNotReceive('findByShortId');
+
+        try {
+            $this->completeOrderHandler->handle('ABC123', $orderData);
+            $this->fail('Expected ValidationException was not thrown');
+        } catch (ValidationException $exception) {
+            $this->assertArrayHasKey('order.email', $exception->errors());
+            $this->assertArrayHasKey('products.0.email', $exception->errors());
+        }
+    }
+
+    public function testThrowsValidationExceptionOnlyForAttendeeEmailAlreadyRegistered(): void
+    {
+        $orderData = new CompleteOrderDTO(
+            order: new CompleteOrderOrderDTO(
+                first_name: 'John',
+                last_name: 'Doe',
+                email: 'John@Example.com ',
+                questions: null,
+            ),
+            products: new Collection([
+                new CompleteOrderProductDataDTO(
+                    product_price_id: 1,
+                    first_name: 'Jane',
+                    last_name: 'Doe',
+                    email: 'jane@example.com',
+                ),
+            ]),
+            event_id: 1,
+        );
+
+        $this->eventSettingsRepository->shouldReceive('findFirstWhere')->andReturn(
+            $this->createMockEventSetting()->setPreventDuplicateEmailRegistrations(true)
+        );
+        $this->orderRepository->shouldReceive('hasRegistrationForEmails')
+            ->with(1, ['john@example.com'], Mockery::any())
+            ->andReturnFalse();
+        $this->orderRepository->shouldReceive('hasRegistrationForEmails')
+            ->with(1, ['jane@example.com'], Mockery::any())
+            ->andReturnTrue();
+
+        try {
+            $this->completeOrderHandler->handle('ABC123', $orderData);
+            $this->fail('Expected ValidationException was not thrown');
+        } catch (ValidationException $exception) {
+            $this->assertSame(['products.0.email'], array_keys($exception->errors()));
+        }
+    }
+
+    public function testAttendeeEmailsAreIgnoredWhenCollectingDetailsPerOrder(): void
+    {
+        $orderShortId = 'ABC123';
+        $orderData = new CompleteOrderDTO(
+            order: new CompleteOrderOrderDTO(
+                first_name: 'John',
+                last_name: 'Doe',
+                email: 'john@example.com',
+                questions: null,
+            ),
+            products: new Collection([
+                new CompleteOrderProductDataDTO(
+                    product_price_id: 1,
+                    first_name: 'Jane',
+                    last_name: 'Doe',
+                    email: 'jane@example.com',
+                ),
+            ]),
+            event_id: 1,
+        );
+
+        $this->eventSettingsRepository->shouldReceive('findFirstWhere')->andReturn(
+            $this->createMockEventSetting()
+                ->setPreventDuplicateEmailRegistrations(true)
+                ->setAttendeeDetailsCollectionMethod('PER_ORDER')
+        );
+        $this->orderRepository->shouldReceive('hasRegistrationForEmails')
+            ->once()
+            ->with(1, ['john@example.com'], Mockery::any())
+            ->andReturnFalse();
+        $this->orderRepository->shouldReceive('findByShortId')->with($orderShortId)->andReturnNull();
+        $this->orderRepository->shouldReceive('loadRelation')->andReturnSelf();
+
+        $this->expectException(ResourceNotFoundException::class);
 
         $this->completeOrderHandler->handle($orderShortId, $orderData);
     }

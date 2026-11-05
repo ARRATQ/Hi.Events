@@ -89,6 +89,9 @@ class EventSettingsResourcePublic extends JsonResource
             // Waitlist settings
             'waitlist_auto_process' => $this->getWaitlistAutoProcess(),
             'waitlist_offer_timeout_minutes' => $this->getWaitlistOfferTimeoutMinutes(),
+
+            // Registration settings
+            'hide_promo_code_input' => $this->getHidePromoCodeInput(),
         ];
     }
 }

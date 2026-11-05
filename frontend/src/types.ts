@@ -261,6 +261,10 @@ export interface EventSettings {
     // Allowed emails settings
     allowed_emails_only?: boolean;
     allowed_emails_message?: string | null;
+
+    // Registration settings
+    hide_promo_code_input?: boolean;
+    prevent_duplicate_email_registrations?: boolean;
 }
 
 export interface VenueAddress {

@@ -109,6 +109,9 @@ class UpdateEventSettingsRequest extends BaseRequest
             // Allowed emails settings
             'allowed_emails_only' => ['nullable', 'boolean'],
             'allowed_emails_message' => ['nullable', 'string', 'max:500'],
+
+            'hide_promo_code_input' => ['boolean'],
+            'prevent_duplicate_email_registrations' => ['boolean'],
         ];
     }
 

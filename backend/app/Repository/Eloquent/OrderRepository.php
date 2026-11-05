@@ -8,6 +8,7 @@ use HiEvents\DomainObjects\AttendeeDomainObject;
 use HiEvents\DomainObjects\Generated\OrderDomainObjectAbstract;
 use HiEvents\DomainObjects\OrderDomainObject;
 use HiEvents\DomainObjects\OrderItemDomainObject;
+use HiEvents\DomainObjects\Status\AttendeeStatus;
 use HiEvents\DomainObjects\Status\OrderPaymentStatus;
 use HiEvents\DomainObjects\Status\OrderStatus;
 use HiEvents\Http\DTO\QueryParamsDTO;
@@ -150,6 +151,42 @@ class OrderRepository extends BaseRepository implements OrderRepositoryInterface
     public function getDomainObject(): string
     {
         return OrderDomainObject::class;
+    }
+
+    public function hasRegistrationForEmails(int $eventId, array $emails, array $orderStatuses): bool
+    {
+        $normalizedEmails = array_values(array_unique(array_map(
+            static fn(string $email) => strtolower(trim($email)),
+            $emails,
+        )));
+
+        if (empty($normalizedEmails) || empty($orderStatuses)) {
+            return false;
+        }
+
+        $placeholders = implode(',', array_fill(0, count($normalizedEmails), '?'));
+
+        $exists = $this->model
+            ->where('orders.event_id', $eventId)
+            ->whereIn('orders.status', $orderStatuses)
+            ->where(static function (Builder $query) use ($placeholders, $normalizedEmails, $eventId) {
+                $query
+                    ->whereRaw("LOWER(orders.email) IN ($placeholders)", $normalizedEmails)
+                    ->orWhereExists(static function ($sub) use ($placeholders, $normalizedEmails, $eventId) {
+                        $sub->select(DB::raw(1))
+                            ->from('attendees')
+                            ->whereColumn('attendees.order_id', 'orders.id')
+                            ->where('attendees.event_id', $eventId)
+                            ->whereNull('attendees.deleted_at')
+                            ->where('attendees.status', '!=', AttendeeStatus::CANCELLED->name)
+                            ->whereRaw("LOWER(attendees.email) IN ($placeholders)", $normalizedEmails);
+                    });
+            })
+            ->exists();
+
+        $this->resetModel();
+
+        return $exists;
     }
 
     protected function getModel(): string

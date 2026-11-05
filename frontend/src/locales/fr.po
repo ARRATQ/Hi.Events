@@ -712,6 +712,10 @@ msgstr "Permettre aux participants de mettre à jour leurs informations de bille
 msgid "Allow customers to join a waitlist when this product is sold out"
 msgstr "Permettre aux clients de rejoindre une liste d'attente lorsque ce produit est épuisé"
 
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:145
+msgid "Allow only one registration per email address"
+msgstr "Autoriser une seule inscription par adresse e-mail"
+
 #: src/components/routes/event/Settings/Sections/SeoSettings/index.tsx:82
 #: src/components/routes/organizer/Settings/Sections/SeoSettings/index.tsx:82
 msgid "Allow search engine indexing"
@@ -1097,7 +1101,7 @@ msgstr "Email du participant"
 msgid "Attendee Information"
 msgstr "Informations du participant"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:114
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:118
 msgid "Attendee information collection"
 msgstr "Collecte d'informations sur les participants"
 
@@ -1640,7 +1644,7 @@ msgstr "Enregistré"
 msgid "Checkout"
 msgstr "Paiement"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:82
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:86
 msgid "Checkout Settings"
 msgstr "Paramètres de paiement"
 
@@ -1755,7 +1759,7 @@ msgstr "Collaborez avec votre équipe pour créer ensemble des événements incr
 msgid "Collapse this product when the event page is initially loaded"
 msgstr "Réduire ce produit lorsque la page de l'événement est initialement chargée"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:42
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:44
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:34
 msgid "Collect attendee details for each ticket purchased."
 msgstr "Collectez les détails du participant pour chaque billet acheté."
@@ -2503,7 +2507,7 @@ msgstr "Personnaliser les paramètres de courrier électronique et de notificati
 msgid "Customize the emails sent to your customers using Liquid templating. These templates will be used as defaults for all events in your organization."
 msgstr "Personnalisez les e-mails envoyés à vos clients en utilisant des modèles Liquid. Ces modèles seront utilisés comme valeurs par défaut pour tous les événements de votre organisation."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:83
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:87
 msgid "Customize the event homepage and checkout messaging"
 msgstr "Personnalisez la page d'accueil de l'événement et la messagerie de paiement"
 
@@ -2758,7 +2762,7 @@ msgstr "Type de remise"
 msgid "Dismiss this message"
 msgstr "Ignorer ce message"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:127
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:131
 msgid "Display a checkbox allowing customers to opt-in to receive marketing communications from this event organizer."
 msgstr "Affiche une case permettant aux clients de s'inscrire pour recevoir des communications marketing de cet organisateur d'événements."
 
@@ -4323,6 +4327,14 @@ msgstr "Masquer le produit sauf si l'utilisateur a un code promo applicable"
 msgid "Hide product when sold out"
 msgstr "Masquer le produit lorsqu'il est épuisé"
 
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:137
+msgid "Hide promo code field"
+msgstr "Masquer le champ code promo"
+
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:138
+msgid "Hide the \"Have a promo code?\" link on the ticket selection page. Promo codes shared via a link will still be applied."
+msgstr "Masquer le lien « Vous avez un code promo ? » sur la page de sélection des billets. Les codes promo partagés via un lien seront toujours appliqués."
+
 #: src/components/routes/event/Settings/Sections/MiscSettings/index.tsx:93
 msgid "Hide the getting started page from the sidebar"
 msgstr "Masquer la page de démarrage de la barre latérale"
@@ -4388,7 +4400,7 @@ msgstr "Homère"
 msgid "How long a customer has to complete their purchase after receiving an offer. Leave empty for no timeout."
 msgstr "Combien de temps un client a pour finaliser son achat après avoir reçu une offre. Laisser vide pour aucun délai."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:120
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:124
 msgid "How many minutes the customer has to complete their order. We recommend at least 15 minutes"
 msgstr "De combien de minutes le client dispose pour finaliser sa commande. Nous recommandons au moins 15 minutes"
 
@@ -6030,7 +6042,7 @@ msgstr "Statuts des commandes"
 msgid "Order Summary"
 msgstr "Récapitulatif de la commande"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:119
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:123
 msgid "Order timeout"
 msgstr "Délai d'expiration de la commande"
 
@@ -6432,12 +6444,12 @@ msgstr "En attente de révision"
 msgid "Per Attendee"
 msgstr "Par participant"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:46
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:48
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:38
 msgid "Per order"
 msgstr "Par commande"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:40
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:42
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:32
 msgid "Per ticket"
 msgstr "Par billet"
@@ -6657,7 +6669,7 @@ msgstr "Événements populaires (14 derniers jours)"
 msgid "Portuguese"
 msgstr "Portugais"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:95
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:99
 msgid "Post Checkout message"
 msgstr "Message après le paiement"
 
@@ -6670,9 +6682,13 @@ msgstr "Message Post-Commande"
 msgid "Powered by"
 msgstr "Alimenté par"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:88
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:92
 msgid "Pre Checkout message"
 msgstr "Message de pré-commande"
+
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:146
+msgid "Prevent an email address from registering more than once for this event. Applies to buyer and attendee emails of completed orders and orders awaiting offline payment."
+msgstr "Empêcher une adresse e-mail de s'inscrire plus d'une fois à cet événement. S'applique aux e-mails des acheteurs et des participants des commandes finalisées et des commandes en attente de paiement hors ligne."
 
 #: src/components/routes/event/CapacityAssignments/index.tsx:32
 msgid "Prevent overselling by sharing inventory across multiple ticket types."
@@ -7390,7 +7406,7 @@ msgstr "San Francisco"
 #: src/components/routes/event/Settings/Sections/AllowedEmailsSettings/index.tsx:180
 #: src/components/routes/event/Settings/Sections/EmailSettings/GeneralEmailSettings.tsx:81
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:129
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:132
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:151
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:166
 #: src/components/routes/event/Settings/Sections/MiscSettings/index.tsx:102
 #: src/components/routes/event/Settings/Sections/PaymentSettings/index.tsx:265
@@ -7915,7 +7931,7 @@ msgstr "Afficher la quantité de produit disponible"
 msgid "Show fewer platforms"
 msgstr "Afficher moins de plateformes"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:126
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:130
 msgid "Show marketing opt-in checkbox"
 msgstr "Afficher la case d'opt-in marketing"
 
@@ -7940,11 +7956,11 @@ msgstr "Afficher les taxes et les frais séparément"
 msgid "Showing {0} of {totalRows} records"
 msgstr "Affichage de {0} sur {totalRows} enregistrements"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:100
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:104
 msgid "Shown to the customer after they checkout, on the order summary page."
 msgstr "Affiché au client après son paiement, sur la page récapitulative de la commande."
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:90
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:94
 msgid "Shown to the customer before they checkout"
 msgstr "Montré au client avant son paiement"
 
@@ -8283,7 +8299,7 @@ msgstr "Paramètres par défaut de l'événement mis à jour avec succès"
 msgid "Successfully Updated Homepage Design"
 msgstr "Conception de la page d'accueil mise à jour avec succès"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:71
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:75
 msgid "Successfully Updated Homepage Settings"
 msgstr "Paramètres de la page d'accueil mis à jour avec succès"
 
@@ -8777,7 +8793,7 @@ msgstr "Ce lien n'est plus valide"
 msgid "This message will be included in the footer of all emails sent from this event"
 msgstr "Ce message sera inclus dans le pied de page de tous les e-mails envoyés à partir de cet événement"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:103
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:107
 msgid "This message will only be shown if order is completed successfully. Orders awaiting payment will not show this message"
 msgstr "Ce message ne sera affiché que si la commande est terminée avec succès. Les commandes en attente de paiement n'afficheront pas ce message."
 
@@ -9423,7 +9439,7 @@ msgstr "Utilisez une version floue de l'image de couverture comme arrière-plan"
 msgid "Use cover image"
 msgstr "Utiliser l'image de couverture"
 
-#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:48
+#: src/components/routes/event/Settings/Sections/HomepageAndCheckoutSettings/index.tsx:50
 #: src/components/routes/organizer/Settings/Sections/EventDefaults/index.tsx:40
 msgid "Use order details for all attendees. Attendee names and emails will match the buyer's information."
 msgstr "Utiliser les détails de commande pour tous les participants. Les noms et e-mails des participants correspondront aux informations de l'acheteur."

@@ -87,6 +87,9 @@ class EventSettingsResource extends JsonResource
             // Guest list settings
             'allowed_emails_only' => $this->getAllowedEmailsOnly(),
             'allowed_emails_message' => $this->getAllowedEmailsMessage(),
+
+            'hide_promo_code_input' => $this->getHidePromoCodeInput(),
+            'prevent_duplicate_email_registrations' => $this->getPreventDuplicateEmailRegistrations(),
         ];
     }
 }

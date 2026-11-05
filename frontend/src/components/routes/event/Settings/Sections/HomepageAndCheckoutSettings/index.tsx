@@ -26,6 +26,8 @@ export const HomepageAndCheckoutSettings = () => {
             order_timeout_in_minutes: 15,
             attendee_details_collection_method: 'PER_TICKET' as 'PER_TICKET' | 'PER_ORDER',
             show_marketing_opt_in: true,
+            hide_promo_code_input: false,
+            prevent_duplicate_email_registrations: false,
         },
         transformValues: (values) => ({
             ...values,
@@ -58,6 +60,8 @@ export const HomepageAndCheckoutSettings = () => {
                 order_timeout_in_minutes: eventSettingsQuery.data.order_timeout_in_minutes,
                 attendee_details_collection_method: eventSettingsQuery.data.attendee_details_collection_method || 'PER_TICKET',
                 show_marketing_opt_in: eventSettingsQuery.data.show_marketing_opt_in ?? true,
+                hide_promo_code_input: eventSettingsQuery.data.hide_promo_code_input ?? false,
+                prevent_duplicate_email_registrations: eventSettingsQuery.data.prevent_duplicate_email_registrations ?? false,
             });
         }
     }, [eventSettingsQuery.isFetched]);
@@ -126,6 +130,21 @@ export const HomepageAndCheckoutSettings = () => {
                         label={t`Show marketing opt-in checkbox`}
                         description={t`Display a checkbox allowing customers to opt-in to receive marketing communications from this event organizer.`}
                         {...form.getInputProps('show_marketing_opt_in', {type: 'checkbox'})}
+                    />
+
+                    <Switch
+                        mt="md"
+                        label={t`Hide promo code field`}
+                        description={t`Hide the "Have a promo code?" link on the ticket selection page. Promo codes shared via a link will still be applied.`}
+                        {...form.getInputProps('hide_promo_code_input', {type: 'checkbox'})}
+                    />
+
+                    <Switch
+                        mt="md"
+                        mb="md"
+                        label={t`Allow only one registration per email address`}
+                        description={t`Prevent an email address from registering more than once for this event. Applies to buyer and attendee emails of completed orders and orders awaiting offline payment.`}
+                        {...form.getInputProps('prevent_duplicate_email_registrations', {type: 'checkbox'})}
                     />
 
                     <Button loading={updateMutation.isPending} type={'submit'}>
